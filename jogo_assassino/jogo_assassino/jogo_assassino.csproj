@@ -83,6 +83,27 @@
   <ItemGroup>
     <None Include="Resources\fancy.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_options.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ext1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
