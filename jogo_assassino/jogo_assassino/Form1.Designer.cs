@@ -49,6 +49,7 @@
             this.button_play.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.button_play.TabIndex = 5;
             this.button_play.TabStop = false;
+            this.button_play.Click += new System.EventHandler(this.button_play_Click);
             // 
             // button_options
             // 
