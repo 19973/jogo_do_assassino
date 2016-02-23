@@ -114,6 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.fancy;
             this.ClientSize = new System.Drawing.Size(634, 386);
+            this.ControlBox = false;
             this.Controls.Add(this.label_creators);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_title);
@@ -121,6 +122,7 @@
             this.Controls.Add(this.button_options);
             this.Controls.Add(this.button_play);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Jogo do assasino";
