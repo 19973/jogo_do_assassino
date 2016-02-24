@@ -170,7 +170,7 @@
             // 
             this.button_back.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
             this.button_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button_back.Image = global::jogo_assassino.Properties.Resources.back_button;
+          
             this.button_back.Location = new System.Drawing.Point(5, 256);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(100, 50);
