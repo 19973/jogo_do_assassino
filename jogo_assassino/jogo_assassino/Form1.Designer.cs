@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button_play = new System.Windows.Forms.PictureBox();
-            this.button_options = new System.Windows.Forms.PictureBox();
             this.button_exit = new System.Windows.Forms.PictureBox();
             this.label_title = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_creators = new System.Windows.Forms.Label();
+            this.button_options = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.button_play)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.button_options)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_options)).BeginInit();
             this.SuspendLayout();
             // 
             // button_play
@@ -50,17 +50,6 @@
             this.button_play.TabIndex = 5;
             this.button_play.TabStop = false;
             this.button_play.Click += new System.EventHandler(this.button_play_Click);
-            // 
-            // button_options
-            // 
-            this.button_options.Image = global::jogo_assassino.Properties.Resources.button_options1;
-            this.button_options.Location = new System.Drawing.Point(53, 172);
-            this.button_options.Name = "button_options";
-            this.button_options.Size = new System.Drawing.Size(189, 83);
-            this.button_options.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.button_options.TabIndex = 6;
-            this.button_options.TabStop = false;
-            this.button_options.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button_exit
             // 
@@ -108,6 +97,17 @@
             this.label_creators.TabIndex = 10;
             this.label_creators.Text = "Criado Por: Nelson Silva, Michael Luis e Miguel Canhola";
             // 
+            // button_options
+            // 
+            this.button_options.Image = global::jogo_assassino.Properties.Resources.button_options1;
+            this.button_options.Location = new System.Drawing.Point(53, 166);
+            this.button_options.Name = "button_options";
+            this.button_options.Size = new System.Drawing.Size(189, 83);
+            this.button_options.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.button_options.TabIndex = 11;
+            this.button_options.TabStop = false;
+            this.button_options.Click += new System.EventHandler(this.button_options_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,11 +115,11 @@
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.fancy;
             this.ClientSize = new System.Drawing.Size(634, 386);
             this.ControlBox = false;
+            this.Controls.Add(this.button_options);
             this.Controls.Add(this.label_creators);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.button_exit);
-            this.Controls.Add(this.button_options);
             this.Controls.Add(this.button_play);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -128,8 +128,8 @@
             this.Text = "Jogo do assasino";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.button_play)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.button_options)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_options)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,11 +137,11 @@
 
         #endregion
         private System.Windows.Forms.PictureBox button_play;
-        private System.Windows.Forms.PictureBox button_options;
         private System.Windows.Forms.PictureBox button_exit;
         private System.Windows.Forms.Label label_title;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_creators;
+        private System.Windows.Forms.PictureBox button_options;
     }
 }
 

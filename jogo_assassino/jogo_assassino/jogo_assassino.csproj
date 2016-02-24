@@ -66,6 +66,7 @@
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="inocente.cs" />
+    <Compile Include="menu.cs" />
     <Compile Include="pessoa.cs" />
     <Compile Include="policia.cs" />
     <Compile Include="Program.cs" />
@@ -128,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\party.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_terror.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
