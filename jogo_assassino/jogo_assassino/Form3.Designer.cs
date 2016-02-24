@@ -171,7 +171,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogação;
-            this.pictureBox1.Location = new System.Drawing.Point(-13, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-13, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(641, 506);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +181,7 @@
             // Lab_Player1_pronto
             // 
             this.Lab_Player1_pronto.AutoSize = true;
-            this.Lab_Player1_pronto.Location = new System.Drawing.Point(259, 97);
+            this.Lab_Player1_pronto.Location = new System.Drawing.Point(260, 97);
             this.Lab_Player1_pronto.Name = "Lab_Player1_pronto";
             this.Lab_Player1_pronto.Size = new System.Drawing.Size(114, 13);
             this.Lab_Player1_pronto.TabIndex = 15;
