@@ -28,31 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Nome_jogador_1 = new System.Windows.Forms.TextBox();
-            this.Nome_jogador_2 = new System.Windows.Forms.TextBox();
-            this.Nome_jogador_3 = new System.Windows.Forms.TextBox();
-            this.Nome_jogador_4 = new System.Windows.Forms.TextBox();
-            this.Nome_jogador_5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button_back = new System.Windows.Forms.PictureBox();
-            this.button_seguinte = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.button_back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.button_seguinte)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+//            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+//            this.comboBox1.FormattingEnabled = true;
+//            this.comboBox1.Items.AddRange(new object[] {
             "3",
             "4",
             "5"});
@@ -170,7 +152,7 @@
             // 
             this.button_back.BackColor = System.Drawing.Color.Transparent;
             this.button_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-          
+
             this.button_back.Location = new System.Drawing.Point(5, 256);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(100, 50);
@@ -194,36 +176,9 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(666, 309);
-            this.Controls.Add(this.button_seguinte);
-            this.Controls.Add(this.button_back);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Nome_jogador_5);
-            this.Controls.Add(this.Nome_jogador_4);
-            this.Controls.Add(this.Nome_jogador_3);
-            this.Controls.Add(this.Nome_jogador_2);
-            this.Controls.Add(this.Nome_jogador_1);
-            this.Controls.Add(this.comboBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.ClientSize = new System.Drawing.Size(353, 297);
             this.Name = "Form2";
-            this.Text = "Número de Jogadores";
-            ((System.ComponentModel.ISupportInitialize)(this.button_back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.button_seguinte)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -244,5 +199,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox button_back;
         private System.Windows.Forms.PictureBox button_seguinte;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
