@@ -33,8 +33,8 @@ namespace jogo_assassino
         private void button_play_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.Show();
+      //      Form2 form2 = new Form2();
+      //      form2.Show();
         }
 
         private void button_options_Click(object sender, EventArgs e)
