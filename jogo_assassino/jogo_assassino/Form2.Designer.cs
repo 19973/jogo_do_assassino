@@ -168,7 +168,7 @@
             // 
             // button_back
             // 
-            this.button_back.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
+            this.button_back.BackColor = System.Drawing.Color.Transparent;
             this.button_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
           
             this.button_back.Location = new System.Drawing.Point(5, 256);
@@ -182,9 +182,9 @@
             // 
             // button_seguinte
             // 
-            this.button_seguinte.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
+            this.button_seguinte.BackColor = System.Drawing.Color.Transparent;
             this.button_seguinte.Image = global::jogo_assassino.Properties.Resources.Seguinte;
-            this.button_seguinte.Location = new System.Drawing.Point(566, 256);
+            this.button_seguinte.Location = new System.Drawing.Point(564, 256);
             this.button_seguinte.Name = "button_seguinte";
             this.button_seguinte.Size = new System.Drawing.Size(100, 50);
             this.button_seguinte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,6 @@
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(666, 309);
-            this.ControlBox = false;
             this.Controls.Add(this.button_seguinte);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.label7);
@@ -215,7 +214,10 @@
             this.Controls.Add(this.Nome_jogador_2);
             this.Controls.Add(this.Nome_jogador_1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
             this.Text = "Número de Jogadores";
             ((System.ComponentModel.ISupportInitialize)(this.button_back)).EndInit();
