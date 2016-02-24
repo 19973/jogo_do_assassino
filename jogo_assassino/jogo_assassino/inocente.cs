@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace jogo_assassino
 {
-    class inocente
+    class inocente : pessoa
     {
 
 
