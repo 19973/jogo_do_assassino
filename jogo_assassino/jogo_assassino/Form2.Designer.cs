@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Nome_jogador_1 = new System.Windows.Forms.TextBox();
+            this.Nome_jogador_2 = new System.Windows.Forms.TextBox();
+            this.Nome_jogador_3 = new System.Windows.Forms.TextBox();
+            this.Nome_jogador_4 = new System.Windows.Forms.TextBox();
+            this.Nome_jogador_5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,6 +42,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button_back = new System.Windows.Forms.PictureBox();
+            this.button_seguinte = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.button_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_seguinte)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -59,45 +63,45 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox1
+            // Nome_jogador_1
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(252, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 20);
-            this.textBox1.TabIndex = 1;
+            this.Nome_jogador_1.Enabled = false;
+            this.Nome_jogador_1.Location = new System.Drawing.Point(252, 49);
+            this.Nome_jogador_1.Name = "Nome_jogador_1";
+            this.Nome_jogador_1.Size = new System.Drawing.Size(293, 20);
+            this.Nome_jogador_1.TabIndex = 1;
             // 
-            // textBox2
+            // Nome_jogador_2
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(252, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(293, 20);
-            this.textBox2.TabIndex = 2;
+            this.Nome_jogador_2.Enabled = false;
+            this.Nome_jogador_2.Location = new System.Drawing.Point(252, 97);
+            this.Nome_jogador_2.Name = "Nome_jogador_2";
+            this.Nome_jogador_2.Size = new System.Drawing.Size(293, 20);
+            this.Nome_jogador_2.TabIndex = 2;
             // 
-            // textBox3
+            // Nome_jogador_3
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(252, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(293, 20);
-            this.textBox3.TabIndex = 3;
+            this.Nome_jogador_3.Enabled = false;
+            this.Nome_jogador_3.Location = new System.Drawing.Point(252, 142);
+            this.Nome_jogador_3.Name = "Nome_jogador_3";
+            this.Nome_jogador_3.Size = new System.Drawing.Size(293, 20);
+            this.Nome_jogador_3.TabIndex = 3;
             // 
-            // textBox4
+            // Nome_jogador_4
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(252, 191);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(293, 20);
-            this.textBox4.TabIndex = 4;
+            this.Nome_jogador_4.Enabled = false;
+            this.Nome_jogador_4.Location = new System.Drawing.Point(252, 191);
+            this.Nome_jogador_4.Name = "Nome_jogador_4";
+            this.Nome_jogador_4.Size = new System.Drawing.Size(293, 20);
+            this.Nome_jogador_4.TabIndex = 4;
             // 
-            // textBox5
+            // Nome_jogador_5
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(252, 242);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(293, 20);
-            this.textBox5.TabIndex = 5;
+            this.Nome_jogador_5.Enabled = false;
+            this.Nome_jogador_5.Location = new System.Drawing.Point(252, 242);
+            this.Nome_jogador_5.Name = "Nome_jogador_5";
+            this.Nome_jogador_5.Size = new System.Drawing.Size(293, 20);
+            this.Nome_jogador_5.TabIndex = 5;
             // 
             // label1
             // 
@@ -162,14 +166,41 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Player 5:";
             // 
+            // button_back
+            // 
+            this.button_back.BackColor = System.Drawing.Color.Transparent;
+            this.button_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+          
+            this.button_back.Location = new System.Drawing.Point(5, 256);
+            this.button_back.Name = "button_back";
+            this.button_back.Size = new System.Drawing.Size(100, 50);
+            this.button_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.button_back.TabIndex = 13;
+            this.button_back.TabStop = false;
+            this.button_back.WaitOnLoad = true;
+            this.button_back.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // button_seguinte
+            // 
+            this.button_seguinte.BackColor = System.Drawing.Color.Transparent;
+            this.button_seguinte.Image = global::jogo_assassino.Properties.Resources.Seguinte;
+            this.button_seguinte.Location = new System.Drawing.Point(564, 256);
+            this.button_seguinte.Name = "button_seguinte";
+            this.button_seguinte.Size = new System.Drawing.Size(100, 50);
+            this.button_seguinte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.button_seguinte.TabIndex = 14;
+            this.button_seguinte.TabStop = false;
+            this.button_seguinte.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(584, 284);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(666, 309);
+            this.Controls.Add(this.button_seguinte);
+            this.Controls.Add(this.button_back);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -177,15 +208,20 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Nome_jogador_5);
+            this.Controls.Add(this.Nome_jogador_4);
+            this.Controls.Add(this.Nome_jogador_3);
+            this.Controls.Add(this.Nome_jogador_2);
+            this.Controls.Add(this.Nome_jogador_1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
             this.Text = "Número de Jogadores";
+            ((System.ComponentModel.ISupportInitialize)(this.button_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_seguinte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,11 +230,11 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Nome_jogador_1;
+        private System.Windows.Forms.TextBox Nome_jogador_2;
+        private System.Windows.Forms.TextBox Nome_jogador_3;
+        private System.Windows.Forms.TextBox Nome_jogador_4;
+        private System.Windows.Forms.TextBox Nome_jogador_5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -206,5 +242,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox button_back;
+        private System.Windows.Forms.PictureBox button_seguinte;
     }
 }

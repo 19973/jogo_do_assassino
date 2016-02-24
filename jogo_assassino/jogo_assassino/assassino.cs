@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace jogo_assassino
 {
-    class assassino
+    class assassino : pessoa
     {
         
     }

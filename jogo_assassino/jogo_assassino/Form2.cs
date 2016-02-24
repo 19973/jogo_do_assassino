@@ -21,30 +21,46 @@ namespace jogo_assassino
         {
             if(comboBox1.Text == "3")
             {
-                textBox1.Enabled = true;
-                textBox2.Enabled = true;
-                textBox3.Enabled = true;
-                textBox4.Enabled = false;
-                textBox5.Enabled = false;
+                Nome_jogador_1.Enabled = true;
+                Nome_jogador_2.Enabled = true;
+                Nome_jogador_3.Enabled = true;
+                Nome_jogador_4.Enabled = false;
+                Nome_jogador_5.Enabled = false;
             }
 
             if (comboBox1.Text == "4")
             {
-                textBox1.Enabled = true;
-                textBox2.Enabled = true;
-                textBox3.Enabled = true;
-                textBox4.Enabled = true;
-                textBox5.Enabled = false;
+                Nome_jogador_1.Enabled = true;
+                Nome_jogador_2.Enabled = true;
+                Nome_jogador_3.Enabled = true;
+                Nome_jogador_4.Enabled = true;
+                Nome_jogador_5.Enabled = false;
             }
 
             if (comboBox1.Text == "5")
             {
-                textBox1.Enabled = true;
-                textBox2.Enabled = true;
-                textBox3.Enabled = true;
-                textBox4.Enabled = true;
-                textBox5.Enabled = true;
+                Nome_jogador_1.Enabled = true;
+                Nome_jogador_2.Enabled = true;
+                Nome_jogador_3.Enabled = true;
+                Nome_jogador_4.Enabled = true;
+                Nome_jogador_5.Enabled = true;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+      
+
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 form3 = new Form3();
+            form3.Show();
         }
     }
 }
