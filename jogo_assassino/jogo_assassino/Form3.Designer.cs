@@ -44,7 +44,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Seguinte = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Lab_Player1_pronto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,28 +171,28 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogação;
-            this.pictureBox1.Location = new System.Drawing.Point(-13, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-13, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(641, 506);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // Lab_Player1_pronto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(259, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Player1, Estás Pronto?";
+            this.Lab_Player1_pronto.AutoSize = true;
+            this.Lab_Player1_pronto.Location = new System.Drawing.Point(260, 97);
+            this.Lab_Player1_pronto.Name = "Lab_Player1_pronto";
+            this.Lab_Player1_pronto.Size = new System.Drawing.Size(114, 13);
+            this.Lab_Player1_pronto.TabIndex = 15;
+            this.Lab_Player1_pronto.Text = "Player1, Estás Pronto?";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 493);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Lab_Player1_pronto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Seguinte);
             this.Controls.Add(this.Lab_Classe);
@@ -234,6 +234,6 @@
         private System.Windows.Forms.Label Lab_Classe;
         private System.Windows.Forms.Button Seguinte;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lab_Player1_pronto;
     }
 }

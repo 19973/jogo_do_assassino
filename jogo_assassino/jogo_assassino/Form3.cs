@@ -12,7 +12,7 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-         = new List<>;
+
 
         public Form3()
         {
@@ -35,9 +35,9 @@ namespace jogo_assassino
             tex_Player5.Hide();
             Seguinte.Enabled = false;
 
-           
-            }
 
         }
+
     }
 }
+
