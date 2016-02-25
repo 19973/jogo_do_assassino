@@ -199,7 +199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.party;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(671, 408);
+            this.ClientSize = new System.Drawing.Size(667, 408);
             this.Controls.Add(this.next_botao);
             this.Controls.Add(this.back_botao);
             this.Controls.Add(this.label7);
