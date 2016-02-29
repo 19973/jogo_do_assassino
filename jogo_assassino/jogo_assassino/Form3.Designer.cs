@@ -41,11 +41,21 @@
             this.tex_Player5 = new System.Windows.Forms.TextBox();
             this.List_Classes = new System.Windows.Forms.ListBox();
             this.Lab_Classe = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Seguinte = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Lab_Player1_pronto = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Lab_Player1_Pronto = new System.Windows.Forms.Label();
+            this.Voltar = new System.Windows.Forms.PictureBox();
+            this.Seguinte = new System.Windows.Forms.PictureBox();
+            this.Imagem_Fundo = new System.Windows.Forms.PictureBox();
+            this.But_Sim = new System.Windows.Forms.Button();
+            this.But_Nao = new System.Windows.Forms.Button();
+            this.Imag_Classes = new System.Windows.Forms.PictureBox();
+            this.Lab_Player2_Pronto = new System.Windows.Forms.Label();
+            this.Lab_Player3_Pronto = new System.Windows.Forms.Label();
+            this.Lab_Player4_Pronto = new System.Windows.Forms.Label();
+            this.Lab_Player5_Pronto = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Voltar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagem_Fundo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).BeginInit();
             this.SuspendLayout();
             // 
             // Lab_Player1
@@ -145,55 +155,129 @@
             this.Lab_Classe.TabIndex = 12;
             this.Lab_Classe.Text = "Classes";
             // 
-            // button1
+            // Lab_Player1_Pronto
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-//            this.button1.BackgroundImage = global::jogo_assassino.Properties.Resources.Voltar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(370, 434);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 51);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = false;
+            this.Lab_Player1_Pronto.AutoSize = true;
+            this.Lab_Player1_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player1_Pronto.Name = "Lab_Player1_Pronto";
+            this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
+            this.Lab_Player1_Pronto.TabIndex = 15;
+            this.Lab_Player1_Pronto.Text = "Player1, Estás Pronto?";
+            // 
+            // Voltar
+            // 
+            this.Voltar.BackColor = System.Drawing.Color.Transparent;
+            this.Voltar.Image = global::jogo_assassino.Properties.Resources.Voltar;
+            this.Voltar.Location = new System.Drawing.Point(401, 440);
+            this.Voltar.Name = "Voltar";
+            this.Voltar.Size = new System.Drawing.Size(94, 41);
+            this.Voltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Voltar.TabIndex = 17;
+            this.Voltar.TabStop = false;
+            this.Voltar.Click += new System.EventHandler(this.Voltar_Click);
             // 
             // Seguinte
             // 
             this.Seguinte.BackColor = System.Drawing.Color.Transparent;
-//            this.Seguinte.BackgroundImage = global::jogo_assassino.Properties.Resources.Seguinte1;
-            this.Seguinte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Seguinte.Location = new System.Drawing.Point(498, 434);
+            this.Seguinte.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
+            this.Seguinte.Location = new System.Drawing.Point(517, 440);
             this.Seguinte.Name = "Seguinte";
-            this.Seguinte.Size = new System.Drawing.Size(113, 51);
-            this.Seguinte.TabIndex = 13;
-            this.Seguinte.UseVisualStyleBackColor = false;
-            this.Seguinte.Click += new System.EventHandler(this.Seguinte_Click);
+            this.Seguinte.Size = new System.Drawing.Size(94, 41);
+            this.Seguinte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Seguinte.TabIndex = 16;
+            this.Seguinte.TabStop = false;
+            this.Seguinte.Click += new System.EventHandler(this.Seguinte_Click_1);
             // 
-            // pictureBox1
+            // Imagem_Fundo
             // 
-//            this.pictureBox1.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogação;
-            this.pictureBox1.Location = new System.Drawing.Point(-13, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(641, 506);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Imagem_Fundo.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogacao;
+            this.Imagem_Fundo.Location = new System.Drawing.Point(-13, -1);
+            this.Imagem_Fundo.Name = "Imagem_Fundo";
+            this.Imagem_Fundo.Size = new System.Drawing.Size(641, 506);
+            this.Imagem_Fundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Imagem_Fundo.TabIndex = 0;
+            this.Imagem_Fundo.TabStop = false;
             // 
-            // Lab_Player1_pronto
+            // But_Sim
             // 
-            this.Lab_Player1_pronto.AutoSize = true;
-            this.Lab_Player1_pronto.Location = new System.Drawing.Point(260, 97);
-            this.Lab_Player1_pronto.Name = "Lab_Player1_pronto";
-            this.Lab_Player1_pronto.Size = new System.Drawing.Size(114, 13);
-            this.Lab_Player1_pronto.TabIndex = 15;
-            this.Lab_Player1_pronto.Text = "Player1, Estás Pronto?";
+            this.But_Sim.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim.Name = "But_Sim";
+            this.But_Sim.Size = new System.Drawing.Size(75, 23);
+            this.But_Sim.TabIndex = 18;
+            this.But_Sim.Text = "Sim";
+            this.But_Sim.UseVisualStyleBackColor = true;
+            this.But_Sim.Click += new System.EventHandler(this.But_Sim_Click);
+            // 
+            // But_Nao
+            // 
+            this.But_Nao.Location = new System.Drawing.Point(237, 128);
+            this.But_Nao.Name = "But_Nao";
+            this.But_Nao.Size = new System.Drawing.Size(75, 23);
+            this.But_Nao.TabIndex = 18;
+            this.But_Nao.Text = "Nao";
+            this.But_Nao.UseVisualStyleBackColor = true;
+            this.But_Nao.Click += new System.EventHandler(this.But_Nao_Click);
+            // 
+            // Imag_Classes
+            // 
+            this.Imag_Classes.Image = global::jogo_assassino.Properties.Resources.Default;
+            this.Imag_Classes.Location = new System.Drawing.Point(178, 157);
+            this.Imag_Classes.Name = "Imag_Classes";
+            this.Imag_Classes.Size = new System.Drawing.Size(261, 242);
+            this.Imag_Classes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Imag_Classes.TabIndex = 19;
+            this.Imag_Classes.TabStop = false;
+            // 
+            // Lab_Player2_Pronto
+            // 
+            this.Lab_Player2_Pronto.AutoSize = true;
+            this.Lab_Player2_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Player2_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player2_Pronto.Name = "Lab_Player2_Pronto";
+            this.Lab_Player2_Pronto.Size = new System.Drawing.Size(232, 25);
+            this.Lab_Player2_Pronto.TabIndex = 20;
+            this.Lab_Player2_Pronto.Text = "Player2, Estás Pronto?";
+            // 
+            // Lab_Player3_Pronto
+            // 
+            this.Lab_Player3_Pronto.AutoSize = true;
+            this.Lab_Player3_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Player3_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player3_Pronto.Name = "Lab_Player3_Pronto";
+            this.Lab_Player3_Pronto.Size = new System.Drawing.Size(232, 25);
+            this.Lab_Player3_Pronto.TabIndex = 21;
+            this.Lab_Player3_Pronto.Text = "Player3, Estás Pronto?";
+            // 
+            // Lab_Player4_Pronto
+            // 
+            this.Lab_Player4_Pronto.AutoSize = true;
+            this.Lab_Player4_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Player4_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player4_Pronto.Name = "Lab_Player4_Pronto";
+            this.Lab_Player4_Pronto.Size = new System.Drawing.Size(232, 25);
+            this.Lab_Player4_Pronto.TabIndex = 22;
+            this.Lab_Player4_Pronto.Text = "Player4, Estás Pronto?";
+            // 
+            // Lab_Player5_Pronto
+            // 
+            this.Lab_Player5_Pronto.AutoSize = true;
+            this.Lab_Player5_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Player5_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player5_Pronto.Name = "Lab_Player5_Pronto";
+            this.Lab_Player5_Pronto.Size = new System.Drawing.Size(232, 25);
+            this.Lab_Player5_Pronto.TabIndex = 23;
+            this.Lab_Player5_Pronto.Text = "Player5, Estás Pronto?";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 493);
-            this.Controls.Add(this.Lab_Player1_pronto);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Imag_Classes);
+            this.Controls.Add(this.But_Nao);
+            this.Controls.Add(this.But_Sim);
+            this.Controls.Add(this.Voltar);
             this.Controls.Add(this.Seguinte);
             this.Controls.Add(this.Lab_Classe);
             this.Controls.Add(this.List_Classes);
@@ -207,11 +291,19 @@
             this.Controls.Add(this.Lab_Player3);
             this.Controls.Add(this.Lab_Player2);
             this.Controls.Add(this.Lab_Player1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Lab_Player1_Pronto);
+            this.Controls.Add(this.Lab_Player2_Pronto);
+            this.Controls.Add(this.Lab_Player3_Pronto);
+            this.Controls.Add(this.Lab_Player4_Pronto);
+            this.Controls.Add(this.Lab_Player5_Pronto);
+            this.Controls.Add(this.Imagem_Fundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Ver Quem Vai Ser Quem";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Voltar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagem_Fundo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,7 +311,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Imagem_Fundo;
         private System.Windows.Forms.Label Lab_Player1;
         private System.Windows.Forms.Label Lab_Player2;
         private System.Windows.Forms.Label Lab_Player3;
@@ -232,8 +324,15 @@
         private System.Windows.Forms.TextBox tex_Player5;
         private System.Windows.Forms.ListBox List_Classes;
         private System.Windows.Forms.Label Lab_Classe;
-        private System.Windows.Forms.Button Seguinte;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label Lab_Player1_pronto;
+        private System.Windows.Forms.Label Lab_Player1_Pronto;
+        private System.Windows.Forms.PictureBox Seguinte;
+        private System.Windows.Forms.PictureBox Voltar;
+        private System.Windows.Forms.Button But_Sim;
+        private System.Windows.Forms.Button But_Nao;
+        private System.Windows.Forms.PictureBox Imag_Classes;
+        private System.Windows.Forms.Label Lab_Player2_Pronto;
+        private System.Windows.Forms.Label Lab_Player3_Pronto;
+        private System.Windows.Forms.Label Lab_Player4_Pronto;
+        private System.Windows.Forms.Label Lab_Player5_Pronto;
     }
 }
