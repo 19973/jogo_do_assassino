@@ -42,6 +42,7 @@
             // 
             // button_play
             // 
+            this.button_play.BackColor = System.Drawing.Color.Transparent;
             this.button_play.Image = global::jogo_assassino.Properties.Resources.button_play;
             this.button_play.Location = new System.Drawing.Point(53, 60);
             this.button_play.Name = "button_play";
@@ -53,8 +54,9 @@
             // 
             // button_exit
             // 
+            this.button_exit.BackColor = System.Drawing.Color.Transparent;
             this.button_exit.Image = global::jogo_assassino.Properties.Resources.button_ext1;
-            this.button_exit.Location = new System.Drawing.Point(53, 273);
+            this.button_exit.Location = new System.Drawing.Point(53, 269);
             this.button_exit.Name = "button_exit";
             this.button_exit.Size = new System.Drawing.Size(189, 83);
             this.button_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +93,7 @@
             this.label_creators.BackColor = System.Drawing.Color.Transparent;
             this.label_creators.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_creators.ForeColor = System.Drawing.Color.White;
-            this.label_creators.Location = new System.Drawing.Point(3, 362);
+            this.label_creators.Location = new System.Drawing.Point(3, 364);
             this.label_creators.Name = "label_creators";
             this.label_creators.Size = new System.Drawing.Size(393, 19);
             this.label_creators.TabIndex = 10;
@@ -99,6 +101,7 @@
             // 
             // button_options
             // 
+            this.button_options.BackColor = System.Drawing.Color.Transparent;
             this.button_options.Image = global::jogo_assassino.Properties.Resources.button_options1;
             this.button_options.Location = new System.Drawing.Point(53, 166);
             this.button_options.Name = "button_options";
@@ -113,7 +116,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.fancy;
-            this.ClientSize = new System.Drawing.Size(634, 386);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(641, 386);
             this.ControlBox = false;
             this.Controls.Add(this.button_options);
             this.Controls.Add(this.label_creators);

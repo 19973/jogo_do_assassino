@@ -23,6 +23,9 @@ namespace jogo_assassino
         private void Form1_Load(object sender, EventArgs e)
         {
             mn = new menu_jogo();
+
+           
+           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -39,7 +42,19 @@ namespace jogo_assassino
 
         private void button_options_Click(object sender, EventArgs e)
         {
+            mn.set_versao();
 
+            if (mn.get_versao() == "normal")
+            {
+                Image myimage = new Bitmap(@"Z:\2º ano\Programação\GitHub\photos\menu\fancy.jpg");
+                this.BackgroundImage = myimage;
+            }
+
+            if (mn.get_versao() == "terror")
+            {
+                Image myimage = new Bitmap(@"Z:\2º ano\Programação\GitHub\photos\menu\creepy.jpg");
+                this.BackgroundImage = myimage;
+            }
         }
     }
 }
