@@ -99,6 +99,7 @@
             this.tex_Player1.Name = "tex_Player1";
             this.tex_Player1.Size = new System.Drawing.Size(100, 20);
             this.tex_Player1.TabIndex = 6;
+            this.tex_Player1.TextChanged += new System.EventHandler(this.tex_Player1_TextChanged);
             // 
             // tex_Player2
             // 
@@ -148,7 +149,6 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-//            this.button1.BackgroundImage = global::jogo_assassino.Properties.Resources.Voltar;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(370, 434);
             this.button1.Name = "button1";
@@ -159,7 +159,6 @@
             // Seguinte
             // 
             this.Seguinte.BackColor = System.Drawing.Color.Transparent;
-//            this.Seguinte.BackgroundImage = global::jogo_assassino.Properties.Resources.Seguinte1;
             this.Seguinte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Seguinte.Location = new System.Drawing.Point(498, 434);
             this.Seguinte.Name = "Seguinte";
@@ -170,13 +169,13 @@
             // 
             // pictureBox1
             // 
-//            this.pictureBox1.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogação;
             this.pictureBox1.Location = new System.Drawing.Point(-13, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(641, 506);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Lab_Player1_pronto
             // 

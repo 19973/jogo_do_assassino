@@ -12,7 +12,7 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-  
+
 
         public Form3()
         {
@@ -35,9 +35,18 @@ namespace jogo_assassino
             tex_Player5.Hide();
             Seguinte.Enabled = false;
 
-           
-            }
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tex_Player1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
+}
 

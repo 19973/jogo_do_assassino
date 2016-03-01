@@ -66,6 +66,7 @@
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="inocente.cs" />
+    <Compile Include="jogo.cs" />
     <Compile Include="menu.cs" />
     <Compile Include="pessoa.cs" />
     <Compile Include="policia.cs" />
