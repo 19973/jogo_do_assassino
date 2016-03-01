@@ -17,7 +17,7 @@ namespace jogo_assassino
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) 
         {
             if(comboBox1.Text == "3")
             {
