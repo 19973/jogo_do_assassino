@@ -154,4 +154,13 @@
   <data name="Seguinte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seguinte2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="creepy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\creepy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MudarVersaoNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MudarVersaoNormal.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MudarVersaoTerror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MudarVersaoTerror.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -13,7 +13,7 @@ namespace jogo_assassino
     public partial class Form1 : System.Windows.Forms.Form
     {
 
-        menu_jogo mn;
+        private menu_jogo mn;
         public Form1()
         {
             
@@ -46,13 +46,13 @@ namespace jogo_assassino
 
             if (mn.get_versao() == "normal")
             {
-                Image myimage = new Bitmap(@"Z:\2º ano\Programação\GitHub\photos\menu\fancy.jpg");
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
                 this.BackgroundImage = myimage;
             }
 
             if (mn.get_versao() == "terror")
             {
-                Image myimage = new Bitmap(@"Z:\2º ano\Programação\GitHub\photos\menu\creepy.jpg");
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
                 this.BackgroundImage = myimage;
             }
         }
