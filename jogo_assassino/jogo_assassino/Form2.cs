@@ -8,25 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace jogo_assassino
-{
+{   
+   
     public partial class Form2 : Form
     {
+        jogo jg;
+
         public Form2()
         {
             InitializeComponent();
+
+
         }
+
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(comboBox1.Text == "3")
+            if (comboBox1.Text == "3")
             {
                 textBox1.Enabled = true;
                 textBox2.Enabled = true;
                 textBox3.Enabled = true;
                 textBox4.Enabled = false;
                 textBox5.Enabled = false;
-                next_botao.Enabled = true;
             }
 
             if (comboBox1.Text == "4")
@@ -36,7 +43,6 @@ namespace jogo_assassino
                 textBox3.Enabled = true;
                 textBox4.Enabled = true;
                 textBox5.Enabled = false;
-                next_botao.Enabled = true;
             }
 
             if (comboBox1.Text == "5")
@@ -46,7 +52,6 @@ namespace jogo_assassino
                 textBox3.Enabled = true;
                 textBox4.Enabled = true;
                 textBox5.Enabled = true;
-                next_botao.Enabled = true;
             }
         }
 
@@ -59,10 +64,77 @@ namespace jogo_assassino
 
         private void next_botao_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3 form3 = new Form3();
-            form3.Show();
+            switch (int.Parse(comboBox1.SelectedItem.ToString()))
+            {
+            
+                case 3:
+                    if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "")
+                    {
+                        this.Hide();
+                        Form3 form3 = new Form3();
+                        Control t = form3.Controls.Find("tex_Player1", true)[0];
+                        t.Text = textBox1.Text;
+                        t = form3.Controls.Find("tex_Player2", true)[0];
+                        t.Text = textBox2.Text;
+                        t = form3.Controls.Find("tex_Player3", true)[0];
+                        t.Text = textBox3.Text;
+
+
+                        form3.Show();
+                        jg = new jogo(int.Parse(comboBox1.Text));
+                    }
+
+                    break;
+
+                case 4:
+                    if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "" || textBox4.Text != "")
+                    {
+                        this.Hide();
+                        Form3 form3 = new Form3();
+                        Control t = form3.Controls.Find("tex_Player1", true)[0];
+                        t.Text = textBox1.Text;
+                        t = form3.Controls.Find("tex_Player2", true)[0];
+                        t.Text = textBox2.Text;
+                        t = form3.Controls.Find("tex_Player3", true)[0];
+                        t.Text = textBox3.Text;
+                        t = form3.Controls.Find("tex_Player4", true)[0];
+                        t.Text = textBox4.Text;
+                        form3.Show();
+                        jg = new jogo(int.Parse(comboBox1.Text));
+                    }
+
+                    break;
+
+                case 5:
+                    if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "" || textBox4.Text != "" || textBox5.Text != "")
+                    {
+                        this.Hide();
+                        Form3 form3 = new Form3();
+                        t.Text = textBox1.Text;
+                        t = form3.Controls.Find("tex_Player2", true)[0];
+                        t.Text = textBox2.Text;
+                        t = form3.Controls.Find("tex_Player3", true)[0];
+                        t.Text = textBox3.Text;
+                        t = form3.Controls.Find("tex_Player4", true)[0];
+                        t.Text = textBox4.Text;
+                        t = form3.Controls.Find("tex_Player5", true)[0];
+                        t.Text = textBox5.Text;
+                        form3.Show();
+                        jg = new jogo(int.Parse(comboBox1.Text));
+                    }
+
+
+
+                    break;
+
+                default:
+                    MessageBox.Show("Vôce não inseriu todo os dados necessario");
+                    break;
+            }
+
         }
+ 
+
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
@@ -81,6 +153,11 @@ namespace jogo_assassino
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        { 
 
         }
     }

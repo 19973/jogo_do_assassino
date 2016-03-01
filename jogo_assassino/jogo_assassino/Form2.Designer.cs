@@ -183,7 +183,6 @@
             // next_botao
             // 
             this.next_botao.BackColor = System.Drawing.Color.Transparent;
-            this.next_botao.Enabled = false;
             this.next_botao.Image = global::jogo_assassino.Properties.Resources.Seguinte;
             this.next_botao.Location = new System.Drawing.Point(559, 346);
             this.next_botao.Name = "next_botao";
@@ -217,6 +216,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.back_botao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_botao)).EndInit();
             this.ResumeLayout(false);
