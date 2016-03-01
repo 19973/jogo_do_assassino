@@ -88,7 +88,7 @@
             // Lab_Player4
             // 
             this.Lab_Player4.AutoSize = true;
-            this.Lab_Player4.Location = new System.Drawing.Point(12, 313);
+            this.Lab_Player4.Location = new System.Drawing.Point(12, 301);
             this.Lab_Player4.Name = "Lab_Player4";
             this.Lab_Player4.Size = new System.Drawing.Size(42, 13);
             this.Lab_Player4.TabIndex = 4;
@@ -97,7 +97,7 @@
             // Lab_Player5
             // 
             this.Lab_Player5.AutoSize = true;
-            this.Lab_Player5.Location = new System.Drawing.Point(12, 400);
+            this.Lab_Player5.Location = new System.Drawing.Point(9, 376);
             this.Lab_Player5.Name = "Lab_Player5";
             this.Lab_Player5.Size = new System.Drawing.Size(42, 13);
             this.Lab_Player5.TabIndex = 5;
@@ -126,14 +126,14 @@
             // 
             // tex_Player4
             // 
-            this.tex_Player4.Location = new System.Drawing.Point(12, 329);
+            this.tex_Player4.Location = new System.Drawing.Point(12, 317);
             this.tex_Player4.Name = "tex_Player4";
             this.tex_Player4.Size = new System.Drawing.Size(112, 20);
             this.tex_Player4.TabIndex = 9;
             // 
             // tex_Player5
             // 
-            this.tex_Player5.Location = new System.Drawing.Point(15, 416);
+            this.tex_Player5.Location = new System.Drawing.Point(12, 392);
             this.tex_Player5.Name = "tex_Player5";
             this.tex_Player5.Size = new System.Drawing.Size(112, 20);
             this.tex_Player5.TabIndex = 10;
