@@ -43,7 +43,7 @@ namespace jogo_assassino
         private void button_options_Click(object sender, EventArgs e)
         {
             mn.set_versao();
-
+            int b;
             if (mn.get_versao() == "normal")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
