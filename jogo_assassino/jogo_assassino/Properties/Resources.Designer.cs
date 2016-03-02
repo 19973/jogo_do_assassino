@@ -163,6 +163,16 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap creepy {
+            get {
+                object obj = ResourceManager.GetObject("creepy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Default {
             get {
                 object obj = ResourceManager.GetObject("Default", resourceCulture);
@@ -187,6 +197,24 @@ namespace jogo_assassino.Properties {
             get {
                 object obj = ResourceManager.GetObject("Inocente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream MudarVersaoNormal {
+            get {
+                return ResourceManager.GetStream("MudarVersaoNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream MudarVersaoTerror {
+            get {
+                return ResourceManager.GetStream("MudarVersaoTerror", resourceCulture);
             }
         }
         
