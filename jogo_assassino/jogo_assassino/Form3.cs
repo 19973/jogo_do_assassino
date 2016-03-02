@@ -58,7 +58,7 @@ namespace jogo_assassino
        
         private void Seguinte_Click_1(object sender, EventArgs e)
         {
-            Image magem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
+            Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
 
             Lab_Classe.Hide();
             Lab_Player1.Hide();
