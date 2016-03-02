@@ -110,6 +110,7 @@ namespace jogo_assassino
                     {
                         this.Hide();
                         Form3 form3 = new Form3();
+                        Control t = form3.Controls.Find("tex_Player1", true)[0];
                         t.Text = textBox1.Text;
                         t = form3.Controls.Find("tex_Player2", true)[0];
                         t.Text = textBox2.Text;
