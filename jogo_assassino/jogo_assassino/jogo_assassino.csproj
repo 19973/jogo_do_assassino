@@ -156,6 +156,7 @@
     <Content Include="corredor_creepy.jpg" />
     <Content Include="corredor_fancy.jpg" />
     <Content Include="creepy.jpg" />
+    <Content Include="Default.jpg" />
     <Content Include="fancy.jpg" />
     <Content Include="icon.ico" />
     <Content Include="MudarVersaoNormal.wav" />
