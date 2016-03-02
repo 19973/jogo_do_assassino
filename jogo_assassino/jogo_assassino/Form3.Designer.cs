@@ -228,6 +228,7 @@
             this.Imag_Classes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imag_Classes.TabIndex = 19;
             this.Imag_Classes.TabStop = false;
+            this.Imag_Classes.Click += new System.EventHandler(this.Imag_Classes_Click);
             // 
             // Lab_Player2_Pronto
             // 
