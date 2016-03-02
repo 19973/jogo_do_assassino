@@ -289,6 +289,11 @@ namespace jogo_assassino
         {
 
         }
+
+        private void Imag_Classes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
