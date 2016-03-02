@@ -30,7 +30,6 @@ namespace jogo_assassino
         private void But_Nao_Click(object sender, EventArgs e)
         {
 
-            
             Lab_Classe.Show();
             Lab_Player1.Show();
             Lab_Player2.Show(); 
