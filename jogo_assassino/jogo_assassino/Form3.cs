@@ -286,6 +286,10 @@ namespace jogo_assassino
 
         }
 
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
