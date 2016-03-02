@@ -173,9 +173,9 @@
     <Content Include="quarto4_fancy.jpg" />
     <Content Include="quarto5_fancy.jpg" />
     <None Include="Resources\creepy.bmp" />
-    <None Include="Resources\creepy.jpg" />
     <None Include="Resources\MudarVersaoNormal.wav" />
     <None Include="Resources\MudarVersaoTerror.wav" />
+    <None Include="Resources\creepy.jpg" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
