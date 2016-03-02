@@ -15,7 +15,7 @@ namespace jogo_assassino
     public partial class Form2 : Form
     {
         jogo jg;
-
+        private menu_jogo mn;
         public Form2()
         {
             InitializeComponent();
