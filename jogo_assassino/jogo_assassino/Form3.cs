@@ -110,7 +110,7 @@ namespace jogo_assassino
                 if (Gerar_Classes == 1)
                 {
                     Imag_Classes.Image = image1;
-                    But_Nao.Enabled = false;
+                    But_Nao.Enabled = false; 
                     But_Sim.Enabled = false;
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
