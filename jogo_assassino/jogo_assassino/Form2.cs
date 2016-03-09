@@ -64,16 +64,16 @@ namespace jogo_assassino
             form1.Show();
         }
 
+
         private void next_botao_Click(object sender, EventArgs e)
         {
             try {
+            
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
                     
                     case 3:
-
-                        
 
                             if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
                     {
