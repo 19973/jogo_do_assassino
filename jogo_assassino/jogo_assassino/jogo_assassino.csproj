@@ -158,6 +158,7 @@
     <Content Include="creepy.jpg" />
     <Content Include="Default.jpg" />
     <Content Include="fancy.jpg" />
+    <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
     <Content Include="MudarVersaoNormal.wav" />
     <Content Include="MudarVersaoTerror.wav" />
