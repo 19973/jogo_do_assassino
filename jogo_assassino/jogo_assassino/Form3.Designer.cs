@@ -194,6 +194,7 @@
             this.But_Sim1.TabIndex = 18;
             this.But_Sim1.Text = "Sim-1";
             this.But_Sim1.UseVisualStyleBackColor = true;
+            this.But_Sim1.Click += new System.EventHandler(this.But_Sim1_Click_1);
             // 
             // But_Nao
             // 
@@ -257,6 +258,7 @@
             // 
             // comboBox_Player
             // 
+            this.comboBox_Player.Enabled = false;
             this.comboBox_Player.FormattingEnabled = true;
             this.comboBox_Player.Location = new System.Drawing.Point(490, 40);
             this.comboBox_Player.Name = "comboBox_Player";
@@ -314,6 +316,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 498);
+            this.ControlBox = false;
             this.Controls.Add(this.But_Sim1);
             this.Controls.Add(this.But_Sim2);
             this.Controls.Add(this.But_Sim3);
