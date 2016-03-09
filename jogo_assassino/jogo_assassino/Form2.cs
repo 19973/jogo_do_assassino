@@ -113,6 +113,8 @@ namespace jogo_assassino
                             t.Text = textBox3.Text;
                             t = form3.Controls.Find("tex_Player4", true)[0];
                             t.Text = textBox4.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
                         }
@@ -138,6 +140,8 @@ namespace jogo_assassino
                             t.Text = textBox4.Text;
                             t = form3.Controls.Find("tex_Player5", true)[0];
                             t.Text = textBox5.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
                         }
