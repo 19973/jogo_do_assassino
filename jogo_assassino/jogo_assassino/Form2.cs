@@ -15,11 +15,13 @@ namespace jogo_assassino
     public partial class Form2 : Form
     {
         jogo jg;
-       // private menu_jogo mnform2;
-        public Form2()
+        //private menu_jogo mnform2;
+
+
+        public Form2(/*menu_jogo m*/)
         {
             InitializeComponent();
-
+            //mnform2 = m;
 
         }
 
@@ -62,33 +64,44 @@ namespace jogo_assassino
             form1.Show();
         }
 
+
         private void next_botao_Click(object sender, EventArgs e)
         {
             try {
+            
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
+                    
                     case 3:
-                        if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "")
-                        {
-                            this.Hide();
-                            Form3 form3 = new Form3();
-                            Control t = form3.Controls.Find("tex_Player1", true)[0];
-                            t.Text = textBox1.Text;
-                            t = form3.Controls.Find("tex_Player2", true)[0];
-                            t.Text = textBox2.Text;
-                            t = form3.Controls.Find("tex_Player3", true)[0];
-                            t.Text = textBox3.Text;
+
+                            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+                    {
+
+                        this.Hide();
+                        Form3 form3 = new Form3();
+                        Control t = form3.Controls.Find("tex_Player1", true)[0];
+                        t.Text = textBox1.Text;
+                        t = form3.Controls.Find("tex_Player2", true)[0];
+                        t.Text = textBox2.Text;
+                        t = form3.Controls.Find("tex_Player3", true)[0];
+                        t.Text = textBox3.Text;
+                        t = form3.Controls.Find("comboBox_Player", true)[0];
+                        t.Text = comboBox1.Text;
 
 
                             form3.Show();
-                            jg = new jogo(int.Parse(comboBox1.Text));
+                        jg = new jogo(int.Parse(comboBox1.Text));
+                    }
+                        else
+                        {
+                            MessageBox.Show("Voce tem que preencher os 3 campos");
                         }
 
-                        break;
-
+                    break;
+                           
                     case 4:
-                        if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "" || textBox4.Text != "")
+                        if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
                         {
                             this.Hide();
                             Form3 form3 = new Form3();
@@ -100,14 +113,20 @@ namespace jogo_assassino
                             t.Text = textBox3.Text;
                             t = form3.Controls.Find("tex_Player4", true)[0];
                             t.Text = textBox4.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
+                        }
+                        else
+                        {
+                            MessageBox.Show("Voce tem que preencher os 4 campos");
                         }
 
                         break;
 
                     case 5:
-                        if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "" || textBox4.Text != "" || textBox5.Text != "")
+                        if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "")
                         {
                             this.Hide();
                             Form3 form3 = new Form3();
@@ -121,10 +140,15 @@ namespace jogo_assassino
                             t.Text = textBox4.Text;
                             t = form3.Controls.Find("tex_Player5", true)[0];
                             t.Text = textBox5.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
                         }
-
+                        else
+                        {
+                            MessageBox.Show("Voce tem que preencher os 5 campos");
+                        }
 
 
                         break;
@@ -134,7 +158,11 @@ namespace jogo_assassino
                         break;
                 }
                 }
-            catch { }
+            catch(Exception) {
+
+                MessageBox.Show("Voce tem que selecionar os numeros de jogadores");
+            }
+            
 
             }
             
@@ -163,18 +191,20 @@ namespace jogo_assassino
 
         private void Form2_Load(object sender, EventArgs e)
         {
-          //  mnform2.set_versao();
-           // if (mnform2.get_versao() == "normal")
-            //{
-              //  Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
-                //this.BackgroundImage = myimage;
-            //}
+            /*  mnform2.set_versao();
+               if (mnform2.get_versao() == "normal")
+               {
+                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
+                   this.BackgroundImage = myimage;
+               }
 
-//            if (mnform2.get_versao() == "terror")
-  //          {
-    //            Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
-      //          this.BackgroundImage = myimage;
-         //   }
+              if (mnform2.get_versao() == "terror")
+              {
+                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
+                   this.BackgroundImage = myimage; 
+               }
+               */
         }
+
     }
 }
