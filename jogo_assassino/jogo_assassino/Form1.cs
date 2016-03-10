@@ -35,7 +35,7 @@ namespace jogo_assassino
         {
             this.Hide();
             Form2 form2 = new Form2();
-           // form2.set_jogo(mn);
+           // form2.set_jogo(mn); 
             form2.ShowDialog();
             form2 = null;
             Show();
