@@ -39,7 +39,7 @@
             this.tex_Player3 = new System.Windows.Forms.TextBox();
             this.tex_Player4 = new System.Windows.Forms.TextBox();
             this.tex_Player5 = new System.Windows.Forms.TextBox();
-            this.Lab_player = new System.Windows.Forms.Label();
+            this.Lab_Player = new System.Windows.Forms.Label();
             this.Lab_Player1_Pronto = new System.Windows.Forms.Label();
             this.Voltar = new System.Windows.Forms.PictureBox();
             this.Seguinte = new System.Windows.Forms.PictureBox();
@@ -140,14 +140,14 @@
             this.tex_Player5.Size = new System.Drawing.Size(112, 20);
             this.tex_Player5.TabIndex = 10;
             // 
-            // Lab_player
+            // Lab_Player
             // 
-            this.Lab_player.AutoSize = true;
-            this.Lab_player.Location = new System.Drawing.Point(452, 14);
-            this.Lab_player.Name = "Lab_player";
-            this.Lab_player.Size = new System.Drawing.Size(41, 13);
-            this.Lab_player.TabIndex = 12;
-            this.Lab_player.Text = "Players";
+            this.Lab_Player.AutoSize = true;
+            this.Lab_Player.Location = new System.Drawing.Point(452, 14);
+            this.Lab_Player.Name = "Lab_Player";
+            this.Lab_Player.Size = new System.Drawing.Size(41, 13);
+            this.Lab_Player.TabIndex = 12;
+            this.Lab_Player.Text = "Players";
             // 
             // Lab_Player1_Pronto
             // 
@@ -261,6 +261,7 @@
             this.But_Sim2.TabIndex = 24;
             this.But_Sim2.Text = "Sim-2";
             this.But_Sim2.UseVisualStyleBackColor = true;
+            this.But_Sim2.Click += new System.EventHandler(this.But_Sim2_Click);
             // 
             // But_Sim3
             // 
@@ -312,7 +313,7 @@
             this.Controls.Add(this.But_Nao);
             this.Controls.Add(this.Voltar);
             this.Controls.Add(this.Seguinte);
-            this.Controls.Add(this.Lab_player);
+            this.Controls.Add(this.Lab_Player);
             this.Controls.Add(this.tex_Player5);
             this.Controls.Add(this.tex_Player4);
             this.Controls.Add(this.tex_Player3);
@@ -350,7 +351,7 @@
         private System.Windows.Forms.TextBox tex_Player3;
         private System.Windows.Forms.TextBox tex_Player4;
         private System.Windows.Forms.TextBox tex_Player5;
-        private System.Windows.Forms.Label Lab_player;
+        private System.Windows.Forms.Label Lab_Player;
         private System.Windows.Forms.Label Lab_Player1_Pronto;
         private System.Windows.Forms.PictureBox Seguinte;
         private System.Windows.Forms.PictureBox Voltar;
