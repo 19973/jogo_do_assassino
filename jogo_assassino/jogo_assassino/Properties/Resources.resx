@@ -133,6 +133,12 @@
   <data name="back_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\back_button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fancy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fancy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="creepy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\creepy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,20 +154,14 @@
   <data name="Voltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Voltar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_ext1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button_ext1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Default.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fancy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fancy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button_ext1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_ext1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button_options1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graficos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\graficos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Seguinte1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seguinte3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,11 +175,14 @@
   <data name="Inocente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inocente.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PontoDeInterrogacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PontoDeInterrogacao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="button_options" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_options.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PontoDeInterrogacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PontoDeInterrogacao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="graficos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\graficos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Assassino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Assassino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,7 +190,10 @@
   <data name="button_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mesa_terror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mesa_terror.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mesa_casual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mesa_casual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

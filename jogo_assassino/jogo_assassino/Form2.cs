@@ -77,21 +77,28 @@ namespace jogo_assassino
 
                             if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
                     {
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox2.Text != textBox3.Text)
+                            {
 
-                        this.Hide();
-                        Form3 form3 = new Form3();
-                        Control t = form3.Controls.Find("tex_Player1", true)[0];
-                        t.Text = textBox1.Text;
-                        t = form3.Controls.Find("tex_Player2", true)[0];
-                        t.Text = textBox2.Text;
-                        t = form3.Controls.Find("tex_Player3", true)[0];
-                        t.Text = textBox3.Text;
-                        t = form3.Controls.Find("comboBox_Player", true)[0];
-                        t.Text = comboBox1.Text;
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
 
 
-                            form3.Show();
-                        jg = new jogo(int.Parse(comboBox1.Text));
+                                form3.Show();
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
                     }
                         else
                         {
@@ -103,20 +110,27 @@ namespace jogo_assassino
                     case 4:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
                         {
-                            this.Hide();
-                            Form3 form3 = new Form3();
-                            Control t = form3.Controls.Find("tex_Player1", true)[0];
-                            t.Text = textBox1.Text;
-                            t = form3.Controls.Find("tex_Player2", true)[0];
-                            t.Text = textBox2.Text;
-                            t = form3.Controls.Find("tex_Player3", true)[0];
-                            t.Text = textBox3.Text;
-                            t = form3.Controls.Find("tex_Player4", true)[0];
-                            t.Text = textBox4.Text;
-                            t = form3.Controls.Find("comboBox_Player", true)[0];
-                            t.Text = comboBox1.Text;
-                            form3.Show();
-                            jg = new jogo(int.Parse(comboBox1.Text));
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox1.Text != textBox4.Text && textBox2.Text != textBox3.Text && textBox2.Text != textBox4.Text && textBox3.Text != textBox5.Text)
+                            {
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("tex_Player4", true)[0];
+                                t.Text = textBox4.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
+                                form3.Show();
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
                         }
                         else
                         {
@@ -128,22 +142,29 @@ namespace jogo_assassino
                     case 5:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "")
                         {
-                            this.Hide();
-                            Form3 form3 = new Form3();
-                            Control t = form3.Controls.Find("tex_Player1", true)[0];
-                            t.Text = textBox1.Text;
-                            t = form3.Controls.Find("tex_Player2", true)[0];
-                            t.Text = textBox2.Text;
-                            t = form3.Controls.Find("tex_Player3", true)[0];
-                            t.Text = textBox3.Text;
-                            t = form3.Controls.Find("tex_Player4", true)[0];
-                            t.Text = textBox4.Text;
-                            t = form3.Controls.Find("tex_Player5", true)[0];
-                            t.Text = textBox5.Text;
-                            t = form3.Controls.Find("comboBox_Player", true)[0];
-                            t.Text = comboBox1.Text;
-                            form3.Show();
-                            jg = new jogo(int.Parse(comboBox1.Text));
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox1.Text != textBox4.Text && textBox1.Text != textBox5.Text && textBox2.Text != textBox3.Text && textBox2.Text != textBox4.Text && textBox2.Text != textBox5.Text && textBox3.Text != textBox4.Text && textBox3.Text != textBox5.Text && textBox4.Text != textBox5.Text)
+                            {
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("tex_Player4", true)[0];
+                                t.Text = textBox4.Text;
+                                t = form3.Controls.Find("tex_Player5", true)[0];
+                                t.Text = textBox5.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
+                                form3.Show();
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
                         }
                         else
                         {
