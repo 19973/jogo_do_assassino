@@ -64,16 +64,16 @@ namespace jogo_assassino
             form1.Show();
         }
 
+
         private void next_botao_Click(object sender, EventArgs e)
         {
             try {
+            
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
                     
                     case 3:
-
-                        
 
                             if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
                     {
@@ -113,6 +113,8 @@ namespace jogo_assassino
                             t.Text = textBox3.Text;
                             t = form3.Controls.Find("tex_Player4", true)[0];
                             t.Text = textBox4.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
                         }
@@ -138,6 +140,8 @@ namespace jogo_assassino
                             t.Text = textBox4.Text;
                             t = form3.Controls.Find("tex_Player5", true)[0];
                             t.Text = textBox5.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
                             form3.Show();
                             jg = new jogo(int.Parse(comboBox1.Text));
                         }
@@ -197,7 +201,7 @@ namespace jogo_assassino
               if (mnform2.get_versao() == "terror")
               {
                    Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
-                   this.BackgroundImage = myimage;
+                   this.BackgroundImage = myimage; 
                }
                */
         }

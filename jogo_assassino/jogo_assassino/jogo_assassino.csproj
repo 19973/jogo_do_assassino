@@ -78,6 +78,7 @@
     <Compile Include="policia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vitoria_derrota.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,7 +159,9 @@
     <Content Include="creepy.jpg" />
     <Content Include="Default.jpg" />
     <Content Include="fancy.jpg" />
+    <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
+    <Content Include="mesa.jpg" />
     <Content Include="MudarVersaoNormal.wav" />
     <Content Include="MudarVersaoTerror.wav" />
     <Content Include="quarto1.jpg" />
@@ -176,6 +179,7 @@
     <None Include="Resources\MudarVersaoNormal.wav" />
     <None Include="Resources\MudarVersaoTerror.wav" />
     <None Include="Resources\creepy.jpg" />
+    <None Include="Resources\mesa.jpg" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

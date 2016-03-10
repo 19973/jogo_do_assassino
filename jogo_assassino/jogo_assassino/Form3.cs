@@ -12,6 +12,13 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
+        Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
+        Image imagem1 = new Bitmap(jogo_assassino.Properties.Resources.Assassino);
+        Image imagem2 = new Bitmap(jogo_assassino.Properties.Resources.Policia);
+        Image imagem3 = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
+        Random rnd = new Random();
+        List<string> classes;
+
 
         public Form3()
         {
@@ -22,7 +29,11 @@ namespace jogo_assassino
             Lab_Player4_Pronto.Hide();
             Lab_Player5_Pronto.Hide();
             But_Nao.Hide();
-            But_Sim.Hide();
+            But_Sim1.Hide();
+            But_Sim2.Hide();
+            But_Sim3.Hide();
+            But_Sim4.Hide();
+            But_Sim5.Hide();
             Imag_Classes.Hide();
             tex_Player1.Enabled = false;
             tex_Player2.Enabled = false;
@@ -31,17 +42,17 @@ namespace jogo_assassino
             tex_Player5.Enabled = false;
         }
 
-
+      
         private void But_Nao_Click(object sender, EventArgs e)
         {
 
-            Lab_Classe.Show();
+            Lab_Players.Show();
             Lab_Player1.Show();
-            Lab_Player2.Show();
+            Lab_Player2.Show(); 
             Lab_Player3.Show();
             Lab_Player4.Show();
             Lab_Player5.Show();
-            List_Classes.Show();
+            comboBox_Player.Show();
             tex_Player1.Show();
             tex_Player2.Show();
             tex_Player3.Show();
@@ -55,23 +66,27 @@ namespace jogo_assassino
             Lab_Player4_Pronto.Hide();
             Lab_Player5_Pronto.Hide();
             But_Nao.Hide();
-            But_Sim.Hide();
+            But_Sim1.Hide();
+            But_Sim2.Hide();
+            But_Sim3.Hide();
+            But_Sim4.Hide();
+            But_Sim5.Hide();
             Imag_Classes.Hide();
-            But_Sim.Enabled = true;
+            But_Sim1.Enabled = true;
 
         }
-
+       
         private void Seguinte_Click_1(object sender, EventArgs e)
         {
             Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
 
-            Lab_Classe.Hide();
+            Lab_Players.Hide();
             Lab_Player1.Hide();
             Lab_Player2.Hide();
             Lab_Player3.Hide();
             Lab_Player4.Hide();
             Lab_Player5.Hide();
-            List_Classes.Hide();
+            comboBox_Player.Hide();
             tex_Player1.Hide();
             tex_Player2.Hide();
             tex_Player3.Hide();
@@ -85,11 +100,15 @@ namespace jogo_assassino
             Lab_Player4_Pronto.Show();
             Lab_Player5_Pronto.Show();
             But_Nao.Show();
-            But_Sim.Show();
+            But_Sim1.Show();
+            But_Sim2.Show();
+            But_Sim3.Show();
+            But_Sim4.Show();
+            But_Sim5.Show();
             Imag_Classes.Show();
             Imag_Classes.Image = imagem_Default;
         }
-
+    
 
         private void Voltar_Click(object sender, EventArgs e)
         {
@@ -99,55 +118,45 @@ namespace jogo_assassino
 
         }
 
-        private void But_Sim_Click(object sender, EventArgs e)
+        private void But_Sim1_Click_1(object sender, EventArgs e)
         {
-
-            Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
-            Image imagem1 = new Bitmap(jogo_assassino.Properties.Resources.Assassino);
-            Image imagem2 = new Bitmap(jogo_assassino.Properties.Resources.Policia);
-            Image imagem3 = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
-            Random rnd = new Random();
-            int Gerar_Classes = rnd.Next(4);
+            classes = new List<string>();
+            classes.Add("Policia");
+            classes.Add("Ladrao");
+            classes.Add("Inocente");
+            int Gerar_classes = rnd.Next(classes.Count);
 
 
+            if (Gerar_classes == 0)
+            {
+                Imag_Classes.Image = imagem2;
+                But_Nao.Enabled = false;
+                But_Sim1.Enabled = false;
+                classes.Remove("Policia");
+                DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    But_Sim1.Hide();
+                    Lab_Player1_Pronto.Hide();
 
+                }
+                else if (dialogResult == DialogResult.No)
+                {
 
-            if (Gerar_Classes == 1)
+                }
+
+            }
+
+            if (Gerar_classes == 1)
             {
                 Imag_Classes.Image = imagem1;
                 But_Nao.Enabled = false;
-                But_Sim.Enabled = false;
+                But_Sim1.Enabled = false;
+                classes.Remove("Ladrao");
                 DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    But_Sim.Enabled = true;
-                    Imag_Classes.Image = imagem2;
-                    Lab_Player1_Pronto.Hide();
-
-
-
-
-
-
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-
-                }
-
-            }
-
-            if (Gerar_Classes == 2)
-            {
-
-                Imag_Classes.Image = imagem2;
-                But_Nao.Enabled = false;
-                But_Sim.Enabled = false;
-                DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    But_Sim.Enabled = true;
-                    Imag_Classes.Image = imagem1;
+                    But_Sim1.Hide();
                     Lab_Player1_Pronto.Hide();
 
                 }
@@ -158,19 +167,17 @@ namespace jogo_assassino
 
             }
 
-            if (Gerar_Classes == 3)
+            if (Gerar_classes == 2)
             {
                 Imag_Classes.Image = imagem3;
                 But_Nao.Enabled = false;
-                But_Sim.Enabled = false;
+                But_Sim1.Enabled = false;
+                classes.Remove("Inocente");
                 DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    But_Sim.Enabled = true;
-                    Imag_Classes.Image = imagem2;
+                    But_Sim1.Hide();
                     Lab_Player1_Pronto.Hide();
-
-
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -287,21 +294,14 @@ namespace jogo_assassino
 
               }
           */
-
-
-
-
-
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void But_Sim2_Click(object sender, EventArgs e)
         {
-
+            int Gerar_Classes = rnd.Next(4);
         }
 
-        private void Imag_Classes_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
+
