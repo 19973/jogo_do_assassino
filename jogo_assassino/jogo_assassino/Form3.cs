@@ -94,7 +94,7 @@ namespace jogo_assassino
         private void Voltar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(/*mn*/);
             form2.Show();
 
         }
