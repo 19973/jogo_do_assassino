@@ -194,7 +194,7 @@
             this.But_Sim1.TabIndex = 18;
             this.But_Sim1.Text = "Sim-1";
             this.But_Sim1.UseVisualStyleBackColor = true;
-            this.But_Sim1.Click += new System.EventHandler(this.But_Sim1_Click_1);
+            this.But_Sim1.Click += new System.EventHandler(this.But_Sim1_Click);
             // 
             // But_Nao
             // 
@@ -300,10 +300,11 @@
             this.But_Sim3.TabIndex = 28;
             this.But_Sim3.Text = "Sim-3";
             this.But_Sim3.UseVisualStyleBackColor = true;
+            this.But_Sim3.Click += new System.EventHandler(this.But_Sim3_Click);
             // 
             // But_Sim2
             // 
-            this.But_Sim2.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim2.Location = new System.Drawing.Point(364, 128);
             this.But_Sim2.Name = "But_Sim2";
             this.But_Sim2.Size = new System.Drawing.Size(75, 23);
             this.But_Sim2.TabIndex = 29;
