@@ -229,7 +229,7 @@ namespace jogo_assassino
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_casual);
                 this.BackgroundImage = myimage;
-            }
+            } 
         }
 
     }
