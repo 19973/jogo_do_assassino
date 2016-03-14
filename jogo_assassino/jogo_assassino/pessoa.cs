@@ -8,70 +8,93 @@ namespace jogo_assassino
 {
     class pessoa
     {
-
+        /*protected string versao = "normal";
+        protected int opcao = 1;
         protected System.Media.SoundPlayer bkground_sound;
 
         public void dormir()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
 
       
         public void bater_porta()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
-            bkground_sound.Play();
+            if (versao == "normal")
+            {
+                bkground_sound.Stop();
+                versao = "terror";
+                opcao = 2;
+                // MessageBox.Show("Versão |-Terror-| Ativada");
+                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
+                bkground_sound.Play();
+            }
+            else if (versao == "terror")
+            {
+                bkground_sound.Stop();
+                versao = "normal";
+                opcao = 1;
+                //   MessageBox.Show("Versão |-Casual-| Ativada");
+                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
+                bkground_sound.Play();
+            }        
         }
 
         public void andar()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
         public void ver_TV()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
         public void telefonar()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
         public void abrir_gaveta()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
 
         public void abrir_cortinas()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
 
         public void abrir_janela()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
 
         public void gritos()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
         }
 
         public void gritar_morrer()
         {
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
             bkground_sound.Play();
+        }
+
+        public string get_versao()
+        {
+            return versao;
         }
 
 
 
-
-
+    
+    }
+    */
     }
 }
