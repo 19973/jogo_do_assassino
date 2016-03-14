@@ -19,6 +19,7 @@ namespace jogo_assassino
         public menu_jogo()
         {
             opcao = 1;
+            versao = "normal";
             bkground_sound = new System.Media.SoundPlayer();
             bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
             bkground_sound.Play();

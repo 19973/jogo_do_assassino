@@ -38,7 +38,7 @@ namespace jogo_assassino
             form2.set_jogo(mn);
            form2.ShowDialog();
             form2 = null;
-            Show();
+           this.Show();
         }
 
         private void button_options_Click(object sender, EventArgs e)
