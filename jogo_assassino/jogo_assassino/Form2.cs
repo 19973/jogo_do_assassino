@@ -25,12 +25,12 @@ namespace jogo_assassino
         }
 
 
-        /*public void set_jogo(menu_jogo mn)
+        public void set_jogo(menu_jogo mn)
         {
             mn2 = mn;
         }
 
-    */
+  
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
