@@ -42,7 +42,7 @@ namespace jogo_assassino
         }
 
         private void button_options_Click(object sender, EventArgs e)
-        {
+        {  
             mn.set_versao();
             if (mn.get_versao() == "normal")
             {
