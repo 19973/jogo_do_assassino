@@ -143,6 +143,16 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap derrota_sim {
+            get {
+                object obj = ResourceManager.GetObject("derrota_sim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fancy {
             get {
                 object obj = ResourceManager.GetObject("fancy", resourceCulture);
@@ -246,6 +256,26 @@ namespace jogo_assassino.Properties {
         internal static System.Drawing.Bitmap Seguinte1 {
             get {
                 object obj = ResourceManager.GetObject("Seguinte1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vitoria {
+            get {
+                object obj = ResourceManager.GetObject("vitoria", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vitoria1 {
+            get {
+                object obj = ResourceManager.GetObject("vitoria1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

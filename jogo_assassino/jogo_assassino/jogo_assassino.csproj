@@ -47,11 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assassino.cs" />
-    <Compile Include="Database5DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database5DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +64,12 @@
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
     <Compile Include="Form7.cs">
       <SubType>Form</SubType>
@@ -98,6 +99,9 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,17 +110,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Database5DataSet.xsc">
-      <DependentUpon>Database5DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database5DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database5DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database5DataSet.xss">
-      <DependentUpon>Database5DataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -173,14 +166,13 @@
     <Content Include="corredor_creepy.jpg" />
     <Content Include="corredor_fancy.jpg" />
     <Content Include="creepy.jpg" />
-    <Content Include="Database5.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Default.jpg" />
     <Content Include="fancy.jpg" />
     <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
     <Content Include="mesa.jpg" />
+    <Content Include="MudarVersaoNormal.wav" />
+    <Content Include="MudarVersaoTerror.wav" />
     <Content Include="quarto1.jpg" />
     <Content Include="quarto1_creepy.jpg" />
     <Content Include="quarto1_fancy.jpg" />
@@ -193,10 +185,15 @@
     <Content Include="quarto4_fancy.jpg" />
     <Content Include="quarto5_fancy.jpg" />
     <None Include="Resources\creepy.bmp" />
+    <None Include="Resources\MudarVersaoNormal.wav" />
+    <None Include="Resources\MudarVersaoTerror.wav" />
     <None Include="Resources\creepy.jpg" />
     <None Include="Resources\mesa.jpg" />
     <None Include="Resources\mesa_casual.jpg" />
     <None Include="Resources\mesa_terror.jpg" />
+    <None Include="Resources\vitoria.png" />
+    <None Include="Resources\vitoria1.png" />
+    <None Include="Resources\derrota_sim.jpg" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
