@@ -29,7 +29,8 @@ namespace jogo_assassino
         {
             mn2 = mn;
         }
- 
+
+  
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
