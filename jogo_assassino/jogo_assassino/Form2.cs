@@ -15,7 +15,7 @@ namespace jogo_assassino
     public partial class Form2 : Form
     {
         jogo jg;
-        menu_jogo mn2;
+       public menu_jogo mn2;
 
 
         public Form2()
@@ -30,7 +30,6 @@ namespace jogo_assassino
             mn2 = mn;
         }
 
-  
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
