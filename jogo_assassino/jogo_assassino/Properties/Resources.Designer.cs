@@ -173,6 +173,16 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagem_Fundo {
+            get {
+                object obj = ResourceManager.GetObject("Imagem_Fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inocente {
             get {
                 object obj = ResourceManager.GetObject("Inocente", resourceCulture);
@@ -244,16 +254,6 @@ namespace jogo_assassino.Properties {
         internal static System.Drawing.Bitmap Policia {
             get {
                 object obj = ResourceManager.GetObject("Policia", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PontoDeInterrogacao {
-            get {
-                object obj = ResourceManager.GetObject("PontoDeInterrogacao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
