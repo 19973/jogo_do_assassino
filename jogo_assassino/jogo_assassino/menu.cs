@@ -8,7 +8,7 @@ using System.IO;
 
 namespace jogo_assassino
 {
-    class menu_jogo
+    public class menu_jogo
     {
         protected string versao = "normal";
         protected int opcao = 1;
@@ -20,7 +20,7 @@ namespace jogo_assassino
         {
             opcao = 1;
             bkground_sound = new System.Media.SoundPlayer();
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoNormal.wav";
+            bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
             bkground_sound.Play();
 
         }
@@ -33,7 +33,7 @@ namespace jogo_assassino
                 versao = "terror";
                 opcao = 2;
                // MessageBox.Show("Versão |-Terror-| Ativada");
-               bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
+               bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoTerror.wav";
                bkground_sound.Play();
             }
             else if (versao == "terror")
@@ -42,7 +42,7 @@ namespace jogo_assassino
                 versao = "normal";
                 opcao = 1;
              //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoNormal.wav";
+                bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
                 bkground_sound.Play();
             }
         }

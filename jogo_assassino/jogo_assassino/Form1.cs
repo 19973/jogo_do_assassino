@@ -16,14 +16,14 @@ namespace jogo_assassino
         private menu_jogo mn;
         public Form1()
         {
-
+            
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            mn = new menu_jogo();
-
+            mn = new menu_jogo(); 
+           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -33,10 +33,10 @@ namespace jogo_assassino
 
         private void button_play_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 form2 = new Form2();
-           // form2.set_jogo(mn); 
-            form2.ShowDialog();
+           this.Hide();
+           Form2 form2 = new Form2();
+            form2.set_jogo(mn);
+           form2.ShowDialog();
             form2 = null;
             Show();
         }
