@@ -178,14 +178,13 @@
             // 
             // Imagem_Fundo
             // 
-            this.Imagem_Fundo.Image = global::jogo_assassino.Properties.Resources.Imagem_Fundo;
+            this.Imagem_Fundo.Image = ((System.Drawing.Image)(resources.GetObject("Imagem_Fundo.Image")));
             this.Imagem_Fundo.Location = new System.Drawing.Point(-13, -1);
             this.Imagem_Fundo.Name = "Imagem_Fundo";
             this.Imagem_Fundo.Size = new System.Drawing.Size(641, 506);
             this.Imagem_Fundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagem_Fundo.TabIndex = 0;
             this.Imagem_Fundo.TabStop = false;
-            this.Imagem_Fundo.Click += new System.EventHandler(this.Imagem_Fundo_Click);
             // 
             // But_Sim1
             // 
