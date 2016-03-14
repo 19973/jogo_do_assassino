@@ -15,14 +15,19 @@ namespace jogo_assassino
     public partial class Form2 : Form
     {
         jogo jg;
-        //private menu_jogo mnform2;
+        menu_jogo mn2;
 
 
-        public Form2(/*menu_jogo m*/)
+        public Form2()
         {
             InitializeComponent();
-            //mnform2 = m;
 
+        }
+
+
+        public void set_jogo(menu_jogo mn)
+        {
+            mn2 = mn;
         }
 
 
@@ -59,9 +64,7 @@ namespace jogo_assassino
 
         private void back_botao_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            this.Close();
         }
 
 
@@ -191,19 +194,18 @@ namespace jogo_assassino
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            /*  mnform2.set_versao();
-               if (mnform2.get_versao() == "normal")
+               mn2.set_versao();
+               if (mn2.get_versao() == "normal")
                {
-                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
+                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_terror);
                    this.BackgroundImage = myimage;
                }
 
-              if (mnform2.get_versao() == "terror")
+              if (mn2.get_versao() == "terror")
               {
-                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
+                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_casual);
                    this.BackgroundImage = myimage; 
                }
-               */
         }
 
     }

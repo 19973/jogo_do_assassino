@@ -103,16 +103,6 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap button_options {
-            get {
-                object obj = ResourceManager.GetObject("button_options", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap button_options1 {
             get {
                 object obj = ResourceManager.GetObject("button_options1", resourceCulture);
@@ -126,36 +116,6 @@ namespace jogo_assassino.Properties {
         internal static System.Drawing.Bitmap button_play {
             get {
                 object obj = ResourceManager.GetObject("button_play", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap button_play1 {
-            get {
-                object obj = ResourceManager.GetObject("button_play1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap button_play2 {
-            get {
-                object obj = ResourceManager.GetObject("button_play2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap button_terror {
-            get {
-                object obj = ResourceManager.GetObject("button_terror", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -221,20 +181,22 @@ namespace jogo_assassino.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream MudarVersaoNormal {
+        internal static System.Drawing.Bitmap mesa_casual {
             get {
-                return ResourceManager.GetStream("MudarVersaoNormal", resourceCulture);
+                object obj = ResourceManager.GetObject("mesa_casual", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream MudarVersaoTerror {
+        internal static System.Drawing.Bitmap mesa_terror {
             get {
-                return ResourceManager.GetStream("MudarVersaoTerror", resourceCulture);
+                object obj = ResourceManager.GetObject("mesa_terror", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
