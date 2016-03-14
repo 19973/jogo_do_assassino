@@ -178,7 +178,7 @@
             // 
             // Imagem_Fundo
             // 
-            this.Imagem_Fundo.Image = global::jogo_assassino.Properties.Resources.PontoDeInterrogacao;
+            this.Imagem_Fundo.Image = ((System.Drawing.Image)(resources.GetObject("Imagem_Fundo.Image")));
             this.Imagem_Fundo.Location = new System.Drawing.Point(-13, -1);
             this.Imagem_Fundo.Name = "Imagem_Fundo";
             this.Imagem_Fundo.Size = new System.Drawing.Size(641, 506);

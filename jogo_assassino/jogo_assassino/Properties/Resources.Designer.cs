@@ -173,6 +173,16 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagem_Fundo {
+            get {
+                object obj = ResourceManager.GetObject("Imagem_Fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inocente {
             get {
                 object obj = ResourceManager.GetObject("Inocente", resourceCulture);
@@ -211,24 +221,6 @@ namespace jogo_assassino.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream MudarVersaoNormal {
-            get {
-                return ResourceManager.GetStream("MudarVersaoNormal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream MudarVersaoTerror {
-            get {
-                return ResourceManager.GetStream("MudarVersaoTerror", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap party {
@@ -244,16 +236,6 @@ namespace jogo_assassino.Properties {
         internal static System.Drawing.Bitmap Policia {
             get {
                 object obj = ResourceManager.GetObject("Policia", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PontoDeInterrogacao {
-            get {
-                object obj = ResourceManager.GetObject("PontoDeInterrogacao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
