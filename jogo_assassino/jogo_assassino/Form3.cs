@@ -481,7 +481,12 @@ namespace jogo_assassino
                     But_Sim2.Enabled = false;
                     classes.Remove("Ladrao");
                     imagem1.Dispose();
-
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
                 }
 
                 if (Gerar_classes == 2)
@@ -491,23 +496,77 @@ namespace jogo_assassino
                     But_Sim3.Enabled = false;
                     classes.Remove("Policia");
                     imagem2.Dispose();
-                  
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
                 }
 
                 if (Gerar_classes == 0)
                 {
                     Imag_Classes.Image = imagem3;
-                    But_Nao.Hide();
-                    But_Sim3.Hide();
-                    
-                    
-                   
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
                 }
 
+                if (comboBox_Player.SelectedItem.ToString() == "4")
+                {
+                    if (Gerar_classes == 1)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim2.Enabled = false;
+                        classes.Remove("Ladrao");
+                        imagem1.Dispose();
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+
+                    if (Gerar_classes == 2)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim3.Enabled = false;
+                        classes.Remove("Policia");
+                        imagem2.Dispose();
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+
+                    if (Gerar_classes == 0)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim3.Enabled = false;
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 
 
