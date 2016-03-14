@@ -129,7 +129,7 @@ namespace jogo_assassino
 
 
 
-            if (comboBox_Player.SelectedItem.ToString() == "3")
+            if (comboBox_Player.Text == "3")
             {
 
                 if (Gerar_classes == 0)
@@ -486,6 +486,10 @@ namespace jogo_assassino
                     {
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                 }
 
@@ -501,6 +505,10 @@ namespace jogo_assassino
                     {
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                 }
 
@@ -509,11 +517,16 @@ namespace jogo_assassino
                     Imag_Classes.Image = imagem3;
                     But_Nao.Enabled = false;
                     But_Sim3.Enabled = false;
+                    imagem3.Dispose();
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                 }
 
@@ -562,10 +575,206 @@ namespace jogo_assassino
                         }
                     }
                 }
+
+                if (comboBox_Player.SelectedItem.ToString() == "5")
+                {
+                    if (Gerar_classes == 1)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim2.Enabled = false;
+                        classes.Remove("Ladrao");
+                        imagem1.Dispose();
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+
+                    if (Gerar_classes == 2)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim3.Enabled = false;
+                        classes.Remove("Policia");
+                        imagem2.Dispose();
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+
+                    if (Gerar_classes == 0)
+                    {
+                        Imag_Classes.Image = imagem3;
+                        But_Nao.Enabled = false;
+                        But_Sim3.Enabled = false;
+                        DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            But_Sim3.Hide();
+                            Lab_Player3_Pronto.Hide();
+                        }
+                    }
+                }
+            }
+        }
+
+        private void But_Sim4_Click(object sender, EventArgs e)
+        {
+            int Gerar_classes = rnd.Next(classes.Count);
+
+            if (comboBox_Player.SelectedItem.ToString() == "4")
+            {
+                if (Gerar_classes == 1)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim2.Enabled = false;
+                    classes.Remove("Ladrao");
+                    imagem1.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 2)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    classes.Remove("Policia");
+                    imagem2.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 0)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+            }
+
+            if (comboBox_Player.SelectedItem.ToString() == "5")
+            {
+                if (Gerar_classes == 1)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim2.Enabled = false;
+                    classes.Remove("Ladrao");
+                    imagem1.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 2)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    classes.Remove("Policia");
+                    imagem2.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 0)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+            }
+        }
+
+        private void But_Sim5_Click(object sender, EventArgs e)
+        {
+            int Gerar_classes = rnd.Next(classes.Count);
+
+            if (comboBox_Player.SelectedItem.ToString() == "5")
+            {
+                if (Gerar_classes == 1)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim2.Enabled = false;
+                    classes.Remove("Ladrao");
+                    imagem1.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 2)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    classes.Remove("Policia");
+                    imagem2.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
+
+                if (Gerar_classes == 0)
+                {
+                    Imag_Classes.Image = imagem3;
+                    But_Nao.Enabled = false;
+                    But_Sim3.Enabled = false;
+                    DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                    }
+                }
             }
         }
     }
 }
+    
+
 
 
 

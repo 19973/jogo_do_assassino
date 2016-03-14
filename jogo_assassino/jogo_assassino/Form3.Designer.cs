@@ -188,7 +188,7 @@
             // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(318, 116);
+            this.But_Sim1.Location = new System.Drawing.Point(333, 116);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -282,19 +282,21 @@
             this.But_Sim5.TabIndex = 26;
             this.But_Sim5.Text = "Sim-5";
             this.But_Sim5.UseVisualStyleBackColor = true;
+            this.But_Sim5.Click += new System.EventHandler(this.But_Sim5_Click);
             // 
             // But_Sim4
             // 
-            this.But_Sim4.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim4.Location = new System.Drawing.Point(342, 133);
             this.But_Sim4.Name = "But_Sim4";
             this.But_Sim4.Size = new System.Drawing.Size(75, 23);
             this.But_Sim4.TabIndex = 27;
             this.But_Sim4.Text = "Sim-4";
             this.But_Sim4.UseVisualStyleBackColor = true;
+            this.But_Sim4.Click += new System.EventHandler(this.But_Sim4_Click);
             // 
             // But_Sim3
             // 
-            this.But_Sim3.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim3.Location = new System.Drawing.Point(342, 128);
             this.But_Sim3.Name = "But_Sim3";
             this.But_Sim3.Size = new System.Drawing.Size(75, 23);
             this.But_Sim3.TabIndex = 28;
