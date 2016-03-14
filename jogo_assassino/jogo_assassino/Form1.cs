@@ -53,7 +53,7 @@ namespace jogo_assassino
             if (mn.get_versao() == "terror")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
-                this.BackgroundImage = myimage;
+                this.BackgroundImage = myimage; 
             }
         }
     }
