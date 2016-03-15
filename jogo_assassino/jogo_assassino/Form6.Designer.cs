@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(170, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome Player";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -111,6 +112,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form6";
             this.Text = "Vitoria/Derrota";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

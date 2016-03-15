@@ -9,46 +9,34 @@ namespace jogo_assassino
     class vitoria_derrota
         
     {
-        protected string versao = "normal";
+        protected string ganhou_perdeu = "vitoria";
         protected int opcao = 1;
-        protected System.Media.SoundPlayer bkground_sound;
 
 
 
         public vitoria_derrota()
         {
             opcao = 1;
-            bkground_sound = new System.Media.SoundPlayer();
-            bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoNormal.wav";
-            bkground_sound.Play();
 
         }
 
-        public void set_versao()
+        public void set_opcao()
         {
-            if (versao == "normal")
+            if (ganhou_perdeu == "vitoria")
             {
-                bkground_sound.Stop();
-                versao = "terror";
+                ganhou_perdeu = "derrota";
                 opcao = 2;
-                // MessageBox.Show("Versão |-Terror-| Ativada");
-                bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoTerror.wav";
-                bkground_sound.Play();
             }
-            else if (versao == "terror")
+            else if (ganhou_perdeu == "derrota")
             {
-                bkground_sound.Stop();
-                versao = "normal";
+                ganhou_perdeu = "vitoria";
                 opcao = 1;
-                //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"Z:\github_musicas\MudarVersaoNormal.wav";
-                bkground_sound.Play();
             }
         }
 
-        public string get_versao()
+        public string get_opcao()
         {
-            return versao;
+            return ganhou_perdeu;
         }
     }
 }

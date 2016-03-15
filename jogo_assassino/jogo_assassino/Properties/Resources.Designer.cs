@@ -273,16 +273,6 @@ namespace jogo_assassino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vitoria1 {
-            get {
-                object obj = ResourceManager.GetObject("vitoria1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Voltar {
             get {
                 object obj = ResourceManager.GetObject("Voltar", resourceCulture);
