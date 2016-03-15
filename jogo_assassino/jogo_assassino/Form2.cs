@@ -68,7 +68,7 @@ namespace jogo_assassino
             Form1 form1 = new Form1();
             form1.ShowDialog();
             form1 = null;
-            this.Close();
+            this.Show();
         }
 
 
@@ -89,7 +89,7 @@ namespace jogo_assassino
 
                                 this.Hide();
                                 Form3 form3 = new Form3();
-                                
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -127,6 +127,7 @@ namespace jogo_assassino
                             {
                                 this.Hide();
                                 Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -164,6 +165,7 @@ namespace jogo_assassino
                             {
                                 this.Hide();
                                 Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
