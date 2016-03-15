@@ -413,7 +413,7 @@ namespace jogo_assassino
 
 
         }
-
+        //Botao2
         private void But_Sim2_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
@@ -430,8 +430,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem2.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -451,9 +451,9 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        imagem1.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        imagem2.Dispose();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
