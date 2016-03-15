@@ -127,9 +127,12 @@ namespace jogo_assassino
 
         private void Voltar_Click(object sender, EventArgs e)
         {
+            
+            
             this.Hide();
             Form2 form2 = new Form2(/*mn*/);
-            form2.Show();
+            form2.ShowDialog();
+            form2 = null;
 
         }
 
@@ -1148,6 +1151,9 @@ namespace jogo_assassino
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            
+
+
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
             {

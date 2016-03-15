@@ -64,6 +64,10 @@ namespace jogo_assassino
 
         private void back_botao_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            form1 = null;
             this.Close();
         }
 
