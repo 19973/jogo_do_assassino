@@ -235,7 +235,7 @@ namespace jogo_assassino
             if (mn2.get_versao() == "terror")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_terror);
-                this.BackgroundImage = myimage;
+                this.BackgroundImage = myimage; 
             }
 
             if (mn2.get_versao() == "normal")
