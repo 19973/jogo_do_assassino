@@ -25,7 +25,7 @@ namespace jogo_assassino
         {
             InitializeComponent();
 
-            Lab_Player1_Pronto.Hide();
+            Lab_Player1_Pronto.Hide(); 
             Lab_Player2_Pronto.Hide();
             Lab_Player3_Pronto.Hide();
             Lab_Player4_Pronto.Hide();
