@@ -345,6 +345,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Ver Quem Vai Ser Quem";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).EndInit();

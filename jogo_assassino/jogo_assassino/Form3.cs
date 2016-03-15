@@ -12,6 +12,8 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
+        public menu_jogo mn3;
+
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
         Image imagem1 = new Bitmap(jogo_assassino.Properties.Resources.Assassino);
         Image imagem2 = new Bitmap(jogo_assassino.Properties.Resources.Policia);
@@ -20,6 +22,11 @@ namespace jogo_assassino
         Image imagem5 = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
         Random rnd = new Random();
         List<string> classes = new List<string>();
+
+        public void set_jogo(menu_jogo mn2)
+        {
+
+        }
 
         public Form3()
         {
@@ -1136,6 +1143,22 @@ namespace jogo_assassino
 
                     }
                 }
+            }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            mn3.set_versao();
+            if (mn3.get_versao() == "normal")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.terror_ponto_int);
+                this.BackgroundImage = myimage;
+            }
+
+            if (mn3.get_versao() == "terror")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.Imagem_Fundo);
+                this.BackgroundImage = myimage;
             }
         }
     }
