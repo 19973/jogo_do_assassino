@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assassino.cs" />
+    <Compile Include="Database5DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +115,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Database5DataSet1.xsc">
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database5DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database5DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database5DataSet1.xss">
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -124,6 +140,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Database5.laccdb" />
     <None Include="Resources\fancy.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -171,8 +188,6 @@
     <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
     <Content Include="mesa.jpg" />
-    <Content Include="MudarVersaoNormal.wav" />
-    <Content Include="MudarVersaoTerror.wav" />
     <Content Include="quarto1.jpg" />
     <Content Include="quarto1_creepy.jpg" />
     <Content Include="quarto1_fancy.jpg" />
@@ -185,8 +200,6 @@
     <Content Include="quarto4_fancy.jpg" />
     <Content Include="quarto5_fancy.jpg" />
     <None Include="Resources\creepy.bmp" />
-    <None Include="Resources\MudarVersaoNormal.wav" />
-    <None Include="Resources\MudarVersaoTerror.wav" />
     <None Include="Resources\creepy.jpg" />
     <None Include="Resources\mesa.jpg" />
     <None Include="Resources\mesa_casual.jpg" />

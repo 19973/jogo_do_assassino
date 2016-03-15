@@ -15,7 +15,7 @@ namespace jogo_assassino
     public partial class Form2 : Form
     {
         jogo jg;
-        menu_jogo mn2;
+       public menu_jogo mn2;
 
 
         public Form2()
@@ -29,7 +29,7 @@ namespace jogo_assassino
         {
             mn2 = mn;
         }
- 
+
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -64,9 +64,7 @@ namespace jogo_assassino
 
         private void back_botao_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            this.Close();
         }
 
 

@@ -12,16 +12,17 @@ namespace jogo_assassino
     {
         protected string versao = "normal";
         protected int opcao = 1;
-        protected System.Media.SoundPlayer bkground_sound;
+        // protected System.Media.SoundPlayer bkground_sound;
         
 
 
         public menu_jogo()
         {
             opcao = 1;
-            bkground_sound = new System.Media.SoundPlayer();
-            bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
-            bkground_sound.Play();
+            versao = "normal";
+           // bkground_sound = new System.Media.SoundPlayer();
+           // bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
+           // bkground_sound.Play();
 
         }
 
@@ -29,21 +30,21 @@ namespace jogo_assassino
         {
             if (versao == "normal")
             {
-                bkground_sound.Stop();
+                //bkground_sound.Stop();
                 versao = "terror";
                 opcao = 2;
                // MessageBox.Show("Versão |-Terror-| Ativada");
-               bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoTerror.wav";
-               bkground_sound.Play();
+               //bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoTerror.wav";
+               //bkground_sound.Play();
             }
             else if (versao == "terror")
             {
-                bkground_sound.Stop();
+                // bkground_sound.Stop();
                 versao = "normal";
                 opcao = 1;
              //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
-                bkground_sound.Play();
+               // bkground_sound.SoundLocation = @"Z:\2º ano\Programação\GitHub\musicas\mudar_versoes\MudarVersaoNormal.wav";
+                //bkground_sound.Play();
             }
         }
 
