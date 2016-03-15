@@ -116,9 +116,7 @@ namespace jogo_assassino
 
         private void Voltar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 form2 = new Form2(/*mn*/);
-            form2.Show();
+            this.Close();
 
         }
 
@@ -611,6 +609,16 @@ namespace jogo_assassino
                     }
                 }
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tex_Player1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

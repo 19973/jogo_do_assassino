@@ -85,6 +85,7 @@ namespace jogo_assassino
 
                                 this.Hide();
                                 Form3 form3 = new Form3();
+                                
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -94,8 +95,13 @@ namespace jogo_assassino
                                 t = form3.Controls.Find("comboBox_Player", true)[0];
                                 t.Text = comboBox1.Text;
 
+                                form3.ShowDialog();
+                                form3 = null;
 
-                                form3.Show();
+                                this.Show();
+
+
+
                                 jg = new jogo(int.Parse(comboBox1.Text));
                             }
                             else
@@ -127,7 +133,12 @@ namespace jogo_assassino
                                 t.Text = textBox4.Text;
                                 t = form3.Controls.Find("comboBox_Player", true)[0];
                                 t.Text = comboBox1.Text;
-                                form3.Show();
+
+                                form3.ShowDialog();
+                                form3 = null;
+
+                                this.Show();
+
                                 jg = new jogo(int.Parse(comboBox1.Text));
                             }
                             else
@@ -161,7 +172,12 @@ namespace jogo_assassino
                                 t.Text = textBox5.Text;
                                 t = form3.Controls.Find("comboBox_Player", true)[0];
                                 t.Text = comboBox1.Text;
-                                form3.Show();
+
+                                form3.ShowDialog();
+                                form3 = null;
+
+                                this.Show();
+
                                 jg = new jogo(int.Parse(comboBox1.Text));
                             }
                             else
@@ -215,14 +231,14 @@ namespace jogo_assassino
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            mn2.set_versao();
-            if (mn2.get_versao() == "normal")
+   
+            if (mn2.get_versao() == "terror")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_terror);
                 this.BackgroundImage = myimage;
             }
 
-            if (mn2.get_versao() == "terror")
+            if (mn2.get_versao() == "normal")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_casual);
                 this.BackgroundImage = myimage;

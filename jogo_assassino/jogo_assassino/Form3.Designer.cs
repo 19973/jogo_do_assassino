@@ -113,6 +113,7 @@
             this.tex_Player1.Name = "tex_Player1";
             this.tex_Player1.Size = new System.Drawing.Size(112, 20);
             this.tex_Player1.TabIndex = 6;
+            this.tex_Player1.TextChanged += new System.EventHandler(this.tex_Player1_TextChanged);
             // 
             // tex_Player2
             // 
@@ -347,7 +348,9 @@
             this.Controls.Add(this.Imagem_Fundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver Quem Vai Ser Quem";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imagem_Fundo)).EndInit();
