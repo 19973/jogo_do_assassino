@@ -188,8 +188,6 @@
     <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
     <Content Include="mesa.jpg" />
-    <Content Include="MudarVersaoNormal.wav" />
-    <Content Include="MudarVersaoTerror.wav" />
     <Content Include="quarto1.jpg" />
     <Content Include="quarto1_creepy.jpg" />
     <Content Include="quarto1_fancy.jpg" />
@@ -202,8 +200,6 @@
     <Content Include="quarto4_fancy.jpg" />
     <Content Include="quarto5_fancy.jpg" />
     <None Include="Resources\creepy.bmp" />
-    <None Include="Resources\MudarVersaoNormal.wav" />
-    <None Include="Resources\MudarVersaoTerror.wav" />
     <None Include="Resources\creepy.jpg" />
     <None Include="Resources\mesa.jpg" />
     <None Include="Resources\mesa_casual.jpg" />
