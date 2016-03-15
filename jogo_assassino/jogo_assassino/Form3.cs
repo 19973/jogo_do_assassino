@@ -125,14 +125,14 @@ namespace jogo_assassino
             form2.Show();
 
         }
-
+        //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
 
             int Gerar_classes = rnd.Next(classes.Count);
 
 
-
+            //COMBOBOX 3
             if (comboBox_Player.Text == "3")
             {
 
@@ -145,7 +145,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        imagem2.Dispose(); 
+                        imagem2.Dispose();
                         But_Sim1.Hide();
                         Lab_Player1_Pronto.Hide();
 
@@ -198,7 +198,7 @@ namespace jogo_assassino
                     }
                 }
             }
-
+            //COMBOBOX 4
             if (comboBox_Player.Text == "4")
             {
 
@@ -305,8 +305,9 @@ namespace jogo_assassino
                 }
             }
 
-
-            if (comboBox_Player.Text == "5") {
+            //COMBOBOX 5
+            if (comboBox_Player.Text == "5")
+            {
 
 
                 if (Gerar_classes == 0)
@@ -417,7 +418,7 @@ namespace jogo_assassino
         private void But_Sim2_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
-
+            //COMBOBOX 3
             if (comboBox_Player.SelectedItem.ToString() == "3")
             {
                 if (Gerar_classes == 0)
@@ -473,8 +474,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem3.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -482,7 +483,7 @@ namespace jogo_assassino
                     }
                 }
             }
-
+            //COMBOBOX 4
             if (comboBox_Player.Text == "4")
             {
                 if (Gerar_classes == 0)
@@ -495,8 +496,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem2.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -517,8 +518,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem1.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -538,8 +539,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem3.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -557,8 +558,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem4.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -577,8 +578,8 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem4.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim2.Hide();
+                        Lab_Player2_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -586,7 +587,7 @@ namespace jogo_assassino
                     }
                 }
             }
-
+            //COMBOBOX 5
             if (comboBox_Player.Text == "5")
             {
                 if (Gerar_classes == 0)
@@ -691,11 +692,11 @@ namespace jogo_assassino
                 }
             }
         }
-
+        //Botao3
         private void But_Sim3_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
-            //Final 3
+            //Final COMBOBOX 3
             if (comboBox_Player.Text == "3")
             {
                 if (Gerar_classes == 0)
@@ -710,7 +711,10 @@ namespace jogo_assassino
                         imagem2.Dispose();
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
-
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -732,7 +736,10 @@ namespace jogo_assassino
                         imagem1.Dispose();
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
-
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -753,6 +760,10 @@ namespace jogo_assassino
                         imagem3.Dispose();
                         But_Sim3.Hide();
                         Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -762,7 +773,7 @@ namespace jogo_assassino
 
 
             }
-
+            //COMBOBOX 4
             if (comboBox_Player.Text == "4")
             {
                 if (Gerar_classes == 0)
@@ -775,8 +786,12 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem2.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -797,8 +812,12 @@ namespace jogo_assassino
                     if (dialogResult == DialogResult.Yes)
                     {
                         imagem1.Dispose();
-                        But_Sim1.Hide();
-                        Lab_Player1_Pronto.Hide();
+                        But_Sim3.Hide();
+                        Lab_Player3_Pronto.Hide();
+                        But_Sim4.Hide();
+                        Lab_Player4_Pronto.Hide();
+                        But_Sim5.Hide();
+                        Lab_Player5_Pronto.Hide();
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -866,7 +885,7 @@ namespace jogo_assassino
                     }
                 }
             }
-
+            //COMBOBOX 5
             if (comboBox_Player.SelectedItem.ToString() == "5")
             {
                 if (Gerar_classes == 0)
@@ -932,8 +951,8 @@ namespace jogo_assassino
                 }
             }
         }
-    
 
+        //Botao4
         private void But_Sim4_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
@@ -1002,7 +1021,7 @@ namespace jogo_assassino
                     }
                 }
             }
-
+            //COMBOBOX 5
             if (comboBox_Player.SelectedItem.ToString() == "5")
             {
                 if (Gerar_classes == 0)
@@ -1068,12 +1087,12 @@ namespace jogo_assassino
                 }
             }
         }
-
+        //Botao5
         private void But_Sim5_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
-
-            if (comboBox_Player.SelectedItem.ToString() == "5")
+            //COMBOBOX 5
+            if (comboBox_Player.Text == "5")
             {
                 if (Gerar_classes == 0)
                 {
@@ -1140,7 +1159,7 @@ namespace jogo_assassino
         }
     }
 }
-    
+
 
 
 
