@@ -207,6 +207,7 @@
     <None Include="Resources\vitoria.png" />
     <None Include="Resources\vitoria1.png" />
     <None Include="Resources\derrota_sim.jpg" />
+    <None Include="Resources\terror_ponto_int.jpg" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
