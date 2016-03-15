@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(170, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome Player";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -100,7 +101,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::jogo_assassino.Properties.Resources.vitoria1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.label5);
@@ -111,6 +111,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form6";
             this.Text = "Vitoria/Derrota";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
