@@ -42,7 +42,6 @@
             this.Lab_Player1_Pronto = new System.Windows.Forms.Label();
             this.Voltar = new System.Windows.Forms.PictureBox();
             this.Seguinte = new System.Windows.Forms.PictureBox();
-            this.Imagem_Fundo = new System.Windows.Forms.PictureBox();
             this.But_Sim1 = new System.Windows.Forms.Button();
             this.But_Nao = new System.Windows.Forms.Button();
             this.Imag_Classes = new System.Windows.Forms.PictureBox();
@@ -58,13 +57,13 @@
             this.But_Sim2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagem_Fundo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).BeginInit();
             this.SuspendLayout();
             // 
             // Lab_Player1
             // 
             this.Lab_Player1.AutoSize = true;
+            this.Lab_Player1.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player1.Location = new System.Drawing.Point(12, 48);
             this.Lab_Player1.Name = "Lab_Player1";
             this.Lab_Player1.Size = new System.Drawing.Size(42, 13);
@@ -74,6 +73,7 @@
             // Lab_Player2
             // 
             this.Lab_Player2.AutoSize = true;
+            this.Lab_Player2.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player2.Location = new System.Drawing.Point(12, 138);
             this.Lab_Player2.Name = "Lab_Player2";
             this.Lab_Player2.Size = new System.Drawing.Size(42, 13);
@@ -83,6 +83,7 @@
             // Lab_Player3
             // 
             this.Lab_Player3.AutoSize = true;
+            this.Lab_Player3.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player3.Location = new System.Drawing.Point(12, 222);
             this.Lab_Player3.Name = "Lab_Player3";
             this.Lab_Player3.Size = new System.Drawing.Size(42, 13);
@@ -92,6 +93,7 @@
             // Lab_Player4
             // 
             this.Lab_Player4.AutoSize = true;
+            this.Lab_Player4.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player4.Location = new System.Drawing.Point(12, 301);
             this.Lab_Player4.Name = "Lab_Player4";
             this.Lab_Player4.Size = new System.Drawing.Size(42, 13);
@@ -101,6 +103,7 @@
             // Lab_Player5
             // 
             this.Lab_Player5.AutoSize = true;
+            this.Lab_Player5.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player5.Location = new System.Drawing.Point(9, 376);
             this.Lab_Player5.Name = "Lab_Player5";
             this.Lab_Player5.Size = new System.Drawing.Size(42, 13);
@@ -146,6 +149,7 @@
             // Lab_Player1_Pronto
             // 
             this.Lab_Player1_Pronto.AutoSize = true;
+            this.Lab_Player1_Pronto.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player1_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lab_Player1_Pronto.Location = new System.Drawing.Point(195, 88);
             this.Lab_Player1_Pronto.Name = "Lab_Player1_Pronto";
@@ -177,19 +181,9 @@
             this.Seguinte.TabStop = false;
             this.Seguinte.Click += new System.EventHandler(this.Seguinte_Click_1);
             // 
-            // Imagem_Fundo
-            // 
-            this.Imagem_Fundo.Image = ((System.Drawing.Image)(resources.GetObject("Imagem_Fundo.Image")));
-            this.Imagem_Fundo.Location = new System.Drawing.Point(-13, -1);
-            this.Imagem_Fundo.Name = "Imagem_Fundo";
-            this.Imagem_Fundo.Size = new System.Drawing.Size(641, 506);
-            this.Imagem_Fundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Imagem_Fundo.TabIndex = 0;
-            this.Imagem_Fundo.TabStop = false;
-            // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(318, 116);
+            this.But_Sim1.Location = new System.Drawing.Point(333, 116);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -269,6 +263,7 @@
             // Lab_Players
             // 
             this.Lab_Players.AutoSize = true;
+            this.Lab_Players.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Players.Location = new System.Drawing.Point(487, 24);
             this.Lab_Players.Name = "Lab_Players";
             this.Lab_Players.Size = new System.Drawing.Size(41, 13);
@@ -283,19 +278,21 @@
             this.But_Sim5.TabIndex = 26;
             this.But_Sim5.Text = "Sim-5";
             this.But_Sim5.UseVisualStyleBackColor = true;
+            this.But_Sim5.Click += new System.EventHandler(this.But_Sim5_Click);
             // 
             // But_Sim4
             // 
-            this.But_Sim4.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim4.Location = new System.Drawing.Point(342, 133);
             this.But_Sim4.Name = "But_Sim4";
             this.But_Sim4.Size = new System.Drawing.Size(75, 23);
             this.But_Sim4.TabIndex = 27;
             this.But_Sim4.Text = "Sim-4";
             this.But_Sim4.UseVisualStyleBackColor = true;
+            this.But_Sim4.Click += new System.EventHandler(this.But_Sim4_Click);
             // 
             // But_Sim3
             // 
-            this.But_Sim3.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim3.Location = new System.Drawing.Point(342, 128);
             this.But_Sim3.Name = "But_Sim3";
             this.But_Sim3.Size = new System.Drawing.Size(75, 23);
             this.But_Sim3.TabIndex = 28;
@@ -317,6 +314,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::jogo_assassino.Properties.Resources.Imagem_Fundo;
             this.ClientSize = new System.Drawing.Size(623, 498);
             this.ControlBox = false;
             this.Controls.Add(this.But_Sim1);
@@ -345,7 +343,6 @@
             this.Controls.Add(this.Lab_Player3_Pronto);
             this.Controls.Add(this.Lab_Player4_Pronto);
             this.Controls.Add(this.Lab_Player5_Pronto);
-            this.Controls.Add(this.Imagem_Fundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -353,7 +350,6 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagem_Fundo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -361,8 +357,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox Imagem_Fundo;
         private System.Windows.Forms.Label Lab_Player1;
         private System.Windows.Forms.Label Lab_Player2;
         private System.Windows.Forms.Label Lab_Player3;
