@@ -145,7 +145,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        imagem2.Dispose();
+                        imagem2.Dispose(); 
                         But_Sim1.Hide();
                         Lab_Player1_Pronto.Hide();
 
