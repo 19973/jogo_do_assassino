@@ -419,7 +419,7 @@ namespace jogo_assassino
         {
             int Gerar_classes = rnd.Next(classes.Count);
             //COMBOBOX 3
-            if (comboBox_Player.SelectedItem.ToString() == "3")
+            if (comboBox_Player.Text == "3")
             {
                 if (Gerar_classes == 0)
                 {
