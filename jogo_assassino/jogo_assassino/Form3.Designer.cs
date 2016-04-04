@@ -116,7 +116,6 @@
             this.tex_Player1.Name = "tex_Player1";
             this.tex_Player1.Size = new System.Drawing.Size(112, 20);
             this.tex_Player1.TabIndex = 6;
-            this.tex_Player1.TextChanged += new System.EventHandler(this.tex_Player1_TextChanged);
             // 
             // tex_Player2
             // 
