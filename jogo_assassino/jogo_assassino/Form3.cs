@@ -899,7 +899,7 @@ namespace jogo_assassino
                 }
             }
             //COMBOBOX 5
-            if (comboBox_Player.SelectedItem.ToString() == "5")
+            if (comboBox_Player.Text == "5")
             {
                 if (Gerar_classes == 0)
                 {
