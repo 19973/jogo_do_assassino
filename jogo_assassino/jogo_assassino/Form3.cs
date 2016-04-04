@@ -970,7 +970,7 @@ namespace jogo_assassino
         {
             int Gerar_classes = rnd.Next(classes.Count);
 
-            if (comboBox_Player.SelectedItem.ToString() == "4")
+            if (comboBox_Player.Text == "4")
             {
                 if (Gerar_classes == 0)
                 {
@@ -1035,7 +1035,7 @@ namespace jogo_assassino
                 }
             }
             //COMBOBOX 5
-            if (comboBox_Player.SelectedItem.ToString() == "5")
+            if (comboBox_Player.Text == "5")
             {
                 if (Gerar_classes == 0)
                 {
@@ -1174,8 +1174,6 @@ namespace jogo_assassino
         private void Form3_Load(object sender, EventArgs e)
         {
            
-            
-
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
             {
