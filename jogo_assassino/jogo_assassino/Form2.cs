@@ -64,7 +64,11 @@ namespace jogo_assassino
 
         private void back_botao_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            form1 = null;
+            this.Show();
         }
 
 
@@ -85,7 +89,7 @@ namespace jogo_assassino
 
                                 this.Hide();
                                 Form3 form3 = new Form3();
-                                
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -123,6 +127,7 @@ namespace jogo_assassino
                             {
                                 this.Hide();
                                 Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -160,6 +165,7 @@ namespace jogo_assassino
                             {
                                 this.Hide();
                                 Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
                                 Control t = form3.Controls.Find("tex_Player1", true)[0];
                                 t.Text = textBox1.Text;
                                 t = form3.Controls.Find("tex_Player2", true)[0];
@@ -198,14 +204,14 @@ namespace jogo_assassino
                         break;
                 }
                 }
-            catch(Exception ) {
-
-                MessageBox.Show("Voce tem que selecionar os numeros de jogadores");
+            catch (Exception e)
+            {
+                Console.WriteLine("Voce tem de selecionar os numeros de jogadores: '{0}'", e);
             }
-          
-            
 
-            }
+
+
+        }
             
  
 
