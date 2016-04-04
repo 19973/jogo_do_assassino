@@ -12,6 +12,9 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
+        
+        public menu_jogo mn3;
+
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
         Image imagem1 = new Bitmap(jogo_assassino.Properties.Resources.Assassino);
         Image imagem2 = new Bitmap(jogo_assassino.Properties.Resources.Policia);
@@ -21,11 +24,16 @@ namespace jogo_assassino
         Random rnd = new Random();
         List<string> classes = new List<string>();
 
+        public void set_jogo(menu_jogo mn2)
+        {
+            mn3 = mn2;
+        }
+
         public Form3()
         {
             InitializeComponent();
 
-            Lab_Player1_Pronto.Hide();
+            Lab_Player1_Pronto.Hide(); 
             Lab_Player2_Pronto.Hide();
             Lab_Player3_Pronto.Hide();
             Lab_Player4_Pronto.Hide();
@@ -120,9 +128,14 @@ namespace jogo_assassino
 
         private void Voltar_Click(object sender, EventArgs e)
         {
+
+
             this.Hide();
-            Form2 form2 = new Form2(/*mn*/);
-            form2.Show();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            form2 = null;
+            this.Show();
+
 
         }
         //Botao1
@@ -1156,6 +1169,26 @@ namespace jogo_assassino
                     }
                 }
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+           
+            
+
+            mn3.set_versao();
+            if (mn3.get_versao() == "normal")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.terror_ponto_int);
+                this.BackgroundImage = myimage;
+            }
+
+            if (mn3.get_versao() == "terror")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.Imagem_Fundo);
+                this.BackgroundImage = myimage;
+            }
+            
         }
     }
 }
