@@ -204,14 +204,14 @@ namespace jogo_assassino
                         break;
                 }
                 }
-            catch(Exception ) {
-
-                MessageBox.Show("Voce tem que selecionar os numeros de jogadores");
+            catch (Exception e)
+            {
+                Console.WriteLine("Voce tem de selecionar os numeros de jogadores: '{0}'", e);
             }
-          
-            
 
-            }
+
+
+        }
             
  
 
