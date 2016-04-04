@@ -74,7 +74,6 @@ namespace jogo_assassino
 
         private void next_botao_Click(object sender, EventArgs e)
         {
-            try {
             
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
@@ -203,11 +202,7 @@ namespace jogo_assassino
                         MessageBox.Show("Vôce não inseriu todo os dados necessario");
                         break;
                 }
-                }
-            catch (Exception)
-            {
-                MessageBox.Show("Voce tem de selecionar os numeros de jogadores");
-            }
+                
 
 
 
