@@ -41,7 +41,7 @@
             this.tex_Player5 = new System.Windows.Forms.TextBox();
             this.Lab_Player1_Pronto = new System.Windows.Forms.Label();
             this.Voltar = new System.Windows.Forms.PictureBox();
-            this.Seguinte = new System.Windows.Forms.PictureBox();
+            this.Seguinte1 = new System.Windows.Forms.PictureBox();
             this.But_Sim1 = new System.Windows.Forms.Button();
             this.But_Nao = new System.Windows.Forms.Button();
             this.Imag_Classes = new System.Windows.Forms.PictureBox();
@@ -55,9 +55,11 @@
             this.But_Sim4 = new System.Windows.Forms.Button();
             this.But_Sim3 = new System.Windows.Forms.Button();
             this.But_Sim2 = new System.Windows.Forms.Button();
+            this.Seguinte2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte2)).BeginInit();
             this.SuspendLayout();
             // 
             // Lab_Player1
@@ -116,7 +118,6 @@
             this.tex_Player1.Name = "tex_Player1";
             this.tex_Player1.Size = new System.Drawing.Size(112, 20);
             this.tex_Player1.TabIndex = 6;
-
             // 
             // tex_Player2
             // 
@@ -169,21 +170,21 @@
             this.Voltar.TabStop = false;
             this.Voltar.Click += new System.EventHandler(this.Voltar_Click);
             // 
-            // Seguinte
+            // Seguinte1
             // 
-            this.Seguinte.BackColor = System.Drawing.Color.Transparent;
-            this.Seguinte.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
-            this.Seguinte.Location = new System.Drawing.Point(517, 440);
-            this.Seguinte.Name = "Seguinte";
-            this.Seguinte.Size = new System.Drawing.Size(94, 41);
-            this.Seguinte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Seguinte.TabIndex = 16;
-            this.Seguinte.TabStop = false;
-            this.Seguinte.Click += new System.EventHandler(this.Seguinte_Click_1);
+            this.Seguinte1.BackColor = System.Drawing.Color.Transparent;
+            this.Seguinte1.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
+            this.Seguinte1.Location = new System.Drawing.Point(517, 440);
+            this.Seguinte1.Name = "Seguinte1";
+            this.Seguinte1.Size = new System.Drawing.Size(94, 41);
+            this.Seguinte1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Seguinte1.TabIndex = 16;
+            this.Seguinte1.TabStop = false;
+            this.Seguinte1.Click += new System.EventHandler(this.Seguinte_Click_1);
             // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(333, 116);
+            this.But_Sim1.Location = new System.Drawing.Point(318, 128);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -282,7 +283,7 @@
             // 
             // But_Sim4
             // 
-            this.But_Sim4.Location = new System.Drawing.Point(342, 133);
+            this.But_Sim4.Location = new System.Drawing.Point(318, 128);
             this.But_Sim4.Name = "But_Sim4";
             this.But_Sim4.Size = new System.Drawing.Size(75, 23);
             this.But_Sim4.TabIndex = 27;
@@ -292,7 +293,7 @@
             // 
             // But_Sim3
             // 
-            this.But_Sim3.Location = new System.Drawing.Point(342, 128);
+            this.But_Sim3.Location = new System.Drawing.Point(318, 128);
             this.But_Sim3.Name = "But_Sim3";
             this.But_Sim3.Size = new System.Drawing.Size(75, 23);
             this.But_Sim3.TabIndex = 28;
@@ -302,13 +303,25 @@
             // 
             // But_Sim2
             // 
-            this.But_Sim2.Location = new System.Drawing.Point(364, 128);
+            this.But_Sim2.Location = new System.Drawing.Point(318, 128);
             this.But_Sim2.Name = "But_Sim2";
             this.But_Sim2.Size = new System.Drawing.Size(75, 23);
             this.But_Sim2.TabIndex = 29;
             this.But_Sim2.Text = "Sim-2";
             this.But_Sim2.UseVisualStyleBackColor = true;
             this.But_Sim2.Click += new System.EventHandler(this.But_Sim2_Click);
+            // 
+            // Seguinte2
+            // 
+            this.Seguinte2.BackColor = System.Drawing.Color.Transparent;
+            this.Seguinte2.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
+            this.Seguinte2.Location = new System.Drawing.Point(517, 440);
+            this.Seguinte2.Name = "Seguinte2";
+            this.Seguinte2.Size = new System.Drawing.Size(94, 41);
+            this.Seguinte2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Seguinte2.TabIndex = 30;
+            this.Seguinte2.TabStop = false;
+            this.Seguinte2.Click += new System.EventHandler(this.Seguinte2_Click);
             // 
             // Form3
             // 
@@ -327,7 +340,6 @@
             this.Controls.Add(this.Imag_Classes);
             this.Controls.Add(this.But_Nao);
             this.Controls.Add(this.Voltar);
-            this.Controls.Add(this.Seguinte);
             this.Controls.Add(this.tex_Player5);
             this.Controls.Add(this.tex_Player4);
             this.Controls.Add(this.tex_Player3);
@@ -343,14 +355,17 @@
             this.Controls.Add(this.Lab_Player3_Pronto);
             this.Controls.Add(this.Lab_Player4_Pronto);
             this.Controls.Add(this.Lab_Player5_Pronto);
+            this.Controls.Add(this.Seguinte2);
+            this.Controls.Add(this.Seguinte1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver Quem Vai Ser Quem";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Seguinte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Seguinte2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,7 +383,7 @@
         private System.Windows.Forms.TextBox tex_Player4;
         private System.Windows.Forms.TextBox tex_Player5;
         private System.Windows.Forms.Label Lab_Player1_Pronto;
-        private System.Windows.Forms.PictureBox Seguinte;
+        private System.Windows.Forms.PictureBox Seguinte1;
         private System.Windows.Forms.PictureBox Voltar;
         private System.Windows.Forms.Button But_Sim1;
         private System.Windows.Forms.Button But_Nao;
@@ -383,5 +398,6 @@
         private System.Windows.Forms.Button But_Sim4;
         private System.Windows.Forms.Button But_Sim3;
         private System.Windows.Forms.Button But_Sim2;
+        private System.Windows.Forms.PictureBox Seguinte2;
     }
 }

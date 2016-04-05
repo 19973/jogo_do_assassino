@@ -74,7 +74,7 @@ namespace jogo_assassino
             tex_Player3.Show();
             tex_Player4.Show();
             tex_Player5.Show();
-            Seguinte.Enabled = true;
+            Seguinte1.Enabled = true;
             Voltar.Enabled = true;
             Lab_Player1_Pronto.Hide();
             Lab_Player2_Pronto.Hide();
@@ -108,7 +108,7 @@ namespace jogo_assassino
             tex_Player3.Hide();
             tex_Player4.Hide();
             tex_Player5.Hide();
-            Seguinte.Enabled = false;
+            Seguinte1.Enabled = false;
             Voltar.Enabled = false;
             Lab_Player1_Pronto.Show();
             Lab_Player2_Pronto.Show();
@@ -414,7 +414,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem5.Dispose();
                         But_Sim1.Hide();
                         Lab_Player1_Pronto.Hide();
                     }
@@ -551,7 +551,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem3.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -570,7 +570,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                       
+                        imagem4.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -590,7 +590,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                       
+                        imagem5.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -655,7 +655,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem3.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -674,7 +674,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem4.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -694,7 +694,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem5.Dispose();
                         But_Sim2.Hide();
                         Lab_Player2_Pronto.Hide();
                     }
@@ -822,11 +822,7 @@ namespace jogo_assassino
                     {
                         imagem1.Dispose();
                         But_Sim3.Hide();
-                        Lab_Player3_Pronto.Hide();
-                        But_Sim4.Hide();
-                        Lab_Player4_Pronto.Hide();
-                        But_Sim5.Hide();
-                        Lab_Player5_Pronto.Hide();
+                       
 
                     }
                     else if (dialogResult == DialogResult.No)
@@ -838,13 +834,14 @@ namespace jogo_assassino
 
                 if (Gerar_classes == 2)
                 {
-                    Imag_Classes.Image = imagem4;
+                    Imag_Classes.Image = imagem3;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
                     classes.Remove("Inocente1");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
+                        imagem3.Dispose();
                         But_Sim1.Hide();
                         Lab_Player1_Pronto.Hide();
                     }
@@ -863,7 +860,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        
+                        imagem4.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -876,14 +873,14 @@ namespace jogo_assassino
 
                 if (Gerar_classes == 4)
                 {
-                    Imag_Classes.Image = imagem4;
+                    Imag_Classes.Image = imagem5;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
                     classes.Remove("Inocente3");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                      
+                        imagem5.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -948,7 +945,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                       
+                        imagem3.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -967,7 +964,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem4.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -987,7 +984,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem5.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1003,7 +1000,7 @@ namespace jogo_assassino
         private void But_Sim4_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
-
+            //FINAL DA COMBOBOX 4
             if (comboBox_Player.Text == "4")
             {
                 if (Gerar_classes == 0)
@@ -1018,7 +1015,8 @@ namespace jogo_assassino
                         imagem2.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
-
+                        Voltar.Hide();
+                        Seguinte1.Hide();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -1077,7 +1075,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem4.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1090,14 +1088,14 @@ namespace jogo_assassino
 
                 if (Gerar_classes == 4)
                 {
-                    Imag_Classes.Image = imagem4;
+                    Imag_Classes.Image = imagem5;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
                     classes.Remove("Inocente3");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem5.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1158,7 +1156,7 @@ namespace jogo_assassino
                     Imag_Classes.Image = imagem3;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
-                    classes.Remove("Inocente");
+                    classes.Remove("Inocente1");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -1182,7 +1180,7 @@ namespace jogo_assassino
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem4.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1195,14 +1193,14 @@ namespace jogo_assassino
 
                 if (Gerar_classes == 4)
                 {
-                    Imag_Classes.Image = imagem4;
+                    Imag_Classes.Image = imagem5;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
                     classes.Remove("Inocente3");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem5.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1217,7 +1215,7 @@ namespace jogo_assassino
         private void But_Sim5_Click(object sender, EventArgs e)
         {
             int Gerar_classes = rnd.Next(classes.Count);
-            //COMBOBOX 5
+            //FIM DA COMBOBOX 5
             if (comboBox_Player.Text == "5")
             {
                 if (Gerar_classes == 0)
@@ -1304,14 +1302,14 @@ namespace jogo_assassino
 
                 if (Gerar_classes == 4)
                 {
-                    Imag_Classes.Image = imagem4;
+                    Imag_Classes.Image = imagem5;
                     But_Nao.Enabled = false;
                     But_Sim1.Enabled = false;
                     classes.Remove("Inocente3");
                     DialogResult dialogResult = MessageBox.Show("Se estiveres pronto Clica Sim e vira as costas", "Vez Do Adversário", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-
+                        imagem5.Dispose();
                         But_Sim4.Hide();
                         Lab_Player4_Pronto.Hide();
                     }
@@ -1339,6 +1337,15 @@ namespace jogo_assassino
                 this.BackgroundImage = myimage;
             }
             
+        }
+
+        private void Seguinte2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
+            form4 = null;
+            this.Show();
         }
     }
 }
