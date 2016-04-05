@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace jogo_assassino
 {
-
+    
     public partial class Form2 : Form
     {
         jogo jg;
