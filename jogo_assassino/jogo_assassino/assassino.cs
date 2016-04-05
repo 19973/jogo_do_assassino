@@ -8,6 +8,10 @@ namespace jogo_assassino
 {
     class assassino : pessoa
     {
-        
+        assassino()
+        {
+            personagem = "Assasino";
+
+        }
     }
 }
