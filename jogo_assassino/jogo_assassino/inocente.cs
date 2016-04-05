@@ -10,7 +10,7 @@ namespace jogo_assassino
     {
         inocente()
         {
-            personagem = "Inocente";
+            personagem = "Inocente"; 
 
         }
 
