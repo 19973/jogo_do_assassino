@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace jogo_assassino
 {
-
+    
     public partial class Form2 : Form
     {
         jogo jg;
@@ -74,15 +74,15 @@ namespace jogo_assassino
 
         private void next_botao_Click(object sender, EventArgs e)
         {
-            
+            try {
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
-                    
+
                     case 3:
 
-                            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
-                    {
+                        if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+                        {
                             if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox2.Text != textBox3.Text)
                             {
 
@@ -111,14 +111,14 @@ namespace jogo_assassino
                             {
                                 MessageBox.Show("Tem nomes repetidos");
                             }
-                    }
+                        }
                         else
                         {
                             MessageBox.Show("Voce tem que preencher os 3 campos");
                         }
 
-                    break;
-                           
+                        break;
+
                     case 4:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
                         {
@@ -202,6 +202,11 @@ namespace jogo_assassino
                         MessageBox.Show("Vôce não inseriu todo os dados necessario");
                         break;
                 }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Voce tem que selecionar o numero de Jogadores");
+            }
                 
 
 
