@@ -12,6 +12,7 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
+        
         public menu_jogo mn3;
 
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
@@ -25,7 +26,7 @@ namespace jogo_assassino
 
         public void set_jogo(menu_jogo mn2)
         {
-
+            mn3 = mn2;
         }
 
         public Form3()
@@ -127,9 +128,14 @@ namespace jogo_assassino
 
         private void Voltar_Click(object sender, EventArgs e)
         {
+
+
             this.Hide();
-            Form2 form2 = new Form2(/*mn*/);
-            form2.Show();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            form2 = null;
+            this.Show();
+
 
         }
 
@@ -1148,6 +1154,9 @@ namespace jogo_assassino
 
         private void Form3_Load(object sender, EventArgs e)
         {
+           
+            
+
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
             {
@@ -1160,6 +1169,7 @@ namespace jogo_assassino
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.Imagem_Fundo);
                 this.BackgroundImage = myimage;
             }
+            
         }
     }
 }
