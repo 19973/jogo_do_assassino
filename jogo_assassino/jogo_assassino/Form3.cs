@@ -12,7 +12,7 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-        
+        jogo jg;
         public menu_jogo mn3;
 
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
@@ -1343,9 +1343,12 @@ namespace jogo_assassino
         {
             this.Hide();
             Form4 form4 = new Form4();
+        //    form4.set_jogo(mn3);
             form4.ShowDialog();
             form4 = null;
             this.Show();
+
+            jg = new jogo(int.Parse(comboBox_Player.Text));
         }
     }
 }
