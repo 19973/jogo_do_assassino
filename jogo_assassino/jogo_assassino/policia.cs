@@ -15,8 +15,5 @@ namespace jogo_assassino
 
         }
 
-
-
-
     }
 }
