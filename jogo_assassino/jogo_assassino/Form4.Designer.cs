@@ -128,7 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.elect;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(755, 444);
+            this.ClientSize = new System.Drawing.Size(767, 444);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
