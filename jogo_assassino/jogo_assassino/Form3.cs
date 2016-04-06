@@ -1461,6 +1461,7 @@ namespace jogo_assassino
         {
             this.Hide();
             Form4 form4 = new Form4();
+            form4.set_jogo(mn3);
             form4.ShowDialog();
             form4 = null;
             this.Show();
