@@ -156,7 +156,7 @@
             // 
             this.Voltar.BackColor = System.Drawing.Color.Transparent;
             this.Voltar.Image = global::jogo_assassino.Properties.Resources.Voltar;
-            this.Voltar.Location = new System.Drawing.Point(401, 440);
+            this.Voltar.Location = new System.Drawing.Point(392, 440);
             this.Voltar.Name = "Voltar";
             this.Voltar.Size = new System.Drawing.Size(94, 41);
             this.Voltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,7 +188,7 @@
             // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(318, 116);
+            this.But_Sim1.Location = new System.Drawing.Point(318, 99);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -303,7 +303,7 @@
             // 
             // But_Sim2
             // 
-            this.But_Sim2.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim2.Location = new System.Drawing.Point(318, 116);
             this.But_Sim2.Name = "But_Sim2";
             this.But_Sim2.Size = new System.Drawing.Size(75, 23);
             this.But_Sim2.TabIndex = 29;
