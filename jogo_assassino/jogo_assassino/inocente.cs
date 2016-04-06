@@ -8,7 +8,11 @@ namespace jogo_assassino
 {
     class inocente : pessoa
     {
+        inocente()
+        {
+            personagem = "Inocente"; 
 
+        }
 
     }
 }

@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="assassino.cs" />
+    <Compile Include="Database5DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +70,18 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form7.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +95,11 @@
     <Compile Include="policia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="vitoria_derrota.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -88,19 +110,31 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <None Include="Database5DataSet1.xsc">
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database5DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database5DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database5DataSet1.xss">
+      <DependentUpon>Database5DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +149,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Database5.laccdb" />
     <None Include="Resources\fancy.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -162,8 +197,6 @@
     <None Include="graficos.jpg" />
     <Content Include="icon.ico" />
     <Content Include="mesa.jpg" />
-    <Content Include="MudarVersaoNormal.wav" />
-    <Content Include="MudarVersaoTerror.wav" />
     <Content Include="quarto1.jpg" />
     <Content Include="quarto1_creepy.jpg" />
     <Content Include="quarto1_fancy.jpg" />
@@ -176,10 +209,15 @@
     <Content Include="quarto4_fancy.jpg" />
     <Content Include="quarto5_fancy.jpg" />
     <None Include="Resources\creepy.bmp" />
-    <None Include="Resources\MudarVersaoNormal.wav" />
-    <None Include="Resources\MudarVersaoTerror.wav" />
     <None Include="Resources\creepy.jpg" />
     <None Include="Resources\mesa.jpg" />
+    <None Include="Resources\mesa_casual.jpg" />
+    <None Include="Resources\mesa_terror.jpg" />
+    <None Include="Resources\vitoria.png" />
+    <None Include="Resources\vitoria1.png" />
+    <None Include="Resources\derrota_sim.jpg" />
+    <None Include="Resources\terror_ponto_int.jpg" />
+    <None Include="Resources\images.png" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

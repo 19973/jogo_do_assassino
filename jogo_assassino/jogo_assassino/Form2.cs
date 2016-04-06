@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 
 namespace jogo_assassino
-{   
-   
+{
+    
     public partial class Form2 : Form
     {
         jogo jg;
-        //private menu_jogo mnform2;
+       public menu_jogo mn2;
 
 
-        public Form2(/*menu_jogo m*/)
+        public Form2()
         {
             InitializeComponent();
-            //mnform2 = m;
 
+        }
+
+
+        public void set_jogo(menu_jogo mn)
+        {
+            mn2 = mn;
         }
 
 
@@ -61,62 +66,89 @@ namespace jogo_assassino
         {
             this.Hide();
             Form1 form1 = new Form1();
-            form1.Show();
+            form1.ShowDialog();
+            form1 = null;
+            this.Show();
         }
 
 
         private void next_botao_Click(object sender, EventArgs e)
         {
             try {
-            
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
-                    
+
                     case 3:
 
-                            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
-                    {
+                        if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+                        {
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox2.Text != textBox3.Text)
+                            {
 
-                        this.Hide();
-                        Form3 form3 = new Form3();
-                        Control t = form3.Controls.Find("tex_Player1", true)[0];
-                        t.Text = textBox1.Text;
-                        t = form3.Controls.Find("tex_Player2", true)[0];
-                        t.Text = textBox2.Text;
-                        t = form3.Controls.Find("tex_Player3", true)[0];
-                        t.Text = textBox3.Text;
-                        t = form3.Controls.Find("comboBox_Player", true)[0];
-                        t.Text = comboBox1.Text;
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
+
+                                form3.ShowDialog();
+                                form3 = null;
+
+                                this.Show();
 
 
-                            form3.Show();
-                        jg = new jogo(int.Parse(comboBox1.Text));
-                    }
+
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
+                        }
                         else
                         {
                             MessageBox.Show("Voce tem que preencher os 3 campos");
                         }
 
-                    break;
-                           
+                        break;
+
                     case 4:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
                         {
-                            this.Hide();
-                            Form3 form3 = new Form3();
-                            Control t = form3.Controls.Find("tex_Player1", true)[0];
-                            t.Text = textBox1.Text;
-                            t = form3.Controls.Find("tex_Player2", true)[0];
-                            t.Text = textBox2.Text;
-                            t = form3.Controls.Find("tex_Player3", true)[0];
-                            t.Text = textBox3.Text;
-                            t = form3.Controls.Find("tex_Player4", true)[0];
-                            t.Text = textBox4.Text;
-                            t = form3.Controls.Find("comboBox_Player", true)[0];
-                            t.Text = comboBox1.Text;
-                            form3.Show();
-                            jg = new jogo(int.Parse(comboBox1.Text));
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox1.Text != textBox4.Text && textBox2.Text != textBox3.Text && textBox2.Text != textBox4.Text && textBox3.Text != textBox5.Text)
+                            {
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("tex_Player4", true)[0];
+                                t.Text = textBox4.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
+
+                                form3.ShowDialog();
+                                form3 = null;
+
+                                this.Show();
+
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
                         }
                         else
                         {
@@ -128,22 +160,35 @@ namespace jogo_assassino
                     case 5:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "")
                         {
-                            this.Hide();
-                            Form3 form3 = new Form3();
-                            Control t = form3.Controls.Find("tex_Player1", true)[0];
-                            t.Text = textBox1.Text;
-                            t = form3.Controls.Find("tex_Player2", true)[0];
-                            t.Text = textBox2.Text;
-                            t = form3.Controls.Find("tex_Player3", true)[0];
-                            t.Text = textBox3.Text;
-                            t = form3.Controls.Find("tex_Player4", true)[0];
-                            t.Text = textBox4.Text;
-                            t = form3.Controls.Find("tex_Player5", true)[0];
-                            t.Text = textBox5.Text;
-                            t = form3.Controls.Find("comboBox_Player", true)[0];
-                            t.Text = comboBox1.Text;
-                            form3.Show();
-                            jg = new jogo(int.Parse(comboBox1.Text));
+                            if (textBox1.Text != textBox2.Text && textBox1.Text != textBox3.Text && textBox1.Text != textBox4.Text && textBox1.Text != textBox5.Text && textBox2.Text != textBox3.Text && textBox2.Text != textBox4.Text && textBox2.Text != textBox5.Text && textBox3.Text != textBox4.Text && textBox3.Text != textBox5.Text && textBox4.Text != textBox5.Text)
+                            {
+                                this.Hide();
+                                Form3 form3 = new Form3();
+                                form3.set_jogo(mn2);
+                                Control t = form3.Controls.Find("tex_Player1", true)[0];
+                                t.Text = textBox1.Text;
+                                t = form3.Controls.Find("tex_Player2", true)[0];
+                                t.Text = textBox2.Text;
+                                t = form3.Controls.Find("tex_Player3", true)[0];
+                                t.Text = textBox3.Text;
+                                t = form3.Controls.Find("tex_Player4", true)[0];
+                                t.Text = textBox4.Text;
+                                t = form3.Controls.Find("tex_Player5", true)[0];
+                                t.Text = textBox5.Text;
+                                t = form3.Controls.Find("comboBox_Player", true)[0];
+                                t.Text = comboBox1.Text;
+
+                                form3.ShowDialog();
+                                form3 = null;
+
+                                this.Show();
+
+                                jg = new jogo(int.Parse(comboBox1.Text));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Tem nomes repetidos");
+                            }
                         }
                         else
                         {
@@ -157,14 +202,16 @@ namespace jogo_assassino
                         MessageBox.Show("Vôce não inseriu todo os dados necessario");
                         break;
                 }
-                }
-            catch(Exception) {
-
-                MessageBox.Show("Voce tem que selecionar os numeros de jogadores");
             }
-            
-
+            catch (Exception)
+            {
+                MessageBox.Show("Voce tem que selecionar o numero de Jogadores");
             }
+                
+
+
+
+        }
             
  
 
@@ -191,20 +238,20 @@ namespace jogo_assassino
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            /*  mnform2.set_versao();
-               if (mnform2.get_versao() == "normal")
-               {
-                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.fancy);
-                   this.BackgroundImage = myimage;
-               }
+   
+            if (mn2.get_versao() == "terror")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_terror);
+                this.BackgroundImage = myimage; 
+            }
 
-              if (mnform2.get_versao() == "terror")
-              {
-                   Image myimage = new Bitmap(jogo_assassino.Properties.Resources.creepy);
-                   this.BackgroundImage = myimage;
-               }
-               */
+            if (mn2.get_versao() == "normal")
+            {
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.mesa_casual);
+                this.BackgroundImage = myimage;
+            } 
         }
 
     }
 }
+
