@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 
 namespace jogo_assassino
-{   
-   
+{
+
     public partial class Form2 : Form
     {
         jogo jg;
-        //private menu_jogo mnform2;
 
 
-        public Form2(/*menu_jogo m*/)
+        public Form2()
         {
             InitializeComponent();
             //mnform2 = m;
@@ -67,39 +66,40 @@ namespace jogo_assassino
 
         private void next_botao_Click(object sender, EventArgs e)
         {
-            try {
-            
+            try
+            {
+
                 switch (int.Parse(comboBox1.SelectedItem.ToString()))
                 {
 
-                    
+
                     case 3:
 
-                            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
-                    {
+                        if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+                        {
 
-                        this.Hide();
-                        Form3 form3 = new Form3();
-                        Control t = form3.Controls.Find("tex_Player1", true)[0];
-                        t.Text = textBox1.Text;
-                        t = form3.Controls.Find("tex_Player2", true)[0];
-                        t.Text = textBox2.Text;
-                        t = form3.Controls.Find("tex_Player3", true)[0];
-                        t.Text = textBox3.Text;
-                        t = form3.Controls.Find("comboBox_Player", true)[0];
-                        t.Text = comboBox1.Text;
+                            this.Hide();
+                            Form3 form3 = new Form3();
+                            Control t = form3.Controls.Find("tex_Player1", true)[0];
+                            t.Text = textBox1.Text;
+                            t = form3.Controls.Find("tex_Player2", true)[0];
+                            t.Text = textBox2.Text;
+                            t = form3.Controls.Find("tex_Player3", true)[0];
+                            t.Text = textBox3.Text;
+                            t = form3.Controls.Find("comboBox_Player", true)[0];
+                            t.Text = comboBox1.Text;
 
 
                             form3.Show();
-                        jg = new jogo(int.Parse(comboBox1.Text));
-                    }
+                            jg = new jogo(int.Parse(comboBox1.Text));
+                        }
                         else
                         {
                             MessageBox.Show("Voce tem que preencher os 3 campos");
                         }
 
-                    break;
-                           
+                        break;
+
                     case 4:
                         if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
                         {
@@ -157,21 +157,22 @@ namespace jogo_assassino
                         MessageBox.Show("Vôce não inseriu todo os dados necessario");
                         break;
                 }
-                }
-            catch(Exception) {
+            }
+            catch (Exception)
+            {
 
                 MessageBox.Show("Voce tem que selecionar os numeros de jogadores");
             }
-            
 
-            }
-            
- 
+
+        }
+
+
 
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -181,7 +182,7 @@ namespace jogo_assassino
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
