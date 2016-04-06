@@ -185,6 +185,7 @@
             this.Imagem_Fundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagem_Fundo.TabIndex = 0;
             this.Imagem_Fundo.TabStop = false;
+            this.Imagem_Fundo.Click += new System.EventHandler(this.Imagem_Fundo_Click);
             // 
             // But_Sim1
             // 

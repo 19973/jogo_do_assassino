@@ -301,7 +301,10 @@ namespace jogo_assassino
             int Gerar_Classes = rnd.Next(4);
         }
 
-       
+        private void Imagem_Fundo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
