@@ -8,5 +8,15 @@ namespace jogo_assassino
 {
     class policia : pessoa
     {
+        
+        policia()
+        {
+            personagem = "Policia";
+
+        }
+
+
+
+
     }
 }
