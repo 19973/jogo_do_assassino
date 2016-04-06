@@ -57,7 +57,7 @@
             this.But_Sim2 = new System.Windows.Forms.Button();
             this.Seguinte2 = new System.Windows.Forms.PictureBox();
             this.Voltar2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Lab_Pronto_Final = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).BeginInit();
@@ -347,17 +347,18 @@
             this.Voltar2.TabStop = false;
             this.Voltar2.Click += new System.EventHandler(this.Voltar2_Click);
             // 
-            // label1
+            // Lab_Pronto_Final
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(139, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 50);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Se tiverem todos players estiverem\r\n prontos cliquem no \"Seguinte\"";
+            this.Lab_Pronto_Final.AutoSize = true;
+            this.Lab_Pronto_Final.BackColor = System.Drawing.Color.Transparent;
+            this.Lab_Pronto_Final.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Pronto_Final.ForeColor = System.Drawing.Color.Red;
+            this.Lab_Pronto_Final.Location = new System.Drawing.Point(139, 213);
+            this.Lab_Pronto_Final.Name = "Lab_Pronto_Final";
+            this.Lab_Pronto_Final.Size = new System.Drawing.Size(348, 50);
+            this.Lab_Pronto_Final.TabIndex = 33;
+            this.Lab_Pronto_Final.Text = "Se tiverem todos players estiverem\r\n prontos cliquem no \"Seguinte\"";
+            this.Lab_Pronto_Final.Visible = false;
             // 
             // Form3
             // 
@@ -366,7 +367,7 @@
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.Imagem_Fundo;
             this.ClientSize = new System.Drawing.Size(623, 498);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Lab_Pronto_Final);
             this.Controls.Add(this.But_Sim1);
             this.Controls.Add(this.But_Sim2);
             this.Controls.Add(this.But_Sim3);
@@ -439,6 +440,6 @@
         private System.Windows.Forms.Button But_Sim2;
         private System.Windows.Forms.PictureBox Seguinte2;
         private System.Windows.Forms.PictureBox Voltar2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lab_Pronto_Final;
     }
 }
