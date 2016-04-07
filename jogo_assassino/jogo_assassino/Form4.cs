@@ -75,7 +75,7 @@ namespace jogo_assassino
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
-            pictureBox4.Visible = false;
+            pictureBox4.Visible = false; 
             pictureBox5.Visible = false;
             pictureBox6.Visible = false;
             this.Hide();
