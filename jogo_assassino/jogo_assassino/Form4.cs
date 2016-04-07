@@ -78,6 +78,12 @@ namespace jogo_assassino
             pictureBox4.Visible = false;
             pictureBox5.Visible = false;
             pictureBox6.Visible = false;
+            this.Hide();
+            Form5 form5 = new Form5();
+            form5.set_jogo(mn4);
+            form5.ShowDialog();
+            form5 = null;
+            this.Show();
 
         }
 
