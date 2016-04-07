@@ -87,7 +87,6 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::jogo_assassino.Properties.Resources.gifs_gifs_terror_41;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(626, 28);
             this.pictureBox4.Name = "pictureBox4";
@@ -100,7 +99,6 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::jogo_assassino.Properties.Resources.aro;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(12, 39);
             this.pictureBox5.Name = "pictureBox5";
@@ -113,7 +111,6 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::jogo_assassino.Properties.Resources.tumblr_mk34zvLlli1s92578o1_500;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(198, 276);
             this.pictureBox6.Name = "pictureBox6";

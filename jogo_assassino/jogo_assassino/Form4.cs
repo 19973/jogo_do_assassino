@@ -31,14 +31,13 @@ namespace jogo_assassino
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
                 this.BackgroundImage = myimage;
 
-                Image mypic5 = new Bitmap(jogo_assassino.Properties.Resources.aro);
-                pictureBox5.Image = mypic5;
+                pictureBox5.Image = Properties.Resources.aro;
 
-                Image mypic4 = new Bitmap(jogo_assassino.Properties.Resources.gifs_gifs_terror_41);
-                pictureBox4.Image = mypic4;
+                pictureBox4.Image = Properties.Resources.gifs_gifs_terror_41;
 
-                Image mypic6 = new Bitmap(jogo_assassino.Properties.Resources.tumblr_mk34zvLlli1s92578o1_500);
-                pictureBox6.Image = mypic6;
+                pictureBox6.Image = Properties.Resources.tumblr_mk34zvLlli1s92578o1_500;
+
+
             }
 
             if (mn4.get_versao() == "terror")
@@ -46,16 +45,13 @@ namespace jogo_assassino
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
                 this.BackgroundImage = myimage;
 
-                Image mypic5 = new Bitmap(jogo_assassino.Properties.Resources.gif_Normal_1);
-                pictureBox5.Image = mypic5;
+                pictureBox5.Image = Properties.Resources.gif_Normal_1;
 
-                Image mypic4 = new Bitmap(jogo_assassino.Properties.Resources.gif_Normal_2);
-                pictureBox4.Image = mypic4;
+                pictureBox4.Image = Properties.Resources.gif_Normal_2;
 
-                Image mypic6 = new Bitmap(jogo_assassino.Properties.Resources.gif_Normal_3);
-                pictureBox6.Image = mypic6;
+                pictureBox6.Image = Properties.Resources.gif_Normal_3;
 
-          
+
             }
         }
 
@@ -76,6 +72,13 @@ namespace jogo_assassino
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
