@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace jogo_assassino
 {
     public partial class Form7 : Form
     {
+        private OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Properties.Resources.Database5;
+            Persist Security Info=False;");
+        OleDbDataAdapter DA = new OleDbDataAdapter();
+        DataSet DS = new DataSet();
+
         public Form7()
         {
             InitializeComponent();
@@ -27,6 +33,11 @@ namespace jogo_assassino
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            verificacao.Text = "Acertou";
         }
     }
 }

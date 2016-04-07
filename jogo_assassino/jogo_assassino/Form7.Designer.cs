@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.voltar_para_menu = new System.Windows.Forms.PictureBox();
             this.sair_jogo = new System.Windows.Forms.PictureBox();
+            this.verificacao = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.voltar_para_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sair_jogo)).BeginInit();
@@ -101,6 +102,15 @@
             this.sair_jogo.TabStop = false;
             this.sair_jogo.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // verificacao
+            // 
+            this.verificacao.AutoSize = true;
+            this.verificacao.Location = new System.Drawing.Point(370, 54);
+            this.verificacao.Name = "verificacao";
+            this.verificacao.Size = new System.Drawing.Size(35, 13);
+            this.verificacao.TabIndex = 5;
+            this.verificacao.Text = "label2";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +119,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(502, 398);
             this.ControlBox = false;
+            this.Controls.Add(this.verificacao);
             this.Controls.Add(this.sair_jogo);
             this.Controls.Add(this.voltar_para_menu);
             this.Controls.Add(this.label1);
@@ -117,6 +128,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form7";
             this.Text = "Estatísticas";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.voltar_para_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sair_jogo)).EndInit();
@@ -133,5 +145,6 @@
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.PictureBox voltar_para_menu;
         private System.Windows.Forms.PictureBox sair_jogo;
+        private System.Windows.Forms.Label verificacao;
     }
 }
