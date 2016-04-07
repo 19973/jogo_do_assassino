@@ -51,10 +51,6 @@
             this.Lab_Player5_Pronto = new System.Windows.Forms.Label();
             this.comboBox_Player = new System.Windows.Forms.ComboBox();
             this.Lab_Players = new System.Windows.Forms.Label();
-            this.But_Sim5 = new System.Windows.Forms.Button();
-            this.But_Sim4 = new System.Windows.Forms.Button();
-            this.But_Sim3 = new System.Windows.Forms.Button();
-            this.But_Sim2 = new System.Windows.Forms.Button();
             this.Seguinte2 = new System.Windows.Forms.PictureBox();
             this.Voltar2 = new System.Windows.Forms.PictureBox();
             this.Lab_Pronto_Final = new System.Windows.Forms.Label();
@@ -161,6 +157,7 @@
             this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
             this.Lab_Player1_Pronto.TabIndex = 15;
             this.Lab_Player1_Pronto.Text = "Player1, Estás Pronto?";
+            this.Lab_Player1_Pronto.Click += new System.EventHandler(this.Lab_Player1_Pronto_Click);
             // 
             // Voltar1
             // 
@@ -188,7 +185,7 @@
             // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim1.Location = new System.Drawing.Point(328, 128);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -283,46 +280,6 @@
             this.Lab_Players.TabIndex = 25;
             this.Lab_Players.Text = "Players";
             // 
-            // But_Sim5
-            // 
-            this.But_Sim5.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim5.Name = "But_Sim5";
-            this.But_Sim5.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim5.TabIndex = 26;
-            this.But_Sim5.Text = "Sim-5";
-            this.But_Sim5.UseVisualStyleBackColor = true;
-            this.But_Sim5.Click += new System.EventHandler(this.But_Sim5_Click);
-            // 
-            // But_Sim4
-            // 
-            this.But_Sim4.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim4.Name = "But_Sim4";
-            this.But_Sim4.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim4.TabIndex = 27;
-            this.But_Sim4.Text = "Sim-4";
-            this.But_Sim4.UseVisualStyleBackColor = true;
-            this.But_Sim4.Click += new System.EventHandler(this.But_Sim4_Click);
-            // 
-            // But_Sim3
-            // 
-            this.But_Sim3.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim3.Name = "But_Sim3";
-            this.But_Sim3.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim3.TabIndex = 28;
-            this.But_Sim3.Text = "Sim-3";
-            this.But_Sim3.UseVisualStyleBackColor = true;
-            this.But_Sim3.Click += new System.EventHandler(this.But_Sim3_Click);
-            // 
-            // But_Sim2
-            // 
-            this.But_Sim2.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim2.Name = "But_Sim2";
-            this.But_Sim2.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim2.TabIndex = 29;
-            this.But_Sim2.Text = "Sim-2";
-            this.But_Sim2.UseVisualStyleBackColor = true;
-            this.But_Sim2.Click += new System.EventHandler(this.But_Sim2_Click);
-            // 
             // Seguinte2
             // 
             this.Seguinte2.BackColor = System.Drawing.Color.Transparent;
@@ -369,10 +326,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.Lab_Pronto_Final);
             this.Controls.Add(this.But_Sim1);
-            this.Controls.Add(this.But_Sim2);
-            this.Controls.Add(this.But_Sim3);
-            this.Controls.Add(this.But_Sim4);
-            this.Controls.Add(this.But_Sim5);
             this.Controls.Add(this.Lab_Players);
             this.Controls.Add(this.comboBox_Player);
             this.Controls.Add(this.Imag_Classes);
@@ -434,10 +387,6 @@
         private System.Windows.Forms.Label Lab_Player5_Pronto;
         private System.Windows.Forms.ComboBox comboBox_Player;
         private System.Windows.Forms.Label Lab_Players;
-        private System.Windows.Forms.Button But_Sim5;
-        private System.Windows.Forms.Button But_Sim4;
-        private System.Windows.Forms.Button But_Sim3;
-        private System.Windows.Forms.Button But_Sim2;
         private System.Windows.Forms.PictureBox Seguinte2;
         private System.Windows.Forms.PictureBox Voltar2;
         private System.Windows.Forms.Label Lab_Pronto_Final;
