@@ -29,7 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            this.Player = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
+            // 
+            // Player
+            // 
+            this.Player.BackColor = System.Drawing.Color.Transparent;
+            this.Player.Location = new System.Drawing.Point(173, 308);
+            this.Player.Name = "Player";
+            this.Player.Size = new System.Drawing.Size(447, 181);
+            this.Player.TabIndex = 0;
+            this.Player.TabStop = false;
+            this.Player.Text = "Player";
             // 
             // Form5
             // 
@@ -38,14 +49,17 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(785, 501);
             this.ControlBox = false;
+            this.Controls.Add(this.Player);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Player";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox Player;
     }
 }
