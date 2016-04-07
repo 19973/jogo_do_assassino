@@ -217,6 +217,17 @@
     <None Include="Resources\vitoria1.png" />
     <None Include="Resources\derrota_sim.jpg" />
     <None Include="Resources\terror_ponto_int.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\elect.jpg" />
+    <None Include="Resources\aro.gif" />
+    <None Include="Resources\button-start-game1.png" />
+    <None Include="Resources\button-start-game.png" />
+    <None Include="Resources\gifs-gifs-terror-411.gif" />
+    <None Include="Resources\gif_Normal_1.gif" />
+    <None Include="Resources\gif_Normal_2.gif" />
+    <None Include="Resources\gif_Normal_3.gif" />
+    <None Include="Resources\gifs-gifs-terror-41.gif" />
+    <None Include="Resources\tumblr_mk34zvLlli1s92578o1_500.gif" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
