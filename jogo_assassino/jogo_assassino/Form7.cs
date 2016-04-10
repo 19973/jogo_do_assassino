@@ -37,7 +37,6 @@ namespace jogo_assassino
 
         private void Form7_Load(object sender, EventArgs e)
         {
-            verificacao.Text = "Acertou";
         }
     }
 }

@@ -139,7 +139,7 @@ namespace jogo_assassino
         //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
-            count++;
+            
             Lab_Player1_Pronto.Text = "Player" + count + ", Estás Pronto?";
 
             if (count <= int.Parse(comboBox_Player.Text))
@@ -155,7 +155,7 @@ namespace jogo_assassino
                 else if (papeis[count] == "inocente3")
                     Imag_Classes.Image = imagem_Inocente1;
             }
-
+            count++;
 
         }
 

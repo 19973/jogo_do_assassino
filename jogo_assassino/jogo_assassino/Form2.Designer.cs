@@ -198,6 +198,7 @@
             // back_botao
             // 
             this.back_botao.BackColor = System.Drawing.Color.Transparent;
+            this.back_botao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_botao.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.back_botao.Location = new System.Drawing.Point(12, 346);
             this.back_botao.Name = "back_botao";
@@ -210,6 +211,7 @@
             // next_botao
             // 
             this.next_botao.BackColor = System.Drawing.Color.Transparent;
+            this.next_botao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.next_botao.Image = global::jogo_assassino.Properties.Resources.Seguinte;
             this.next_botao.Location = new System.Drawing.Point(559, 346);
             this.next_botao.Name = "next_botao";
@@ -245,7 +247,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Numero de Jogadores";
+            this.Text = "Escolhe de Jogadores";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.back_botao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_botao)).EndInit();

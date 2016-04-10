@@ -174,6 +174,7 @@
             // Seguinte1
             // 
             this.Seguinte1.BackColor = System.Drawing.Color.Transparent;
+            this.Seguinte1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Seguinte1.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
             this.Seguinte1.Location = new System.Drawing.Point(517, 440);
             this.Seguinte1.Name = "Seguinte1";
@@ -185,6 +186,7 @@
             // 
             // But_Sim1
             // 
+            this.But_Sim1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.But_Sim1.Location = new System.Drawing.Point(328, 128);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
@@ -195,6 +197,7 @@
             // 
             // But_Nao
             // 
+            this.But_Nao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.But_Nao.Location = new System.Drawing.Point(237, 128);
             this.But_Nao.Name = "But_Nao";
             this.But_Nao.Size = new System.Drawing.Size(75, 23);
@@ -205,6 +208,7 @@
             // 
             // Imag_Classes
             // 
+            this.Imag_Classes.Cursor = System.Windows.Forms.Cursors.No;
             this.Imag_Classes.Image = global::jogo_assassino.Properties.Resources.Default;
             this.Imag_Classes.Location = new System.Drawing.Point(178, 157);
             this.Imag_Classes.Name = "Imag_Classes";
@@ -295,6 +299,7 @@
             // Voltar2
             // 
             this.Voltar2.BackColor = System.Drawing.Color.Transparent;
+            this.Voltar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Voltar2.Image = global::jogo_assassino.Properties.Resources.Voltar;
             this.Voltar2.Location = new System.Drawing.Point(407, 440);
             this.Voltar2.Name = "Voltar2";
@@ -352,7 +357,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ver Quem Vai Ser Quem";
+            this.Text = "Ver Quem Vai Ser Quem?";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).EndInit();

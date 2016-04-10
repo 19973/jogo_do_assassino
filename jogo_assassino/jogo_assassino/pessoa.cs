@@ -101,6 +101,7 @@ namespace jogo_assassino
         public string get_personagem()
         {
             return personagem;
+   
         }
     }
 }
