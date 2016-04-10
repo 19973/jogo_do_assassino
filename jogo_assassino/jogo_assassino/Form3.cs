@@ -142,21 +142,51 @@ namespace jogo_assassino
             count++;
             Lab_Player1_Pronto.Text = "Player" + count + ", Estás Pronto?";
 
-            if (count <= int.Parse(comboBox_Player.Text))
-            {
-                if (papeis[count] == "policia")
-                    Imag_Classes.Image = imagem_Policia;
-                else if (papeis[count] == "ladrao")
-                    Imag_Classes.Image = imagem_Ladrao;
-                else if (papeis[count] == "inocente1")
-                    Imag_Classes.Image = imagem_Inocente1;
-                else if (papeis[count] == "inocente2")
-                    Imag_Classes.Image = imagem_Inocente1;
-                else if (papeis[count] == "inocente3")
-                    Imag_Classes.Image = imagem_Inocente1;
+            
+
+                if (count <= int.Parse(comboBox_Player.Text))
+                {
+                    if (papeis[count] == "policia")
+                    {
+                        Imag_Classes.Image = imagem_Policia;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+                    }
+                    else if (papeis[count] == "ladrao")
+                    {
+                        Imag_Classes.Image = imagem_Ladrao;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+
+                    }
+                    else if (papeis[count] == "inocente1")
+                    {
+                        Imag_Classes.Image = imagem_Inocente1;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+
+                    }
+                    else if (papeis[count] == "inocente2")
+                    {
+                        Imag_Classes.Image = imagem_Inocente1;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+
+                    }
+                    else if (papeis[count] == "inocente3")
+                    {
+                        Imag_Classes.Image = imagem_Inocente1;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+                    }
+
             }
-
-
+            int n_jogadores = 0;
+            n_jogadores++;
+            if(n_jogadores == int.Parse(comboBox_Player.Text))
+            Seguinte2.Show();
+                
+ 
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -177,7 +207,7 @@ namespace jogo_assassino
 
             }
 
-
+           
 
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
@@ -232,10 +262,7 @@ namespace jogo_assassino
             Seguinte1.Show();
         }
 
-        private void Lab_Player1_Pronto_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
 

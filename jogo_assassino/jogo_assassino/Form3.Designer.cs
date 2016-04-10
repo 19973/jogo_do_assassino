@@ -157,7 +157,7 @@
             this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
             this.Lab_Player1_Pronto.TabIndex = 15;
             this.Lab_Player1_Pronto.Text = "Player1, Estás Pronto?";
-            this.Lab_Player1_Pronto.Click += new System.EventHandler(this.Lab_Player1_Pronto_Click);
+            
             // 
             // Voltar1
             // 
