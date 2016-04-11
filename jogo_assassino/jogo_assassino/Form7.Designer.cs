@@ -60,6 +60,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(35, 117);
@@ -81,6 +82,7 @@
             // voltar_para_menu
             // 
             this.voltar_para_menu.BackColor = System.Drawing.Color.Transparent;
+            this.voltar_para_menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.voltar_para_menu.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.voltar_para_menu.Location = new System.Drawing.Point(399, 289);
             this.voltar_para_menu.Name = "voltar_para_menu";
@@ -92,6 +94,7 @@
             // 
             // sair_jogo
             // 
+            this.sair_jogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sair_jogo.Image = global::jogo_assassino.Properties.Resources.button_ext1;
             this.sair_jogo.Location = new System.Drawing.Point(399, 345);
             this.sair_jogo.Name = "sair_jogo";
