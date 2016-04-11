@@ -204,9 +204,9 @@ namespace jogo_assassino
                         break;
                 }
             }
-            catch (Exception t)
+            catch
             {
-                Console.WriteLine("An error occurred: '{0}'", t);
+                MessageBox.Show("Voce tem selecionar o numero de jogadores");
             }
 
 
