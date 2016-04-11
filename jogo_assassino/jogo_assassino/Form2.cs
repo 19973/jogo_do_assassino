@@ -204,9 +204,9 @@ namespace jogo_assassino
                         break;
                 }
             }
-            catch
+            catch (Exception error)
             {
-                MessageBox.Show("Voce tem selecionar o numero de jogadores");
+                MessageBox.Show(error.Message);
             }
 
 
