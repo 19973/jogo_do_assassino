@@ -139,23 +139,49 @@ namespace jogo_assassino
         //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
-            
+            count++;
+
             Lab_Player1_Pronto.Text = "Player" + count + ", Estás Pronto?";
+
+        
 
             if (count <= int.Parse(comboBox_Player.Text))
             {
                 if (papeis[count] == "policia")
+                {
                     Imag_Classes.Image = imagem_Policia;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
+
                 else if (papeis[count] == "ladrao")
+                {
                     Imag_Classes.Image = imagem_Ladrao;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
+
                 else if (papeis[count] == "inocente1")
+                {
                     Imag_Classes.Image = imagem_Inocente1;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
+
                 else if (papeis[count] == "inocente2")
+                {
                     Imag_Classes.Image = imagem_Inocente1;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
                 else if (papeis[count] == "inocente3")
+                {
                     Imag_Classes.Image = imagem_Inocente1;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
             }
-            count++;
+            
 
         }
 
