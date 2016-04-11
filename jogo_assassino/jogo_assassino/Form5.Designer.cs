@@ -42,6 +42,7 @@
             this.Player.TabIndex = 0;
             this.Player.TabStop = false;
             this.Player.Text = "Ações que pdoes fazer:";
+            this.Player.Enter += new System.EventHandler(this.Player_Enter);
             // 
             // Form5
             // 
