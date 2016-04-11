@@ -13,5 +13,12 @@ namespace jogo_assassino
             personagem = "Assasino";
 
         }
+
+        void esfaquaear(pessoa p)
+        {
+            p.perde_vida();
+
+        }
+
     }
 }
