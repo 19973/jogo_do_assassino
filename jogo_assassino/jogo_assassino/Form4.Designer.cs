@@ -48,6 +48,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::jogo_assassino.Properties.Resources.button_start_game;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(166, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(427, 144);
@@ -61,6 +62,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::jogo_assassino.Properties.Resources.Voltar;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.pictureBox2.Location = new System.Drawing.Point(12, 382);
             this.pictureBox2.Name = "pictureBox2";
@@ -75,6 +77,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::jogo_assassino.Properties.Resources.button_ext1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::jogo_assassino.Properties.Resources.button_ext1;
             this.pictureBox3.Location = new System.Drawing.Point(643, 382);
             this.pictureBox3.Name = "pictureBox3";

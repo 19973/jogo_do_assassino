@@ -43,6 +43,7 @@
             // button_play
             // 
             this.button_play.BackColor = System.Drawing.Color.Transparent;
+            this.button_play.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_play.Image = global::jogo_assassino.Properties.Resources.button_play;
             this.button_play.Location = new System.Drawing.Point(53, 60);
             this.button_play.Name = "button_play";
@@ -55,6 +56,7 @@
             // button_exit
             // 
             this.button_exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_exit.Image = global::jogo_assassino.Properties.Resources.button_ext1;
             this.button_exit.Location = new System.Drawing.Point(53, 269);
             this.button_exit.Name = "button_exit";
@@ -102,6 +104,7 @@
             // button_options
             // 
             this.button_options.BackColor = System.Drawing.Color.Transparent;
+            this.button_options.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_options.Image = global::jogo_assassino.Properties.Resources.button_options1;
             this.button_options.Location = new System.Drawing.Point(53, 166);
             this.button_options.Name = "button_options";
