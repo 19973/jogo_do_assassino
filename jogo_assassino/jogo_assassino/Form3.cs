@@ -18,7 +18,7 @@ namespace jogo_assassino
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
         Image imagem_Ladrao= new Bitmap(jogo_assassino.Properties.Resources.Assassino);
         Image imagem_Policia = new Bitmap(jogo_assassino.Properties.Resources.Policia);
-        Image imagem_Inocente1 = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
+        Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
         List<string> papeis = new List<string>();
@@ -136,7 +136,6 @@ namespace jogo_assassino
 
 
         }
-        //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
             count++;
@@ -163,26 +162,32 @@ namespace jogo_assassino
 
                 else if (papeis[count] == "inocente1")
                 {
-                    Imag_Classes.Image = imagem_Inocente1;
+                    Imag_Classes.Image = imagem_Inocente;
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
                     Imag_Classes.Image = imagem_Default;
                 }
 
                 else if (papeis[count] == "inocente2")
                 {
-                    Imag_Classes.Image = imagem_Inocente1;
+                    Imag_Classes.Image = imagem_Inocente;
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
                     Imag_Classes.Image = imagem_Default;
                 }
                 else if (papeis[count] == "inocente3")
                 {
-                    Imag_Classes.Image = imagem_Inocente1;
+                    Imag_Classes.Image = imagem_Inocente;
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
                     Imag_Classes.Image = imagem_Default;
                 }
-            }
-            
 
+               
+            }
+
+            if (count == int.Parse(comboBox_Player.Text))
+            {
+                Seguinte2.Show();
+                Lab_Pronto_Final.Show();
+            }
         }
 
         private void Form3_Load(object sender, EventArgs e)
