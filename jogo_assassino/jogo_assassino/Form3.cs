@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace jogo_assassino
 {
+
     public partial class Form3 : System.Windows.Forms.Form
     {
 
@@ -140,7 +141,7 @@ namespace jogo_assassino
         private void But_Sim1_Click(object sender, EventArgs e)
         {
             
-            Lab_Player1_Pronto.Text = "Player" + count + ", Estás Pronto?";
+            Lab_Player1_Pronto.Text  = "Player " + count  + ", Estás Pronto?";
 
             if (count <= int.Parse(comboBox_Player.Text))
             {
@@ -167,7 +168,7 @@ namespace jogo_assassino
 
             for (int i = 0; i <= 10; i++)
             {
-                int p1 = rnd.Next(papeis.Count);
+                int p1 = rnd.Next(papeis.Count );
                 int p2 = rnd.Next(papeis.Count - 1);
 
 
