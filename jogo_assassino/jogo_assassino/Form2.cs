@@ -204,9 +204,9 @@ namespace jogo_assassino
                         break;
                 }
             }
-            catch(Exception ex)
+            catch (Exception error)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(error.Message);
             }
 
 

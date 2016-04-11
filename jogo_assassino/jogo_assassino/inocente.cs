@@ -8,6 +8,8 @@ namespace jogo_assassino
 {
     class inocente : pessoa
     {
+        protected bool arma = false;
+
         inocente()
         {
             personagem = "Inocente"; 
