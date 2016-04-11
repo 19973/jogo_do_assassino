@@ -174,12 +174,14 @@ namespace jogo_assassino
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
                     Imag_Classes.Image = imagem_Default;
                 }
+
                 else if (papeis[count] == "inocente3")
                 {
                     Imag_Classes.Image = imagem_Inocente1;
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
                     Imag_Classes.Image = imagem_Default;
                 }
+
             }
             
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 
 namespace jogo_assassino
@@ -203,13 +204,12 @@ namespace jogo_assassino
                         break;
                 }
             }
-            catch (Exception )
+            catch (Exception t)
             {
-                MessageBox.Show("Voce tem que selecionar o numero de Jogadores");
-                
+                Console.WriteLine("An error occurred: '{0}'", t);
             }
-                
-            
+
+
 
 
         }
