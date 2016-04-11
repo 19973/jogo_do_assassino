@@ -204,9 +204,9 @@ namespace jogo_assassino
                         break;
                 }
             }
-            catch (Exception t)
+            catch (Exception )
             {
-               MessageBox.Show("An error occurred: '{0}'", t);
+               MessageBox.Show("An error occurred: '{0}'");
             }
 
 
