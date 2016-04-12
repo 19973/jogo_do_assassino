@@ -42,7 +42,36 @@ namespace jogo_assassino
             }
 
 
+            progressBar_Descanso.ForeColor = Color.Blue;
+            progressBar_Descanso.Minimum = 0;
+            progressBar_Descanso.Maximum = 100;
+            progressBar_Descanso.Step = 5;
 
+            for (int x = 1; x <= 100; x++)
+            {
+                progressBar_Descanso.PerformStep();
+
+            }
+
+            progressBar_Saude.Minimum = 0;
+            progressBar_Saude.Maximum = 100;
+            progressBar_Saude.Step = 5;
+
+            for (int x = 1; x <= 100; x++)
+            {
+                progressBar_Saude.PerformStep();
+
+            }
+            progressBar_Comida.ForeColor = Color.Orange;
+            progressBar_Comida.Minimum = 0;
+            progressBar_Comida.Maximum = 100;
+            progressBar_Comida.Step = 5;
+
+            for (int x = 1; x <= 100; x++)
+            {
+                progressBar_Comida.PerformStep();
+
+            }
         }
 
         private void Player_Enter(object sender, EventArgs e)
@@ -50,5 +79,6 @@ namespace jogo_assassino
 
         }
 
+       
     }
 }

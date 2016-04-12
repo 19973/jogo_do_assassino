@@ -297,6 +297,7 @@
             this.Controls.Add(this.Seguinte2);
             this.Controls.Add(this.Voltar2);
             this.Controls.Add(this.Voltar1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

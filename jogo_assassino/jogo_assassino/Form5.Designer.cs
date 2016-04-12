@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar_Saude = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.but_Opcao10 = new System.Windows.Forms.Button();
@@ -55,8 +55,8 @@
             this.lab_Opcao3 = new System.Windows.Forms.Label();
             this.lab_Opcao2 = new System.Windows.Forms.Label();
             this.lab_Opcao1 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar_Descanso = new System.Windows.Forms.ProgressBar();
+            this.progressBar_Comida = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,14 +86,14 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Descanse";
+            this.label3.Text = "Descanso";
             // 
-            // progressBar1
+            // progressBar_Saude
             // 
-            this.progressBar1.Location = new System.Drawing.Point(73, 34);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(109, 13);
-            this.progressBar1.TabIndex = 3;
+            this.progressBar_Saude.Location = new System.Drawing.Point(73, 34);
+            this.progressBar_Saude.Name = "progressBar_Saude";
+            this.progressBar_Saude.Size = new System.Drawing.Size(109, 13);
+            this.progressBar_Saude.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -347,19 +347,19 @@
             this.lab_Opcao1.TabIndex = 0;
             this.lab_Opcao1.Text = "Comer";
             // 
-            // progressBar2
+            // progressBar_Descanso
             // 
-            this.progressBar2.Location = new System.Drawing.Point(73, 61);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(109, 13);
-            this.progressBar2.TabIndex = 7;
+            this.progressBar_Descanso.Location = new System.Drawing.Point(73, 61);
+            this.progressBar_Descanso.Name = "progressBar_Descanso";
+            this.progressBar_Descanso.Size = new System.Drawing.Size(109, 13);
+            this.progressBar_Descanso.TabIndex = 7;
             // 
-            // progressBar3
+            // progressBar_Comida
             // 
-            this.progressBar3.Location = new System.Drawing.Point(73, 91);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(109, 13);
-            this.progressBar3.TabIndex = 8;
+            this.progressBar_Comida.Location = new System.Drawing.Point(73, 91);
+            this.progressBar_Comida.Name = "progressBar_Comida";
+            this.progressBar_Comida.Size = new System.Drawing.Size(109, 13);
+            this.progressBar_Comida.TabIndex = 8;
             // 
             // Form5
             // 
@@ -368,10 +368,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(785, 501);
             this.ControlBox = false;
-            this.Controls.Add(this.progressBar3);
-            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.progressBar_Comida);
+            this.Controls.Add(this.progressBar_Descanso);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBar_Saude);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -392,7 +392,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar_Saude;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button but_Opcao10;
         private System.Windows.Forms.Button but_Opcao9;
@@ -415,7 +415,7 @@
         private System.Windows.Forms.Label lab_Opcao2;
         private System.Windows.Forms.Label lab_Opcao1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar_Descanso;
+        private System.Windows.Forms.ProgressBar progressBar_Comida;
     }
 }
