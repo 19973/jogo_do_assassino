@@ -129,7 +129,7 @@ namespace jogo_assassino
                 papeis.Add("inocente3");
         
 
-        count++;
+            count++;
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
             
@@ -172,13 +172,14 @@ namespace jogo_assassino
 
             }
 
-            if(count == int.Parse(comboBox_Player.Text) - 1)
+            if(count == int.Parse(comboBox_Player.Text))
             {
                 Seguinte2.Show();
-                Lab_Pronto_Final.Hide();
+                Lab_Player1_Pronto.Hide();
                 Imag_Classes.Hide();
                 But_Sim1.Hide();
                 But_Nao.Hide();
+                Lab_Pronto_Final.Show();
             }
 
         }

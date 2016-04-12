@@ -40,11 +40,15 @@ namespace jogo_assassino
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.corredor);
                 this.BackgroundImage = myimage;
             }
+
+
+
         }
 
         private void Player_Enter(object sender, EventArgs e)
         {
 
         }
+
     }
 }
