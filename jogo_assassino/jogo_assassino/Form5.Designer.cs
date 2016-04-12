@@ -141,7 +141,7 @@
             // 
             this.but_Opcao10.BackColor = System.Drawing.Color.Maroon;
             this.but_Opcao10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao10.Location = new System.Drawing.Point(381, 157);
+            this.but_Opcao10.Location = new System.Drawing.Point(379, 157);
             this.but_Opcao10.Name = "but_Opcao10";
             this.but_Opcao10.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao10.TabIndex = 19;
@@ -152,7 +152,7 @@
             // 
             this.but_Opcao9.BackColor = System.Drawing.Color.Green;
             this.but_Opcao9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao9.Location = new System.Drawing.Point(381, 127);
+            this.but_Opcao9.Location = new System.Drawing.Point(379, 127);
             this.but_Opcao9.Name = "but_Opcao9";
             this.but_Opcao9.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao9.TabIndex = 18;
@@ -163,7 +163,7 @@
             // 
             this.but_Opcao.BackColor = System.Drawing.Color.Purple;
             this.but_Opcao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao.Location = new System.Drawing.Point(381, 96);
+            this.but_Opcao.Location = new System.Drawing.Point(379, 96);
             this.but_Opcao.Name = "but_Opcao";
             this.but_Opcao.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao.TabIndex = 17;
@@ -174,7 +174,7 @@
             // 
             this.but_Opcao7.BackColor = System.Drawing.Color.Silver;
             this.but_Opcao7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao7.Location = new System.Drawing.Point(381, 64);
+            this.but_Opcao7.Location = new System.Drawing.Point(379, 64);
             this.but_Opcao7.Name = "but_Opcao7";
             this.but_Opcao7.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao7.TabIndex = 16;
@@ -185,7 +185,7 @@
             // 
             this.but_Opcao6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.but_Opcao6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao6.Location = new System.Drawing.Point(381, 34);
+            this.but_Opcao6.Location = new System.Drawing.Point(379, 34);
             this.but_Opcao6.Name = "but_Opcao6";
             this.but_Opcao6.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao6.TabIndex = 15;
@@ -196,7 +196,7 @@
             // 
             this.but_Opcao5.BackColor = System.Drawing.Color.Aqua;
             this.but_Opcao5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao5.Location = new System.Drawing.Point(6, 157);
+            this.but_Opcao5.Location = new System.Drawing.Point(8, 157);
             this.but_Opcao5.Name = "but_Opcao5";
             this.but_Opcao5.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao5.TabIndex = 14;
@@ -207,7 +207,7 @@
             // 
             this.but_Opcao4.BackColor = System.Drawing.Color.Magenta;
             this.but_Opcao4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao4.Location = new System.Drawing.Point(6, 127);
+            this.but_Opcao4.Location = new System.Drawing.Point(8, 127);
             this.but_Opcao4.Name = "but_Opcao4";
             this.but_Opcao4.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao4.TabIndex = 13;
@@ -218,7 +218,7 @@
             // 
             this.but_Opcao3.BackColor = System.Drawing.Color.Lime;
             this.but_Opcao3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao3.Location = new System.Drawing.Point(6, 96);
+            this.but_Opcao3.Location = new System.Drawing.Point(8, 96);
             this.but_Opcao3.Name = "but_Opcao3";
             this.but_Opcao3.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao3.TabIndex = 12;
@@ -229,7 +229,7 @@
             // 
             this.but_Opcao2.BackColor = System.Drawing.Color.Yellow;
             this.but_Opcao2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_Opcao2.Location = new System.Drawing.Point(6, 64);
+            this.but_Opcao2.Location = new System.Drawing.Point(8, 64);
             this.but_Opcao2.Name = "but_Opcao2";
             this.but_Opcao2.Size = new System.Drawing.Size(83, 24);
             this.but_Opcao2.TabIndex = 11;
@@ -241,7 +241,7 @@
             this.but_Opcao1.BackColor = System.Drawing.Color.Red;
             this.but_Opcao1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_Opcao1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.but_Opcao1.Location = new System.Drawing.Point(6, 35);
+            this.but_Opcao1.Location = new System.Drawing.Point(8, 35);
             this.but_Opcao1.Name = "but_Opcao1";
             this.but_Opcao1.Size = new System.Drawing.Size(83, 22);
             this.but_Opcao1.TabIndex = 10;
@@ -252,7 +252,7 @@
             // 
             this.lab_Opcao10.AutoSize = true;
             this.lab_Opcao10.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao10.Location = new System.Drawing.Point(293, 40);
+            this.lab_Opcao10.Location = new System.Drawing.Point(291, 40);
             this.lab_Opcao10.Name = "lab_Opcao10";
             this.lab_Opcao10.Size = new System.Drawing.Size(56, 13);
             this.lab_Opcao10.TabIndex = 9;
@@ -262,7 +262,7 @@
             // 
             this.lab_Opcao9.AutoSize = true;
             this.lab_Opcao9.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao9.Location = new System.Drawing.Point(293, 70);
+            this.lab_Opcao9.Location = new System.Drawing.Point(291, 70);
             this.lab_Opcao9.Name = "lab_Opcao9";
             this.lab_Opcao9.Size = new System.Drawing.Size(39, 13);
             this.lab_Opcao9.TabIndex = 8;
@@ -272,7 +272,7 @@
             // 
             this.lab_Opcao8.AutoSize = true;
             this.lab_Opcao8.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao8.Location = new System.Drawing.Point(293, 102);
+            this.lab_Opcao8.Location = new System.Drawing.Point(291, 102);
             this.lab_Opcao8.Name = "lab_Opcao8";
             this.lab_Opcao8.Size = new System.Drawing.Size(55, 13);
             this.lab_Opcao8.TabIndex = 7;
@@ -282,7 +282,7 @@
             // 
             this.lab_Opcao7.AutoSize = true;
             this.lab_Opcao7.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao7.Location = new System.Drawing.Point(293, 133);
+            this.lab_Opcao7.Location = new System.Drawing.Point(291, 133);
             this.lab_Opcao7.Name = "lab_Opcao7";
             this.lab_Opcao7.Size = new System.Drawing.Size(53, 13);
             this.lab_Opcao7.TabIndex = 6;
@@ -292,7 +292,7 @@
             // 
             this.lab_Opcao6.AutoSize = true;
             this.lab_Opcao6.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao6.Location = new System.Drawing.Point(293, 163);
+            this.lab_Opcao6.Location = new System.Drawing.Point(291, 163);
             this.lab_Opcao6.Name = "lab_Opcao6";
             this.lab_Opcao6.Size = new System.Drawing.Size(78, 13);
             this.lab_Opcao6.TabIndex = 5;
@@ -302,7 +302,7 @@
             // 
             this.lab_Opcao5.AutoSize = true;
             this.lab_Opcao5.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao5.Location = new System.Drawing.Point(95, 163);
+            this.lab_Opcao5.Location = new System.Drawing.Point(97, 163);
             this.lab_Opcao5.Name = "lab_Opcao5";
             this.lab_Opcao5.Size = new System.Drawing.Size(40, 13);
             this.lab_Opcao5.TabIndex = 4;
@@ -312,7 +312,7 @@
             // 
             this.lab_Opcao4.AutoSize = true;
             this.lab_Opcao4.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao4.Location = new System.Drawing.Point(95, 133);
+            this.lab_Opcao4.Location = new System.Drawing.Point(97, 133);
             this.lab_Opcao4.Name = "lab_Opcao4";
             this.lab_Opcao4.Size = new System.Drawing.Size(62, 13);
             this.lab_Opcao4.TabIndex = 3;
@@ -322,7 +322,7 @@
             // 
             this.lab_Opcao3.AutoSize = true;
             this.lab_Opcao3.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao3.Location = new System.Drawing.Point(95, 102);
+            this.lab_Opcao3.Location = new System.Drawing.Point(97, 102);
             this.lab_Opcao3.Name = "lab_Opcao3";
             this.lab_Opcao3.Size = new System.Drawing.Size(52, 13);
             this.lab_Opcao3.TabIndex = 2;
@@ -332,7 +332,7 @@
             // 
             this.lab_Opcao2.AutoSize = true;
             this.lab_Opcao2.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao2.Location = new System.Drawing.Point(95, 70);
+            this.lab_Opcao2.Location = new System.Drawing.Point(97, 70);
             this.lab_Opcao2.Name = "lab_Opcao2";
             this.lab_Opcao2.Size = new System.Drawing.Size(37, 13);
             this.lab_Opcao2.TabIndex = 1;
@@ -342,7 +342,7 @@
             // 
             this.lab_Opcao1.AutoSize = true;
             this.lab_Opcao1.ForeColor = System.Drawing.Color.White;
-            this.lab_Opcao1.Location = new System.Drawing.Point(95, 40);
+            this.lab_Opcao1.Location = new System.Drawing.Point(97, 40);
             this.lab_Opcao1.Name = "lab_Opcao1";
             this.lab_Opcao1.Size = new System.Drawing.Size(37, 13);
             this.lab_Opcao1.TabIndex = 0;

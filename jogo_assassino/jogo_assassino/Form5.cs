@@ -45,8 +45,9 @@ namespace jogo_assassino
 
             progressBar_Descanso.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             progressBar_Comida.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            progressBar_Saude.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 
-            progressBar_Descanso.ForeColor = Color.Blue;
+            progressBar_Descanso.ForeColor = Color.DeepSkyBlue;
             progressBar_Descanso.Minimum = 0;
             progressBar_Descanso.Maximum = 100;
             progressBar_Descanso.Step = 5;
@@ -56,7 +57,7 @@ namespace jogo_assassino
                 progressBar_Descanso.PerformStep();
 
             }
-
+            progressBar_Saude.ForeColor = Color.Green;
             progressBar_Saude.Minimum = 0;
             progressBar_Saude.Maximum = 100;
             progressBar_Saude.Step = 5;
