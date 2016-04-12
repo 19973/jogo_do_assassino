@@ -148,7 +148,7 @@
             this.Lab_Player1_Pronto.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player1_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lab_Player1_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(207, 82);
+            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(207, 86);
             this.Lab_Player1_Pronto.Name = "Lab_Player1_Pronto";
             this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
             this.Lab_Player1_Pronto.TabIndex = 15;
