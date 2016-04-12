@@ -16,7 +16,7 @@ namespace jogo_assassino
 
         protected void aumentar_rondas()
         {
-            rondas = rondas + 1;
+            rondas = rondas + 1; 
 
         }
 
