@@ -298,10 +298,11 @@
             this.Controls.Add(this.Voltar2);
             this.Controls.Add(this.Voltar1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ver Quem Vai Ser Quem?";
+            this.Text = "Escolha de papéis";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).EndInit();

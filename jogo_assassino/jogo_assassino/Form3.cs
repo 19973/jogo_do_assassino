@@ -76,6 +76,7 @@ namespace jogo_assassino
             But_Sim1.Hide();
             Imag_Classes.Hide();
             But_Sim1.Enabled = true;
+            Seguinte1.Show();
 
         }
 

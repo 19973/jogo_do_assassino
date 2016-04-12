@@ -94,6 +94,7 @@
             this.progressBar_Saude.Name = "progressBar_Saude";
             this.progressBar_Saude.Size = new System.Drawing.Size(109, 13);
             this.progressBar_Saude.TabIndex = 3;
+            this.progressBar_Saude.Click += new System.EventHandler(this.progressBar_Saude_Click);
             // 
             // groupBox1
             // 
@@ -375,8 +376,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jogo do Assasino";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox1.ResumeLayout(false);

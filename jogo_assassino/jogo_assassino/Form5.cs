@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Text.RegularExpressions;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +43,8 @@ namespace jogo_assassino
                 this.BackgroundImage = myimage;
             }
 
+            progressBar_Descanso.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            progressBar_Comida.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 
             progressBar_Descanso.ForeColor = Color.Blue;
             progressBar_Descanso.Minimum = 0;
@@ -79,6 +83,9 @@ namespace jogo_assassino
 
         }
 
-       
+        private void progressBar_Saude_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
