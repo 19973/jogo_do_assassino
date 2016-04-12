@@ -9,6 +9,10 @@ namespace jogo_assassino
     class pessoa
     {
         protected string personagem = "Pessoa";
+        protected int vida = 100;
+        protected int sono = 0;
+        protected int fome = 0;
+
         /*protected string versao = "normal";
         protected int opcao = 1;
         protected System.Media.SoundPlayer bkground_sound;
@@ -101,6 +105,7 @@ namespace jogo_assassino
         public string get_personagem()
         {
             return personagem;
+   
         }
     }
 }

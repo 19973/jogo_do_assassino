@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.voltar_para_menu = new System.Windows.Forms.PictureBox();
             this.sair_jogo = new System.Windows.Forms.PictureBox();
-            this.verificacao = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.voltar_para_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sair_jogo)).BeginInit();
@@ -61,6 +60,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(35, 117);
@@ -82,6 +82,7 @@
             // voltar_para_menu
             // 
             this.voltar_para_menu.BackColor = System.Drawing.Color.Transparent;
+            this.voltar_para_menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.voltar_para_menu.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.voltar_para_menu.Location = new System.Drawing.Point(399, 289);
             this.voltar_para_menu.Name = "voltar_para_menu";
@@ -93,6 +94,7 @@
             // 
             // sair_jogo
             // 
+            this.sair_jogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sair_jogo.Image = global::jogo_assassino.Properties.Resources.button_ext1;
             this.sair_jogo.Location = new System.Drawing.Point(399, 345);
             this.sair_jogo.Name = "sair_jogo";
@@ -102,15 +104,6 @@
             this.sair_jogo.TabStop = false;
             this.sair_jogo.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // verificacao
-            // 
-            this.verificacao.AutoSize = true;
-            this.verificacao.Location = new System.Drawing.Point(370, 54);
-            this.verificacao.Name = "verificacao";
-            this.verificacao.Size = new System.Drawing.Size(35, 13);
-            this.verificacao.TabIndex = 5;
-            this.verificacao.Text = "label2";
-            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,7 +112,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(502, 398);
             this.ControlBox = false;
-            this.Controls.Add(this.verificacao);
             this.Controls.Add(this.sair_jogo);
             this.Controls.Add(this.voltar_para_menu);
             this.Controls.Add(this.label1);
@@ -145,6 +137,5 @@
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.PictureBox voltar_para_menu;
         private System.Windows.Forms.PictureBox sair_jogo;
-        private System.Windows.Forms.Label verificacao;
     }
 }

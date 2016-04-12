@@ -18,11 +18,11 @@ namespace jogo_assassino
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
         Image imagem_Ladrao= new Bitmap(jogo_assassino.Properties.Resources.Assassino);
         Image imagem_Policia = new Bitmap(jogo_assassino.Properties.Resources.Policia);
-        Image imagem_Inocente1 = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
+        Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
         List<string> papeis = new List<string>();
-        int count = 0;
+        int count = (-1);
 
 
 
@@ -38,10 +38,6 @@ namespace jogo_assassino
             
 
             Lab_Player1_Pronto.Hide();
-            Lab_Player2_Pronto.Hide();
-            Lab_Player3_Pronto.Hide();
-            Lab_Player4_Pronto.Hide();
-            Lab_Player5_Pronto.Hide();
             But_Nao.Hide();
             But_Sim1.Hide();
             Imag_Classes.Hide();
@@ -81,10 +77,6 @@ namespace jogo_assassino
             Seguinte1.Enabled = true;
             Voltar1.Enabled = true;
             Lab_Player1_Pronto.Hide();
-            Lab_Player2_Pronto.Hide();
-            Lab_Player3_Pronto.Hide();
-            Lab_Player4_Pronto.Hide();
-            Lab_Player5_Pronto.Hide();
             But_Nao.Hide();
             But_Sim1.Hide();
             Imag_Classes.Hide();
@@ -113,10 +105,6 @@ namespace jogo_assassino
             tex_Player4.Hide();
             tex_Player5.Hide();
             Lab_Player1_Pronto.Show();
-            Lab_Player2_Pronto.Show();
-            Lab_Player3_Pronto.Show();
-            Lab_Player4_Pronto.Show();
-            Lab_Player5_Pronto.Show();
             But_Nao.Show();
             But_Sim1.Show();
             Imag_Classes.Show();
@@ -136,57 +124,61 @@ namespace jogo_assassino
 
 
         }
-        //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
             count++;
-            Lab_Player1_Pronto.Text = "Player" + count + ", Estás Pronto?";
+            Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
-            
 
-                if (count <= int.Parse(comboBox_Player.Text))
+            if (count <= int.Parse(comboBox_Player.Text)-1)
+            {
+                if (papeis[count] == "policia")
                 {
-                    if (papeis[count] == "policia")
-                    {
-                        Imag_Classes.Image = imagem_Policia;
-                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-                    }
-                    else if (papeis[count] == "ladrao")
-                    {
-                        Imag_Classes.Image = imagem_Ladrao;
-                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
+                    Imag_Classes.Image = imagem_Policia;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
 
-                    }
-                    else if (papeis[count] == "inocente1")
-                    {
-                        Imag_Classes.Image = imagem_Inocente1;
-                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
+                else if (papeis[count] == "ladrao")
+                {
+                    Imag_Classes.Image = imagem_Ladrao;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
 
-                    }
-                    else if (papeis[count] == "inocente2")
-                    {
-                        Imag_Classes.Image = imagem_Inocente1;
-                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
+                else if (papeis[count] == "inocente1")
+                {
+                    Imag_Classes.Image = imagem_Inocente;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
 
-                    }
-                    else if (papeis[count] == "inocente3")
-                    {
-                        Imag_Classes.Image = imagem_Inocente1;
-                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-                    }
+                else if (papeis[count] == "inocente2")
+                {
+                    Imag_Classes.Image = imagem_Inocente;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
+                else if (papeis[count] == "inocente3")
+                {
+                    Imag_Classes.Image = imagem_Inocente;
+                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
+                    Imag_Classes.Image = imagem_Default;
+                }
+
+                
 
             }
-            int n_jogadores = 0;
-            n_jogadores++;
-            if(n_jogadores == int.Parse(comboBox_Player.Text))
-            Seguinte2.Show();
-                
- 
+
+            if (count == int.Parse(comboBox_Player.Text))
+             { 
+                Lab_Player1_Pronto.Hide();
+                But_Sim1.Hide();
+                But_Nao.Hide();
+                Imag_Classes.Hide();
+                Seguinte2.Show();
+                Lab_Pronto_Final.Show();
+            }
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -207,7 +199,7 @@ namespace jogo_assassino
 
             }
 
-           
+
 
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
@@ -251,10 +243,6 @@ namespace jogo_assassino
             Seguinte1.Enabled = true;
             Voltar1.Enabled = true;
             Lab_Player1_Pronto.Hide();
-            Lab_Player2_Pronto.Hide();
-            Lab_Player3_Pronto.Hide();
-            Lab_Player4_Pronto.Hide();
-            Lab_Player5_Pronto.Hide();
             But_Nao.Hide();
             But_Sim1.Hide();
             But_Nao.Hide();
@@ -262,7 +250,7 @@ namespace jogo_assassino
             Seguinte1.Show();
         }
 
-      
+       
     }
 }
 

@@ -41,5 +41,10 @@ namespace jogo_assassino
                 this.BackgroundImage = myimage;
             }
         }
+
+        private void Player_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

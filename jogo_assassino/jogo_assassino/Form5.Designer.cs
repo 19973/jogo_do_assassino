@@ -34,13 +34,15 @@
             // 
             // Player
             // 
-            this.Player.BackColor = System.Drawing.Color.Transparent;
-            this.Player.Location = new System.Drawing.Point(173, 308);
+            this.Player.BackColor = System.Drawing.Color.SaddleBrown;
+            this.Player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Player.Location = new System.Drawing.Point(173, 320);
             this.Player.Name = "Player";
             this.Player.Size = new System.Drawing.Size(447, 181);
             this.Player.TabIndex = 0;
             this.Player.TabStop = false;
-            this.Player.Text = "Player";
+            this.Player.Text = "Ações que pdoes fazer:";
+            this.Player.Enter += new System.EventHandler(this.Player_Enter);
             // 
             // Form5
             // 
@@ -52,7 +54,7 @@
             this.Controls.Add(this.Player);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
-            this.Text = "Player";
+            this.Text = "Jogo do Assasino";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
 
