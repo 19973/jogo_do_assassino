@@ -237,6 +237,7 @@
     <None Include="Resources\gif_Normal_3.gif" />
     <None Include="Resources\gifs-gifs-terror-41.gif" />
     <None Include="Resources\tumblr_mk34zvLlli1s92578o1_500.gif" />
+    <Content Include="Resources\FundoPreto.jpg" />
     <Content Include="Resources\xpto.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
