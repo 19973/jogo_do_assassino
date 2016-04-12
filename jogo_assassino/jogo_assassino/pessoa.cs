@@ -10,102 +10,63 @@ namespace jogo_assassino
     {
         protected string personagem = "Pessoa";
         protected int vida = 100;
-        protected int sono = 0;
-        protected int fome = 0;
+        protected int descanso = 100;
+        protected int comida = 100;
+        protected int rondas = 1;
 
-        /*protected string versao = "normal";
-        protected int opcao = 1;
-        protected System.Media.SoundPlayer bkground_sound;
-
-        public void dormir()
+        protected void aumentar_rondas()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            rondas = rondas + 1;
+
         }
 
-      
-        public void bater_porta()
+        protected void aumentar_sono()
         {
-            if (versao == "normal")
-            {
-                bkground_sound.Stop();
-                versao = "terror";
-                opcao = 2;
-                // MessageBox.Show("Versão |-Terror-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }
-            else if (versao == "terror")
-            {
-                bkground_sound.Stop();
-                versao = "normal";
-                opcao = 1;
-                //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }        
+                descanso = descanso - 10;
         }
 
-        public void andar()
+        protected void aumentar_fome()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void ver_TV()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void telefonar()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void abrir_gaveta()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+                comida = comida - 20;
         }
 
-        public void abrir_cortinas()
+        protected void perder_vida()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            if (comida >= 100)
+                vida = vida + 15;
+
+            if (descanso >= 100)
+                vida = vida + 15;
         }
-
-        public void abrir_janela()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void gritos()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void gritar_morrer()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public string get_versao()
-        {
-            return versao;
-        }
-
-
-
-    
-    }
-    */
 
         public string get_personagem()
         {
             return personagem;
    
+        }
+
+        protected int get_descanso()
+        {
+            return descanso;
+
+        }
+
+        protected int get_comida()
+        {
+            return comida;
+
+        }
+
+        protected int get_vida()
+        {
+            return vida;
+
+        }
+
+        protected int get_rondas()
+        {
+            return rondas;
+
         }
     }
 }
