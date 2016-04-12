@@ -13,6 +13,28 @@ namespace jogo_assassino
         protected int descanso = 100;
         protected int comida = 100;
         protected int rondas = 1;
+        protected bool esconder = false;
+        protected bool falar = false;
+        protected bool investigar = false;
+        protected string nome_player = "";
+
+        protected void investigar_pessoa()
+        {
+
+
+        }
+
+        protected void falar_pessoa()
+        {
+            
+
+        }
+
+        protected void esconder_pessoa()
+        {
+            esconder = true;
+
+        }
 
         protected void aumentar_rondas()
         {
@@ -66,6 +88,24 @@ namespace jogo_assassino
         protected int get_rondas()
         {
             return rondas;
+
+        }
+
+        protected bool get_esconder()
+        {
+            return esconder;
+
+        }
+
+        protected bool get_falar()
+        {
+            return falar;
+
+        }
+
+        protected bool get_investigar()
+        {
+            return investigar;
 
         }
     }
