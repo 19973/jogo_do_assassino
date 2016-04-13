@@ -64,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 34);
+            this.label1.Location = new System.Drawing.Point(12, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -131,9 +131,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(226, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(226, -6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 213);
+            this.pictureBox1.Size = new System.Drawing.Size(10, 220);
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
@@ -141,6 +141,7 @@
             // 
             this.but_Opcao10.BackColor = System.Drawing.Color.Maroon;
             this.but_Opcao10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao10.Enabled = false;
             this.but_Opcao10.Location = new System.Drawing.Point(379, 157);
             this.but_Opcao10.Name = "but_Opcao10";
             this.but_Opcao10.Size = new System.Drawing.Size(83, 24);
@@ -152,6 +153,7 @@
             // 
             this.but_Opcao9.BackColor = System.Drawing.Color.Green;
             this.but_Opcao9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao9.Enabled = false;
             this.but_Opcao9.Location = new System.Drawing.Point(379, 127);
             this.but_Opcao9.Name = "but_Opcao9";
             this.but_Opcao9.Size = new System.Drawing.Size(83, 24);
@@ -163,6 +165,7 @@
             // 
             this.but_Opcao.BackColor = System.Drawing.Color.Purple;
             this.but_Opcao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao.Enabled = false;
             this.but_Opcao.Location = new System.Drawing.Point(379, 96);
             this.but_Opcao.Name = "but_Opcao";
             this.but_Opcao.Size = new System.Drawing.Size(83, 24);
@@ -174,6 +177,7 @@
             // 
             this.but_Opcao7.BackColor = System.Drawing.Color.Silver;
             this.but_Opcao7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao7.Enabled = false;
             this.but_Opcao7.Location = new System.Drawing.Point(379, 64);
             this.but_Opcao7.Name = "but_Opcao7";
             this.but_Opcao7.Size = new System.Drawing.Size(83, 24);
@@ -185,6 +189,7 @@
             // 
             this.but_Opcao6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.but_Opcao6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao6.Enabled = false;
             this.but_Opcao6.Location = new System.Drawing.Point(379, 34);
             this.but_Opcao6.Name = "but_Opcao6";
             this.but_Opcao6.Size = new System.Drawing.Size(83, 24);
@@ -196,6 +201,7 @@
             // 
             this.but_Opcao5.BackColor = System.Drawing.Color.Aqua;
             this.but_Opcao5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao5.Enabled = false;
             this.but_Opcao5.Location = new System.Drawing.Point(8, 157);
             this.but_Opcao5.Name = "but_Opcao5";
             this.but_Opcao5.Size = new System.Drawing.Size(83, 24);
@@ -207,6 +213,7 @@
             // 
             this.but_Opcao4.BackColor = System.Drawing.Color.Magenta;
             this.but_Opcao4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao4.Enabled = false;
             this.but_Opcao4.Location = new System.Drawing.Point(8, 127);
             this.but_Opcao4.Name = "but_Opcao4";
             this.but_Opcao4.Size = new System.Drawing.Size(83, 24);
@@ -218,6 +225,7 @@
             // 
             this.but_Opcao3.BackColor = System.Drawing.Color.Lime;
             this.but_Opcao3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao3.Enabled = false;
             this.but_Opcao3.Location = new System.Drawing.Point(8, 96);
             this.but_Opcao3.Name = "but_Opcao3";
             this.but_Opcao3.Size = new System.Drawing.Size(83, 24);
@@ -229,6 +237,7 @@
             // 
             this.but_Opcao2.BackColor = System.Drawing.Color.Yellow;
             this.but_Opcao2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao2.Enabled = false;
             this.but_Opcao2.Location = new System.Drawing.Point(8, 64);
             this.but_Opcao2.Name = "but_Opcao2";
             this.but_Opcao2.Size = new System.Drawing.Size(83, 24);
@@ -240,6 +249,7 @@
             // 
             this.but_Opcao1.BackColor = System.Drawing.Color.Red;
             this.but_Opcao1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_Opcao1.Enabled = false;
             this.but_Opcao1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.but_Opcao1.Location = new System.Drawing.Point(8, 35);
             this.but_Opcao1.Name = "but_Opcao1";

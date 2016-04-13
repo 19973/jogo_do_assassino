@@ -21,6 +21,7 @@ namespace jogo_assassino
         Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
+        List<pessoa> jogadores = new List<pessoa>();
         List<string> papeis = new List<string>();
         int count = (-1);
 
@@ -128,49 +129,47 @@ namespace jogo_assassino
 
             if (comboBox_Player.Text == "5")
                 papeis.Add("inocente3");
-        
+
+
 
             count++;
+            p.Add();
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
-            
-
-                if (count <= int.Parse(comboBox_Player.Text)-1)
+            if (count <= int.Parse(comboBox_Player.Text)-1)
                 {
+
                     if (papeis[count] == "policia")
                     {
                         Imag_Classes.Image = imagem_Policia;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-                    }
+                        Imag_Classes.Image = imagem_Default;  
+                     }
                     else if (papeis[count] == "ladrao")
                     {
                         Imag_Classes.Image = imagem_Ladrao;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
-
-                    }
+                   }
                     else if (papeis[count] == "inocente1")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
-
                     }
                     else if (papeis[count] == "inocente2")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-
-                    }
+                        Imag_Classes.Image = imagem_Default;                  
+                     }
                     else if (papeis[count] == "inocente3")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
+                        Imag_Classes.Image = imagem_Default;                      
                     }
-
+                
             }
 
             if(count == int.Parse(comboBox_Player.Text))
@@ -228,6 +227,9 @@ namespace jogo_assassino
             form4.ShowDialog();
             form4 = null;
             this.Show();
+
+
+
         }
 
         private void Voltar2_Click(object sender, EventArgs e)
