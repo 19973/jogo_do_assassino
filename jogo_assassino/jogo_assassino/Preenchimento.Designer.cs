@@ -192,6 +192,7 @@
             this.Name = "Preenchimento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Preenchimento das Estatísticas";
+            this.Load += new System.EventHandler(this.Preenchimento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

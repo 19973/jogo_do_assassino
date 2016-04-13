@@ -90,5 +90,10 @@ namespace jogo_assassino
         {
 
         }
+
+        private void but_Opcao1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

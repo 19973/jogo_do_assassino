@@ -247,6 +247,7 @@
             this.but_Opcao1.TabIndex = 10;
             this.but_Opcao1.Text = "Carregue Aqui";
             this.but_Opcao1.UseVisualStyleBackColor = false;
+            this.but_Opcao1.Click += new System.EventHandler(this.but_Opcao1_Click);
             // 
             // lab_Opcao10
             // 
