@@ -23,6 +23,8 @@ namespace jogo_assassino
             InitializeComponent();
         }
 
+
+
         public void set_jogo(menu_jogo mn4)
         {
             mn5 = mn4;
@@ -87,6 +89,11 @@ namespace jogo_assassino
         private void progressBar_Saude_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void but_Opcao1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

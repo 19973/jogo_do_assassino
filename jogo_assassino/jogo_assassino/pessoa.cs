@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace jogo_assassino
 {
@@ -17,23 +18,30 @@ namespace jogo_assassino
         protected bool falar = false;
         protected bool investigar = false;
         protected string nome_player = "";
+        protected List <string> mensagens = new List<string> ();
 
         protected void investigar_pessoa()
         {
 
-
         }
 
-        protected void falar_pessoa()
+        protected void emviar_mensagem(pessoa p, string mensagem)
         {
-            
+            p.receber_mensagem(this, mensagem);
+        }       
 
+        protected void receber_mensagem(pessoa p, string mensagem)
+        {
+            mensagens.Add(mensagem);
+            for (int i = 0; i <= mensagens.Count; i++)
+            {
+                MessageBox.Show(mensagens[i].ToString());
+            }
         }
 
         protected void esconder_pessoa()
         {
             esconder = true;
-
         }
 
         protected void aumentar_rondas()
