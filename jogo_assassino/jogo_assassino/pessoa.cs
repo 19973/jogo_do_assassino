@@ -9,98 +9,104 @@ namespace jogo_assassino
     class pessoa
     {
         protected string personagem = "Pessoa";
-        /*protected string versao = "normal";
-        protected int opcao = 1;
-        protected System.Media.SoundPlayer bkground_sound;
+        protected int vida = 100;
+        protected int descanso = 100;
+        protected int comida = 100;
+        protected int rondas = 1;
+        protected bool esconder = false;
+        protected bool falar = false;
+        protected bool investigar = false;
+        protected string nome_player = "";
 
-        public void dormir()
+        protected void investigar_pessoa()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-      
-        public void bater_porta()
-        {
-            if (versao == "normal")
-            {
-                bkground_sound.Stop();
-                versao = "terror";
-                opcao = 2;
-                // MessageBox.Show("Versão |-Terror-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }
-            else if (versao == "terror")
-            {
-                bkground_sound.Stop();
-                versao = "normal";
-                opcao = 1;
-                //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }        
-        }
-
-        public void andar()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void ver_TV()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void telefonar()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void abrir_gaveta()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void abrir_cortinas()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void abrir_janela()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void gritos()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public void gritar_morrer()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-
-        public string get_versao()
-        {
-            return versao;
-        }
 
 
+        }
 
-    
-    }
-    */
+        protected void falar_pessoa()
+        {
+            
+
+        }
+
+        protected void esconder_pessoa()
+        {
+            esconder = true;
+
+        }
+
+        protected void aumentar_rondas()
+        {
+            rondas = rondas + 1; 
+
+        }
+
+        protected void aumentar_sono()
+        {
+                descanso = descanso - 10;
+        }
+
+        protected void aumentar_fome()
+        {
+                comida = comida - 20;
+        }
+
+        protected void perder_vida()
+        {
+            if (comida >= 100)
+                vida = vida + 15;
+
+            if (descanso >= 100)
+                vida = vida + 15;
+        }
 
         public string get_personagem()
         {
             return personagem;
+   
+        }
+
+        protected int get_descanso()
+        {
+            return descanso;
+
+        }
+
+        protected int get_comida()
+        {
+            return comida;
+
+        }
+
+        protected int get_vida()
+        {
+            return vida;
+
+        }
+
+        protected int get_rondas()
+        {
+            return rondas;
+
+        }
+
+        protected bool get_esconder()
+        {
+            return esconder;
+
+        }
+
+        protected bool get_falar()
+        {
+            return falar;
+
+        }
+
+        protected bool get_investigar()
+        {
+            return investigar;
+
         }
     }
 }

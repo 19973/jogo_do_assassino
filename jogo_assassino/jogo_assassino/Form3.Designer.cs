@@ -45,19 +45,11 @@
             this.But_Sim1 = new System.Windows.Forms.Button();
             this.But_Nao = new System.Windows.Forms.Button();
             this.Imag_Classes = new System.Windows.Forms.PictureBox();
-            this.Lab_Player2_Pronto = new System.Windows.Forms.Label();
-            this.Lab_Player3_Pronto = new System.Windows.Forms.Label();
-            this.Lab_Player4_Pronto = new System.Windows.Forms.Label();
-            this.Lab_Player5_Pronto = new System.Windows.Forms.Label();
             this.comboBox_Player = new System.Windows.Forms.ComboBox();
             this.Lab_Players = new System.Windows.Forms.Label();
-            this.But_Sim5 = new System.Windows.Forms.Button();
-            this.But_Sim4 = new System.Windows.Forms.Button();
-            this.But_Sim3 = new System.Windows.Forms.Button();
-            this.But_Sim2 = new System.Windows.Forms.Button();
             this.Seguinte2 = new System.Windows.Forms.PictureBox();
             this.Voltar2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Lab_Pronto_Final = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imag_Classes)).BeginInit();
@@ -156,7 +148,7 @@
             this.Lab_Player1_Pronto.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player1_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lab_Player1_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(195, 88);
+            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(207, 87);
             this.Lab_Player1_Pronto.Name = "Lab_Player1_Pronto";
             this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
             this.Lab_Player1_Pronto.TabIndex = 15;
@@ -177,6 +169,7 @@
             // Seguinte1
             // 
             this.Seguinte1.BackColor = System.Drawing.Color.Transparent;
+            this.Seguinte1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Seguinte1.Image = global::jogo_assassino.Properties.Resources.Seguinte1;
             this.Seguinte1.Location = new System.Drawing.Point(517, 440);
             this.Seguinte1.Name = "Seguinte1";
@@ -188,7 +181,8 @@
             // 
             // But_Sim1
             // 
-            this.But_Sim1.Location = new System.Drawing.Point(318, 128);
+            this.But_Sim1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.But_Sim1.Location = new System.Drawing.Point(328, 128);
             this.But_Sim1.Name = "But_Sim1";
             this.But_Sim1.Size = new System.Drawing.Size(75, 23);
             this.But_Sim1.TabIndex = 18;
@@ -198,6 +192,7 @@
             // 
             // But_Nao
             // 
+            this.But_Nao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.But_Nao.Location = new System.Drawing.Point(237, 128);
             this.But_Nao.Name = "But_Nao";
             this.But_Nao.Size = new System.Drawing.Size(75, 23);
@@ -208,6 +203,7 @@
             // 
             // Imag_Classes
             // 
+            this.Imag_Classes.Cursor = System.Windows.Forms.Cursors.No;
             this.Imag_Classes.Image = global::jogo_assassino.Properties.Resources.Default;
             this.Imag_Classes.Location = new System.Drawing.Point(178, 157);
             this.Imag_Classes.Name = "Imag_Classes";
@@ -215,54 +211,6 @@
             this.Imag_Classes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imag_Classes.TabIndex = 19;
             this.Imag_Classes.TabStop = false;
-            // 
-            // Lab_Player2_Pronto
-            // 
-            this.Lab_Player2_Pronto.AutoSize = true;
-            this.Lab_Player2_Pronto.BackColor = System.Drawing.Color.Transparent;
-            this.Lab_Player2_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Player2_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player2_Pronto.Location = new System.Drawing.Point(195, 88);
-            this.Lab_Player2_Pronto.Name = "Lab_Player2_Pronto";
-            this.Lab_Player2_Pronto.Size = new System.Drawing.Size(232, 25);
-            this.Lab_Player2_Pronto.TabIndex = 20;
-            this.Lab_Player2_Pronto.Text = "Player2, Estás Pronto?";
-            // 
-            // Lab_Player3_Pronto
-            // 
-            this.Lab_Player3_Pronto.AutoSize = true;
-            this.Lab_Player3_Pronto.BackColor = System.Drawing.Color.Transparent;
-            this.Lab_Player3_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Player3_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player3_Pronto.Location = new System.Drawing.Point(195, 88);
-            this.Lab_Player3_Pronto.Name = "Lab_Player3_Pronto";
-            this.Lab_Player3_Pronto.Size = new System.Drawing.Size(232, 25);
-            this.Lab_Player3_Pronto.TabIndex = 21;
-            this.Lab_Player3_Pronto.Text = "Player3, Estás Pronto?";
-            // 
-            // Lab_Player4_Pronto
-            // 
-            this.Lab_Player4_Pronto.AutoSize = true;
-            this.Lab_Player4_Pronto.BackColor = System.Drawing.Color.Transparent;
-            this.Lab_Player4_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Player4_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player4_Pronto.Location = new System.Drawing.Point(195, 88);
-            this.Lab_Player4_Pronto.Name = "Lab_Player4_Pronto";
-            this.Lab_Player4_Pronto.Size = new System.Drawing.Size(232, 25);
-            this.Lab_Player4_Pronto.TabIndex = 22;
-            this.Lab_Player4_Pronto.Text = "Player4, Estás Pronto?";
-            // 
-            // Lab_Player5_Pronto
-            // 
-            this.Lab_Player5_Pronto.AutoSize = true;
-            this.Lab_Player5_Pronto.BackColor = System.Drawing.Color.Transparent;
-            this.Lab_Player5_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Player5_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player5_Pronto.Location = new System.Drawing.Point(195, 88);
-            this.Lab_Player5_Pronto.Name = "Lab_Player5_Pronto";
-            this.Lab_Player5_Pronto.Size = new System.Drawing.Size(232, 25);
-            this.Lab_Player5_Pronto.TabIndex = 23;
-            this.Lab_Player5_Pronto.Text = "Player5, Estás Pronto?";
             // 
             // comboBox_Player
             // 
@@ -283,46 +231,6 @@
             this.Lab_Players.TabIndex = 25;
             this.Lab_Players.Text = "Players";
             // 
-            // But_Sim5
-            // 
-            this.But_Sim5.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim5.Name = "But_Sim5";
-            this.But_Sim5.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim5.TabIndex = 26;
-            this.But_Sim5.Text = "Sim-5";
-            this.But_Sim5.UseVisualStyleBackColor = true;
-            this.But_Sim5.Click += new System.EventHandler(this.But_Sim5_Click);
-            // 
-            // But_Sim4
-            // 
-            this.But_Sim4.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim4.Name = "But_Sim4";
-            this.But_Sim4.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim4.TabIndex = 27;
-            this.But_Sim4.Text = "Sim-4";
-            this.But_Sim4.UseVisualStyleBackColor = true;
-            this.But_Sim4.Click += new System.EventHandler(this.But_Sim4_Click);
-            // 
-            // But_Sim3
-            // 
-            this.But_Sim3.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim3.Name = "But_Sim3";
-            this.But_Sim3.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim3.TabIndex = 28;
-            this.But_Sim3.Text = "Sim-3";
-            this.But_Sim3.UseVisualStyleBackColor = true;
-            this.But_Sim3.Click += new System.EventHandler(this.But_Sim3_Click);
-            // 
-            // But_Sim2
-            // 
-            this.But_Sim2.Location = new System.Drawing.Point(318, 128);
-            this.But_Sim2.Name = "But_Sim2";
-            this.But_Sim2.Size = new System.Drawing.Size(75, 23);
-            this.But_Sim2.TabIndex = 29;
-            this.But_Sim2.Text = "Sim-2";
-            this.But_Sim2.UseVisualStyleBackColor = true;
-            this.But_Sim2.Click += new System.EventHandler(this.But_Sim2_Click);
-            // 
             // Seguinte2
             // 
             this.Seguinte2.BackColor = System.Drawing.Color.Transparent;
@@ -338,6 +246,7 @@
             // Voltar2
             // 
             this.Voltar2.BackColor = System.Drawing.Color.Transparent;
+            this.Voltar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Voltar2.Image = global::jogo_assassino.Properties.Resources.Voltar;
             this.Voltar2.Location = new System.Drawing.Point(407, 440);
             this.Voltar2.Name = "Voltar2";
@@ -347,17 +256,18 @@
             this.Voltar2.TabStop = false;
             this.Voltar2.Click += new System.EventHandler(this.Voltar2_Click);
             // 
-            // label1
+            // Lab_Pronto_Final
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(139, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 50);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Se tiverem todos players estiverem\r\n prontos cliquem no \"Seguinte\"";
+            this.Lab_Pronto_Final.AutoSize = true;
+            this.Lab_Pronto_Final.BackColor = System.Drawing.Color.Transparent;
+            this.Lab_Pronto_Final.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Pronto_Final.ForeColor = System.Drawing.Color.Red;
+            this.Lab_Pronto_Final.Location = new System.Drawing.Point(139, 213);
+            this.Lab_Pronto_Final.Name = "Lab_Pronto_Final";
+            this.Lab_Pronto_Final.Size = new System.Drawing.Size(348, 50);
+            this.Lab_Pronto_Final.TabIndex = 33;
+            this.Lab_Pronto_Final.Text = "Se tiverem todos players estiverem\r\n prontos cliquem no \"Seguinte\"";
+            this.Lab_Pronto_Final.Visible = false;
             // 
             // Form3
             // 
@@ -366,12 +276,8 @@
             this.BackgroundImage = global::jogo_assassino.Properties.Resources.Imagem_Fundo;
             this.ClientSize = new System.Drawing.Size(623, 498);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Lab_Pronto_Final);
             this.Controls.Add(this.But_Sim1);
-            this.Controls.Add(this.But_Sim2);
-            this.Controls.Add(this.But_Sim3);
-            this.Controls.Add(this.But_Sim4);
-            this.Controls.Add(this.But_Sim5);
             this.Controls.Add(this.Lab_Players);
             this.Controls.Add(this.comboBox_Player);
             this.Controls.Add(this.Imag_Classes);
@@ -387,18 +293,16 @@
             this.Controls.Add(this.Lab_Player2);
             this.Controls.Add(this.Lab_Player1);
             this.Controls.Add(this.Lab_Player1_Pronto);
-            this.Controls.Add(this.Lab_Player2_Pronto);
-            this.Controls.Add(this.Lab_Player3_Pronto);
-            this.Controls.Add(this.Lab_Player4_Pronto);
-            this.Controls.Add(this.Lab_Player5_Pronto);
             this.Controls.Add(this.Seguinte1);
             this.Controls.Add(this.Seguinte2);
             this.Controls.Add(this.Voltar2);
             this.Controls.Add(this.Voltar1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ver Quem Vai Ser Quem";
+            this.Text = "Escolha de papéis";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).EndInit();
@@ -427,18 +331,10 @@
         private System.Windows.Forms.Button But_Sim1;
         private System.Windows.Forms.Button But_Nao;
         private System.Windows.Forms.PictureBox Imag_Classes;
-        private System.Windows.Forms.Label Lab_Player2_Pronto;
-        private System.Windows.Forms.Label Lab_Player3_Pronto;
-        private System.Windows.Forms.Label Lab_Player4_Pronto;
-        private System.Windows.Forms.Label Lab_Player5_Pronto;
         private System.Windows.Forms.ComboBox comboBox_Player;
         private System.Windows.Forms.Label Lab_Players;
-        private System.Windows.Forms.Button But_Sim5;
-        private System.Windows.Forms.Button But_Sim4;
-        private System.Windows.Forms.Button But_Sim3;
-        private System.Windows.Forms.Button But_Sim2;
         private System.Windows.Forms.PictureBox Seguinte2;
         private System.Windows.Forms.PictureBox Voltar2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lab_Pronto_Final;
     }
 }

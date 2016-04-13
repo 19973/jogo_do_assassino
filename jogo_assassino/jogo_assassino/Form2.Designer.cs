@@ -50,6 +50,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -70,6 +71,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(305, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "A";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -80,6 +82,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(305, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "b";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
@@ -90,6 +93,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(305, 20);
             this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "c";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
@@ -100,6 +104,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(305, 20);
             this.textBox4.TabIndex = 3;
+            this.textBox4.Text = "d";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
@@ -110,6 +115,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(305, 20);
             this.textBox5.TabIndex = 4;
+            this.textBox5.Text = "f";
             // 
             // label1
             // 
@@ -198,6 +204,7 @@
             // back_botao
             // 
             this.back_botao.BackColor = System.Drawing.Color.Transparent;
+            this.back_botao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_botao.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.back_botao.Location = new System.Drawing.Point(12, 346);
             this.back_botao.Name = "back_botao";
@@ -210,6 +217,7 @@
             // next_botao
             // 
             this.next_botao.BackColor = System.Drawing.Color.Transparent;
+            this.next_botao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.next_botao.Image = global::jogo_assassino.Properties.Resources.Seguinte;
             this.next_botao.Location = new System.Drawing.Point(559, 346);
             this.next_botao.Name = "next_botao";
@@ -242,10 +250,11 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Numero de Jogadores";
+            this.Text = "Escolhe de Jogadores";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.back_botao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_botao)).EndInit();

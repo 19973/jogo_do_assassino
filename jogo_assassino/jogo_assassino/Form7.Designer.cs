@@ -44,9 +44,9 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.vScrollBar1);
-            this.groupBox1.Location = new System.Drawing.Point(35, 158);
+            this.groupBox1.Location = new System.Drawing.Point(35, 144);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(322, 237);
+            this.groupBox1.Size = new System.Drawing.Size(322, 251);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estatísticas";
@@ -60,6 +60,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(35, 117);
@@ -81,6 +82,7 @@
             // voltar_para_menu
             // 
             this.voltar_para_menu.BackColor = System.Drawing.Color.Transparent;
+            this.voltar_para_menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.voltar_para_menu.Image = global::jogo_assassino.Properties.Resources.back_button;
             this.voltar_para_menu.Location = new System.Drawing.Point(399, 289);
             this.voltar_para_menu.Name = "voltar_para_menu";
@@ -92,6 +94,7 @@
             // 
             // sair_jogo
             // 
+            this.sair_jogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sair_jogo.Image = global::jogo_assassino.Properties.Resources.button_ext1;
             this.sair_jogo.Location = new System.Drawing.Point(399, 345);
             this.sair_jogo.Name = "sair_jogo";
@@ -114,9 +117,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estatísticas";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.voltar_para_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sair_jogo)).EndInit();
