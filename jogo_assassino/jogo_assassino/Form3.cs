@@ -133,7 +133,6 @@ namespace jogo_assassino
 
 
             count++;
-            p.Add();
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
             if (count <= int.Parse(comboBox_Player.Text)-1)
@@ -169,7 +168,6 @@ namespace jogo_assassino
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;                      
                     }
-                
             }
 
             if(count == int.Parse(comboBox_Player.Text))
