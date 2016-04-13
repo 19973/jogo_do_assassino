@@ -23,6 +23,8 @@ namespace jogo_assassino
             InitializeComponent();
         }
 
+
+
         public void set_jogo(menu_jogo mn4)
         {
             mn5 = mn4;

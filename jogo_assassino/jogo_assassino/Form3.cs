@@ -123,14 +123,16 @@ namespace jogo_assassino
         //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
+            
+
             if (comboBox_Player.Text == "4")
                 papeis.Add("inocente2");
 
             if (comboBox_Player.Text == "5")
                 papeis.Add("inocente3");
-        
 
             count++;
+
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
             
@@ -142,34 +144,39 @@ namespace jogo_assassino
                         Imag_Classes.Image = imagem_Policia;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
+                    
                     }
                     else if (papeis[count] == "ladrao")
                     {
                         Imag_Classes.Image = imagem_Ladrao;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
+                    
 
-                    }
+                }
                     else if (papeis[count] == "inocente1")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
+                    
 
-                    }
+                }
                     else if (papeis[count] == "inocente2")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
+                   
 
-                    }
+                }
                     else if (papeis[count] == "inocente3")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
-                    }
+                    
+                }
 
             }
 
@@ -200,6 +207,7 @@ namespace jogo_assassino
                 string troca = papeis[p1];
                 papeis.RemoveAt(p1);
                 papeis.Insert(p2, troca);
+                count  += 1 -2 ;
 
             }
 
