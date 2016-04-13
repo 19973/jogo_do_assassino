@@ -62,5 +62,10 @@ namespace jogo_assassino
         {
             Environment.Exit(0);
         }
+
+        private void Preenchimento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
