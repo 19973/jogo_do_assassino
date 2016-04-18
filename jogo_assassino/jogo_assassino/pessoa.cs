@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace jogo_assassino
 {
@@ -10,169 +11,147 @@ namespace jogo_assassino
     {
         protected string personagem = "Pessoa";
         protected int vida = 100;
-        protected bool morte = false;
-        protected bool escondida = false;
-        protected bool sono = false;
-        protected bool fome = false;
+        protected int descanso = 100;
+        protected int comida = 100;
         protected int rondas = 1;
+        protected bool tv = false;
+        protected bool esconder = false;
+        protected bool falar = false;
+        protected bool investigar = false;
+        protected string nome_player = "";
+        protected List <string> mensagens = new List<string> ();
 
-        protected void perde_vida() {
-            if (escondida == false)
-                vida = vida - 75;
-            else
-                vida = vida - 30;
-            if (vida <= 0)
-                morte = true;
+        protected void emviar_mensagem(pessoa p, string mensagem)
+        {
+            p.receber_mensagem(this, mensagem);
+        }       
+
+        protected void receber_mensagem(pessoa p, string mensagem)
+        {
+            mensagens.Add(mensagem);
+            for (int i = 0; i <= mensagens.Count; i++)
+            {
+                MessageBox.Show(mensagens[i].ToString());
+            }
         }
 
-        protected void aumenta_ronda()
+        protected void esconder_pessoa()
         {
-            rondas++;
+            esconder = true;
         }
 
-        protected void ganha_sono()
+        protected void tv_true()
         {
-            if (rondas % 10 == 10)
-                sono = true;
-
-            if (sono == true)
-                vida = vida - 25;
+            tv = true;
         }
 
-        protected void ganha_fome()
+        protected void ver_tv()
         {
-            
-            if (rondas % 10 == 5)
-                fome = true;
-
-            if (fome == true)
-                vida = vida - 25;
+            if (tv == true)
+            {
+                comida = comida + 25;
+                descanso = descanso + 25;
+            }
         }
 
-        protected int get_vida()
+        protected void aumentar_rondas()
         {
-            return vida;
+            rondas = rondas + 1; 
+
         }
 
-        protected bool get_sono()
+        protected void aumentar_sono()
         {
-            return sono;
+                descanso = descanso - 10;
         }
 
-        protected bool get_fome()
+        protected void aumentar_fome()
         {
-            return fome;
+                comida = comida - 20;
         }
 
-        protected bool get_escondida()
+        protected void comer()
         {
-            return escondida;
+            comida = comida + 100;
         }
 
-        protected bool get_morte()
+        protected void dormir()
         {
-            return morte;
+            descanso = descanso + 100;
         }
 
-        public int get_rondas()
+        protected void perder_vida_de_players()
         {
-            return rondas;
 
+            if (esconder == true)
+                vida = vida - 35;
+
+            if (esconder == false)
+                vida = vida - 100;
+        }
+
+        protected void perder_vida_de_atributos()
+        { 
+
+            if (comida >= 100)
+                vida = vida - 15;
+
+            if (descanso >= 100)
+                vida = vida - 15;
         }
 
         public string get_personagem()
         {
             return personagem;
-
+   
         }
 
-        /*protected string versao = "normal";
-        protected int opcao = 1;
-        protected System.Media.SoundPlayer bkground_sound;
-
-        public void dormir()
+        protected int get_descanso()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return descanso;
+
         }
 
-      
-        public void bater_porta()
+        protected int get_comida()
         {
-            if (versao == "normal")
-            {
-                bkground_sound.Stop();
-                versao = "terror";
-                opcao = 2;
-                // MessageBox.Show("Versão |-Terror-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }
-            else if (versao == "terror")
-            {
-                bkground_sound.Stop();
-                versao = "normal";
-                opcao = 1;
-                //   MessageBox.Show("Versão |-Casual-| Ativada");
-                bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-                bkground_sound.Play();
-            }        
+            return comida;
+
         }
 
-        public void andar()
+        protected int get_vida()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void ver_TV()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void telefonar()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
-        }
-        public void abrir_gaveta()
-        {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return vida;
+
         }
 
-        public void abrir_cortinas()
+        protected int get_rondas()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return rondas;
+
         }
 
-        public void abrir_janela()
+        protected bool get_esconder()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return esconder;
+
         }
 
-        public void gritos()
+        protected bool get_falar()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return falar;
+
         }
 
-        public void gritar_morrer()
+        protected bool get_investigar()
         {
-            bkground_sound.SoundLocation = @"D:\github\musicas\Dormir2Versoes.wav";
-            bkground_sound.Play();
+            return investigar;
+
         }
 
-        public string get_versao()
+        protected bool get_tv()
         {
-            return versao;
+            return tv;
+
         }
-
-
-
-    
-    }
-    */
     }
 }
