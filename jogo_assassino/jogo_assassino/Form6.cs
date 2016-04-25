@@ -20,9 +20,9 @@ namespace jogo_assassino
         {
             InitializeComponent();
         }
-        public void set_jogo(menu_jogo mn5)
+        public void set_jogo(menu_jogo mn)
         {
-            mn6 = mn5;
+            mn6 = mn;
         }
 
 
@@ -80,12 +80,18 @@ namespace jogo_assassino
 
             }
 
-            if (mn6.get_versao() != "terror")
+            if (mn6.get_versao() == "terror")
             {
-               
+                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.derrota_sim);
+                this.BackgroundImage = myimage;
+
+                label_perder.Visible = true;
+                botao_back_fim.Visible = true;
+                botao_back_fim.Enabled = true;
+                label_perder.Enabled = true;
             }
 
-            if (mn6.get_versao() != "normal")
+            if (mn6.get_versao() == "normal")
             {
                
             }

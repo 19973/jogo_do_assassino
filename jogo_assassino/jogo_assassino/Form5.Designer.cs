@@ -196,6 +196,7 @@
             this.but_Opcao6.TabIndex = 15;
             this.but_Opcao6.Text = "Carregue Aqui";
             this.but_Opcao6.UseVisualStyleBackColor = false;
+            this.but_Opcao6.Click += new System.EventHandler(this.but_Opcao6_Click);
             // 
             // but_Opcao5
             // 

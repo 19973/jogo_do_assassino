@@ -17,7 +17,10 @@ namespace jogo_assassino
 
        
         public menu_jogo mn5;
-
+        private pessoa p;
+        private assassino ass;
+        private policia pol;
+        private inocente ino;
         public Form5()
         {
             InitializeComponent();
@@ -32,7 +35,7 @@ namespace jogo_assassino
 
         private void Form5_Load(object sender, EventArgs e)
         {
-
+            p = new pessoa();
             if (mn5.get_versao() == "terror")
             {
                 Image myimage = new Bitmap(jogo_assassino.Properties.Resources.corredor_fancy);
@@ -79,6 +82,34 @@ namespace jogo_assassino
                 progressBar_Comida.PerformStep();
 
             }
+
+            
+            if(p.get_personagem() == "Inocente")
+            {
+                lab_Opcao6.Text = "";
+                lab_Opcao7.Text = "";
+                lab_Opcao8.Text = "Apanhar Arma";
+                lab_Opcao9.Text = "Denunciar";
+                lab_Opcao10.Text = "Suicidar";
+            }
+
+            if (p.get_personagem() == "Policia")
+            {
+                lab_Opcao6.Text = "Prender";
+                lab_Opcao7.Text = "Disparar";
+                lab_Opcao8.Text = "Investigar";
+                lab_Opcao9.Text = "";
+                lab_Opcao10.Text = "";
+            }
+
+            if (p.get_personagem() == "Assasino")
+            {
+                lab_Opcao6.Text = "Denunciar";
+                lab_Opcao7.Text = "Raptar";
+                lab_Opcao8.Text = "Esfaquear";
+                lab_Opcao9.Text = "Investigar";
+                lab_Opcao10.Text = "Esconder Arma";
+            }
         }
 
         private void Player_Enter(object sender, EventArgs e)
@@ -93,7 +124,25 @@ namespace jogo_assassino
 
         private void but_Opcao1_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void but_Opcao6_Click(object sender, EventArgs e)
+        {
+            if (p.get_personagem() == "Assasino")
+            {
+
+            }
+
+            if (p.get_personagem() == "Policia")
+            {
+
+            }
+
+            if (p.get_personagem() == "Inocente")
+            {
+
+            }
         }
     }
 }

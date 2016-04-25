@@ -12,7 +12,9 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-
+        private policia pol;
+        private assassino ass;
+        private inocente ino;
         public menu_jogo mn3;
 
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
@@ -21,11 +23,14 @@ namespace jogo_assassino
         Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
-        List<pessoa> jogadores = new List<pessoa>();
+        List<int> jogadores = new List<int>();
         List<string> papeis = new List<string>();
         int count = (-1);
-
-
+        string player1 = "";
+        string player2 = "";
+        string player3 = "";
+        string player4 = "";
+        string player5 = "";
 
         public void set_jogo(menu_jogo mn2)
         {
@@ -134,12 +139,17 @@ namespace jogo_assassino
 
             count++;
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
+            jogadores.Add(count - 1);
 
             if (count <= int.Parse(comboBox_Player.Text)-1)
                 {
 
                     if (papeis[count] == "policia")
                     {
+                    if (jogadores[0] == 0)
+                        player1 = "policia";
+                        pol.get_personagem();
+
                         Imag_Classes.Image = imagem_Policia;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;  
@@ -184,7 +194,7 @@ namespace jogo_assassino
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+       
             Random rnd = new Random();
 
 

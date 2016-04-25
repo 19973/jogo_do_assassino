@@ -34,10 +34,10 @@ namespace jogo_assassino
         private void button_play_Click(object sender, EventArgs e)
         {
            this.Hide();
-           Form2 form2 = new Form2();
-            form2.set_jogo(mn);
-           form2.ShowDialog();
-            form2 = null;
+           Form6 form6 = new Form6();
+            form6.set_jogo(mn);
+           form6.ShowDialog();
+            form6 = null;
            this.Show();
         }
 
