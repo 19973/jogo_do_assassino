@@ -406,6 +406,11 @@
             // 
             this.comboBox_enviar_mensagem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_enviar_mensagem.FormattingEnabled = true;
+            this.comboBox_enviar_mensagem.Items.AddRange(new object[] {
+            "Player 1",
+            "Player 2",
+            "Player 3",
+            "Player 4"});
             this.comboBox_enviar_mensagem.Location = new System.Drawing.Point(340, 61);
             this.comboBox_enviar_mensagem.Name = "comboBox_enviar_mensagem";
             this.comboBox_enviar_mensagem.Size = new System.Drawing.Size(121, 21);
@@ -419,6 +424,7 @@
             this.textBox_eviar_mensagem.Name = "textBox_eviar_mensagem";
             this.textBox_eviar_mensagem.Size = new System.Drawing.Size(197, 20);
             this.textBox_eviar_mensagem.TabIndex = 22;
+            this.textBox_eviar_mensagem.Visible = false;
             // 
             // enviar_mensagem
             // 
@@ -428,6 +434,7 @@
             this.enviar_mensagem.TabIndex = 23;
             this.enviar_mensagem.Text = "Enviar Mensagem";
             this.enviar_mensagem.UseVisualStyleBackColor = true;
+            this.enviar_mensagem.Visible = false;
             // 
             // Form5
             // 

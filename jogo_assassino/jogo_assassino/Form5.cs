@@ -16,16 +16,18 @@ namespace jogo_assassino
     public partial class Form5 : Form
     {
 
-       
+
         public menu_jogo mn5;
         private pessoa p;
         int rondas = 1;
+        int jogadas = 0;
         /* private assassino ass;
         private policia pol;
         private inocente ino; */
         public Form5()
         {
             InitializeComponent();
+
         }
 
 
@@ -85,8 +87,8 @@ namespace jogo_assassino
 
             }
 
-            
-            if(p.get_personagem() == "Inocente")
+
+            if (p.get_personagem() == "Inocente")
             {
                 lab_Opcao6.Text = "";
                 lab_Opcao7.Text = "";
@@ -113,7 +115,9 @@ namespace jogo_assassino
                 lab_Opcao10.Text = "Esconder Arma";
             }
 
-            
+            num_rondas.Text = rondas.ToString();
+
+
         }
 
         private void Player_Enter(object sender, EventArgs e)
@@ -128,12 +132,17 @@ namespace jogo_assassino
 
         private void but_Opcao1_Click(object sender, EventArgs e)
         {
-            
-                progressBar_Comida.Step = 30;
-                progressBar_Comida.PerformStep();
+
+            progressBar_Comida.Step = 30;
+            progressBar_Comida.PerformStep();
+            jogadas++;
+            if (jogadas == 4)
+            {
                 rondas++;
-            
-            
+                num_rondas.Text = rondas.ToString();
+                jogadas = 0;
+            }
+
         }
 
         private void but_Opcao6_Click(object sender, EventArgs e)
@@ -156,10 +165,16 @@ namespace jogo_assassino
 
         private void but_Opcao2_Click(object sender, EventArgs e)
         {
-           
-                progressBar_Descanso.Step = 40;
-                progressBar_Descanso.PerformStep();
-            rondas++;
+
+            progressBar_Descanso.Step = 40;
+            progressBar_Descanso.PerformStep();
+            jogadas++;
+            if (jogadas == 4)
+            {
+                rondas++;
+                num_rondas.Text = rondas.ToString();
+                jogadas = 0;
+            }
 
         }
 
@@ -169,7 +184,14 @@ namespace jogo_assassino
             progressBar_Descanso.PerformStep();
             progressBar_Comida.Step = (-10);
             progressBar_Comida.PerformStep();
-            rondas++;
+            num_rondas.Text = rondas.ToString();
+            jogadas++;
+            if (jogadas == 4)
+            {
+                rondas++;
+                num_rondas.Text = rondas.ToString();
+                jogadas = 0;
+            }
         }
 
         private void but_Opcao4_Click(object sender, EventArgs e)
@@ -178,7 +200,12 @@ namespace jogo_assassino
             progressBar_Descanso.PerformStep();
             progressBar_Comida.Step = (-5);
             progressBar_Comida.PerformStep();
-            rondas++;
+            if (jogadas == 4)
+            {
+                rondas++;
+                num_rondas.Text = rondas.ToString();
+                jogadas = 0;
+            }
             comboBox_enviar_mensagem.Visible = true;
         }
     }

@@ -108,10 +108,6 @@ namespace jogo_assassino
             Imag_Classes.Show();
             Imag_Classes.Image = imagem_Default;
 
-            /*Form5 form5 = new Form5();
-            
-            t = form5.Controls.Find("comboBox_enviar_mensagem", true)[0];
-            t.Text = comboBox_Player.Text;*/
         }
 
 
