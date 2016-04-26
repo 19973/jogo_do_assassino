@@ -148,7 +148,7 @@
             this.Lab_Player1_Pronto.BackColor = System.Drawing.Color.Transparent;
             this.Lab_Player1_Pronto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lab_Player1_Pronto.ForeColor = System.Drawing.Color.Red;
-            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(207, 82);
+            this.Lab_Player1_Pronto.Location = new System.Drawing.Point(207, 87);
             this.Lab_Player1_Pronto.Name = "Lab_Player1_Pronto";
             this.Lab_Player1_Pronto.Size = new System.Drawing.Size(232, 25);
             this.Lab_Player1_Pronto.TabIndex = 15;
@@ -220,6 +220,7 @@
             this.comboBox_Player.Name = "comboBox_Player";
             this.comboBox_Player.Size = new System.Drawing.Size(121, 21);
             this.comboBox_Player.TabIndex = 24;
+            this.comboBox_Player.SelectedIndexChanged += new System.EventHandler(this.comboBox_Player_SelectedIndexChanged);
             // 
             // Lab_Players
             // 
@@ -297,10 +298,12 @@
             this.Controls.Add(this.Seguinte2);
             this.Controls.Add(this.Voltar2);
             this.Controls.Add(this.Voltar1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ver Quem Vai Ser Quem?";
+            this.Text = "Escolha de papéis";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Voltar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Seguinte1)).EndInit();

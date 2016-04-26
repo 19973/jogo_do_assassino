@@ -12,7 +12,9 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-
+        private policia pol;
+        private assassino ass;
+        private inocente ino;
         public menu_jogo mn3;
 
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
@@ -21,9 +23,9 @@ namespace jogo_assassino
         Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
+        List<pessoa> jogadores = new List<pessoa>();
         List<string> papeis = new List<string>();
         int count = (-1);
-
 
 
         public void set_jogo(menu_jogo mn2)
@@ -51,11 +53,6 @@ namespace jogo_assassino
             papeis.Add("ladrao");
             papeis.Add("inocente1");
 
-            if (comboBox_Player.Text == "4")
-                papeis.Add("inocente2");
-
-            if (comboBox_Player.Text == "5")
-                papeis.Add("inocente3");
         }
 
 
@@ -81,6 +78,7 @@ namespace jogo_assassino
             But_Sim1.Hide();
             Imag_Classes.Hide();
             But_Sim1.Enabled = true;
+            Seguinte1.Show();
 
         }
 
@@ -109,6 +107,11 @@ namespace jogo_assassino
             But_Sim1.Show();
             Imag_Classes.Show();
             Imag_Classes.Image = imagem_Default;
+
+            /*Form5 form5 = new Form5();
+            
+            t = form5.Controls.Find("comboBox_enviar_mensagem", true)[0];
+            t.Text = comboBox_Player.Text;*/
         }
 
 
@@ -124,66 +127,70 @@ namespace jogo_assassino
 
 
         }
+        //Botao1
         private void But_Sim1_Click(object sender, EventArgs e)
         {
+            if (comboBox_Player.Text == "4")
+                papeis.Add("inocente2");
+
+            if (comboBox_Player.Text == "5")
+                papeis.Add("inocente3");
+
+
+
             count++;
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
-
             if (count <= int.Parse(comboBox_Player.Text)-1)
-            {
-                if (papeis[count] == "policia")
                 {
-                    Imag_Classes.Image = imagem_Policia;
-                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default;
-                }
 
-                else if (papeis[count] == "ladrao")
-                {
-                    Imag_Classes.Image = imagem_Ladrao;
-                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default;
-                }
-
-                else if (papeis[count] == "inocente1")
-                {
-                    Imag_Classes.Image = imagem_Inocente;
-                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default;
-                }
-
-                else if (papeis[count] == "inocente2")
-                {
-                    Imag_Classes.Image = imagem_Inocente;
-                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default;
-                }
-                else if (papeis[count] == "inocente3")
-                {
-                    Imag_Classes.Image = imagem_Inocente;
-                    MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default; 
-                }
-
-                
-
+                    if (papeis[count] == "policia")
+                    {
+                        Imag_Classes.Image = imagem_Policia;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;  
+                     }
+                    else if (papeis[count] == "ladrao")
+                    {
+                        Imag_Classes.Image = imagem_Ladrao;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+                   }
+                    else if (papeis[count] == "inocente1")
+                    {
+                        Imag_Classes.Image = imagem_Inocente;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;
+                    }
+                    else if (papeis[count] == "inocente2")
+                    {
+                        Imag_Classes.Image = imagem_Inocente;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;                  
+                     }
+                    else if (papeis[count] == "inocente3")
+                    {
+                        Imag_Classes.Image = imagem_Inocente;
+                        MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
+                        Imag_Classes.Image = imagem_Default;                      
+                    }
             }
 
-            if (count == int.Parse(comboBox_Player.Text))
-             { 
+            if(count == int.Parse(comboBox_Player.Text))
+            {
+                Seguinte2.Show();
                 Lab_Player1_Pronto.Hide();
+                Imag_Classes.Hide();
                 But_Sim1.Hide();
                 But_Nao.Hide();
-                Imag_Classes.Hide();
-                Seguinte2.Show();
                 Lab_Pronto_Final.Show();
             }
+
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+       
             Random rnd = new Random();
 
 
@@ -199,7 +206,7 @@ namespace jogo_assassino
 
             }
 
-
+           
 
             mn3.set_versao();
             if (mn3.get_versao() == "normal")
@@ -224,6 +231,9 @@ namespace jogo_assassino
             form4.ShowDialog();
             form4 = null;
             this.Show();
+
+
+
         }
 
         private void Voltar2_Click(object sender, EventArgs e)
@@ -250,7 +260,10 @@ namespace jogo_assassino
             Seguinte1.Show();
         }
 
-       
+        private void comboBox_Player_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

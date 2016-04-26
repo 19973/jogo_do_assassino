@@ -13,18 +13,24 @@ namespace jogo_assassino
 {
     public partial class Form7 : Form
     {
-        private OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Properties.Resources.Database5;");
+
+     
 
         public Form7()
         {
             InitializeComponent();
-        }
+
+    }
+
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 form1 = new Form1();
-            form1.Show();
+            form1.ShowDialog();
+            form1 = null;
+            this.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -34,6 +40,7 @@ namespace jogo_assassino
 
         private void Form7_Load(object sender, EventArgs e)
         {
+         
         }
     }
 }
