@@ -163,7 +163,7 @@ namespace jogo_assassino
                 {
                     Imag_Classes.Image = imagem_Inocente;
                     MessageBox.Show("Clique ok se ja sabes a classe e vira as costas.");
-                    Imag_Classes.Image = imagem_Default;
+                    Imag_Classes.Image = imagem_Default; 
                 }
 
                 
