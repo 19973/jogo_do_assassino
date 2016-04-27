@@ -20,12 +20,12 @@ namespace jogo_assassino
         protected string nome_player = "";
         protected List <string> mensagens = new List<string> ();
 
-        protected void investigar_pessoa()
+        protected void investigar_pessoa(pessoa p)
         {
-
+            
         }
 
-        protected void emviar_mensagem(pessoa p, string mensagem)
+        protected void enviar_mensagem(pessoa p, string mensagem)
         {
             p.receber_mensagem(this, mensagem);
         }       
@@ -39,7 +39,7 @@ namespace jogo_assassino
             }
         }
 
-        protected void esconder_pessoa()
+        protected void esconder_pessoa() 
         {
             esconder = true;
         }
