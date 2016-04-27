@@ -14,18 +14,14 @@ namespace jogo_assassino
         protected int descanso = 100;
         protected int comida = 100;
         protected int rondas = 1;
+        protected bool tv = false;
         protected bool esconder = false;
         protected bool falar = false;
         protected bool investigar = false;
         protected string nome_player = "";
         protected List <string> mensagens = new List<string> ();
 
-        protected void investigar_pessoa(pessoa p)
-        {
-            
-        }
-
-        protected void enviar_mensagem(pessoa p, string mensagem)
+        protected void emviar_mensagem(pessoa p, string mensagem)
         {
             p.receber_mensagem(this, mensagem);
         }       
@@ -39,9 +35,23 @@ namespace jogo_assassino
             }
         }
 
-        protected void esconder_pessoa() 
+        protected void esconder_pessoa()
         {
             esconder = true;
+        }
+
+        protected void tv_true()
+        {
+            tv = true;
+        }
+
+        protected void ver_tv()
+        {
+            if (tv == true)
+            {
+                comida = comida + 25;
+                descanso = descanso + 25;
+            }
         }
 
         protected void aumentar_rondas()
@@ -60,13 +70,34 @@ namespace jogo_assassino
                 comida = comida - 20;
         }
 
-        protected void perder_vida()
+        protected void comer()
         {
+            comida = comida + 100;
+        }
+
+        protected void dormir()
+        {
+            descanso = descanso + 100;
+        }
+
+        protected void perder_vida_de_players()
+        {
+
+            if (esconder == true)
+                vida = vida - 35;
+
+            if (esconder == false)
+                vida = vida - 100;
+        }
+
+        protected void perder_vida_de_atributos()
+        { 
+
             if (comida >= 100)
-                vida = vida + 15;
+                vida = vida - 15;
 
             if (descanso >= 100)
-                vida = vida + 15;
+                vida = vida - 15;
         }
 
         public string get_personagem()
@@ -114,6 +145,12 @@ namespace jogo_assassino
         protected bool get_investigar()
         {
             return investigar;
+
+        }
+
+        protected bool get_tv()
+        {
+            return tv;
 
         }
     }

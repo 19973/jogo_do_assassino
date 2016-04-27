@@ -26,33 +26,35 @@ namespace jogo_assassino
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            if (mn4.get_versao() == "normal")
-            {
-                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
-                this.BackgroundImage = myimage;
+                if (mn4.get_versao() == "normal")
+                {
+                    Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
+                    this.BackgroundImage = myimage;
 
-                pictureBox5.Image = Properties.Resources.aro;
+                    pictureBox5.Image = Properties.Resources.aro;
 
-                pictureBox4.Image = Properties.Resources.gifs_gifs_terror_41;
+                    pictureBox4.Image = Properties.Resources.gifs_gifs_terror_41;
 
-                pictureBox6.Image = Properties.Resources.tumblr_mk34zvLlli1s92578o1_500;
-
-
-            }
-
-            if (mn4.get_versao() == "terror")
-            {
-                Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
-                this.BackgroundImage = myimage;
-
-                pictureBox5.Image = Properties.Resources.gif_Normal_1;
-
-                pictureBox4.Image = Properties.Resources.gif_Normal_2;
-
-                pictureBox6.Image = Properties.Resources.gif_Normal_3;
+                    pictureBox6.Image = Properties.Resources.tumblr_mk34zvLlli1s92578o1_500;
 
 
-            }
+                }
+
+                if (mn4.get_versao() == "terror")
+                {
+                    Image myimage = new Bitmap(jogo_assassino.Properties.Resources.elect);
+                    this.BackgroundImage = myimage;
+
+                    pictureBox5.Image = Properties.Resources.gif_Normal_1;
+
+                    pictureBox4.Image = Properties.Resources.gif_Normal_2;
+
+                    pictureBox6.Image = Properties.Resources.gif_Normal_3;
+
+
+                }
+            
+        
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

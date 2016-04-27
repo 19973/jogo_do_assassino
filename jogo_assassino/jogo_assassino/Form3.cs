@@ -12,7 +12,9 @@ namespace jogo_assassino
 {
     public partial class Form3 : System.Windows.Forms.Form
     {
-
+        private policia pol;
+        private assassino ass;
+        private inocente ino;
         public menu_jogo mn3;
 
         Image imagem_Default = new Bitmap(jogo_assassino.Properties.Resources.Default);
@@ -21,9 +23,9 @@ namespace jogo_assassino
         Image imagem_Inocente = new Bitmap(jogo_assassino.Properties.Resources.Inocente);
 
         Random rnd = new Random();
+        List<pessoa> jogadores = new List<pessoa>();
         List<string> papeis = new List<string>();
         int count = (-1);
-
 
 
         public void set_jogo(menu_jogo mn2)
@@ -105,6 +107,7 @@ namespace jogo_assassino
             But_Sim1.Show();
             Imag_Classes.Show();
             Imag_Classes.Image = imagem_Default;
+
         }
 
 
@@ -128,49 +131,45 @@ namespace jogo_assassino
 
             if (comboBox_Player.Text == "5")
                 papeis.Add("inocente3");
-        
+
+
 
             count++;
             Lab_Player1_Pronto.Text = "Player" + (count+1) + ", Estás Pronto?";
 
-            
-
-                if (count <= int.Parse(comboBox_Player.Text)-1)
+            if (count <= int.Parse(comboBox_Player.Text)-1)
                 {
+
                     if (papeis[count] == "policia")
                     {
                         Imag_Classes.Image = imagem_Policia;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-                    }
+                        Imag_Classes.Image = imagem_Default;  
+                     }
                     else if (papeis[count] == "ladrao")
                     {
                         Imag_Classes.Image = imagem_Ladrao;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
-
-                    }
+                   }
                     else if (papeis[count] == "inocente1")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
                         Imag_Classes.Image = imagem_Default;
-
                     }
                     else if (papeis[count] == "inocente2")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
-
-                    }
+                        Imag_Classes.Image = imagem_Default;                  
+                     }
                     else if (papeis[count] == "inocente3")
                     {
                         Imag_Classes.Image = imagem_Inocente;
                         MessageBox.Show("Carrega ok e vira as costas se ja sabes a classe");
-                        Imag_Classes.Image = imagem_Default;
+                        Imag_Classes.Image = imagem_Default;                      
                     }
-
             }
 
             if(count == int.Parse(comboBox_Player.Text))
@@ -187,7 +186,7 @@ namespace jogo_assassino
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+       
             Random rnd = new Random();
 
 
@@ -228,6 +227,9 @@ namespace jogo_assassino
             form4.ShowDialog();
             form4 = null;
             this.Show();
+
+
+
         }
 
         private void Voltar2_Click(object sender, EventArgs e)
@@ -254,7 +256,10 @@ namespace jogo_assassino
             Seguinte1.Show();
         }
 
-      
+        private void comboBox_Player_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

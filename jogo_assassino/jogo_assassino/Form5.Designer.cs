@@ -57,6 +57,12 @@
             this.lab_Opcao1 = new System.Windows.Forms.Label();
             this.progressBar_Descanso = new System.Windows.Forms.ProgressBar();
             this.progressBar_Comida = new System.Windows.Forms.ProgressBar();
+            this.ronda = new System.Windows.Forms.Label();
+            this.num_rondas = new System.Windows.Forms.Label();
+            this.player_ronda = new System.Windows.Forms.Label();
+            this.comboBox_enviar_mensagem = new System.Windows.Forms.ComboBox();
+            this.textBox_eviar_mensagem = new System.Windows.Forms.TextBox();
+            this.enviar_mensagem = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 34);
+            this.label1.Location = new System.Drawing.Point(12, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -131,9 +137,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(226, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(226, -6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 213);
+            this.pictureBox1.Size = new System.Drawing.Size(10, 220);
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
@@ -191,6 +197,7 @@
             this.but_Opcao6.TabIndex = 15;
             this.but_Opcao6.Text = "Carregue Aqui";
             this.but_Opcao6.UseVisualStyleBackColor = false;
+            this.but_Opcao6.Click += new System.EventHandler(this.but_Opcao6_Click);
             // 
             // but_Opcao5
             // 
@@ -202,6 +209,7 @@
             this.but_Opcao5.TabIndex = 14;
             this.but_Opcao5.Text = "Carregue Aqui";
             this.but_Opcao5.UseVisualStyleBackColor = false;
+            this.but_Opcao5.Click += new System.EventHandler(this.but_Opcao5_Click);
             // 
             // but_Opcao4
             // 
@@ -213,6 +221,7 @@
             this.but_Opcao4.TabIndex = 13;
             this.but_Opcao4.Text = "Carregue Aqui";
             this.but_Opcao4.UseVisualStyleBackColor = false;
+            this.but_Opcao4.Click += new System.EventHandler(this.but_Opcao4_Click);
             // 
             // but_Opcao3
             // 
@@ -235,6 +244,7 @@
             this.but_Opcao2.TabIndex = 11;
             this.but_Opcao2.Text = "Carregue Aqui";
             this.but_Opcao2.UseVisualStyleBackColor = false;
+            this.but_Opcao2.Click += new System.EventHandler(this.but_Opcao2_Click);
             // 
             // but_Opcao1
             // 
@@ -363,6 +373,69 @@
             this.progressBar_Comida.Size = new System.Drawing.Size(109, 13);
             this.progressBar_Comida.TabIndex = 8;
             // 
+            // ronda
+            // 
+            this.ronda.AutoSize = true;
+            this.ronda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ronda.Location = new System.Drawing.Point(644, 3);
+            this.ronda.Name = "ronda";
+            this.ronda.Size = new System.Drawing.Size(87, 25);
+            this.ronda.TabIndex = 9;
+            this.ronda.Text = "Ronda:";
+            // 
+            // num_rondas
+            // 
+            this.num_rondas.AutoSize = true;
+            this.num_rondas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_rondas.Location = new System.Drawing.Point(723, 3);
+            this.num_rondas.Name = "num_rondas";
+            this.num_rondas.Size = new System.Drawing.Size(56, 25);
+            this.num_rondas.TabIndex = 10;
+            this.num_rondas.Text = "num";
+            // 
+            // player_ronda
+            // 
+            this.player_ronda.AutoSize = true;
+            this.player_ronda.Location = new System.Drawing.Point(63, 9);
+            this.player_ronda.Name = "player_ronda";
+            this.player_ronda.Size = new System.Drawing.Size(36, 13);
+            this.player_ronda.TabIndex = 11;
+            this.player_ronda.Text = "Player";
+            // 
+            // comboBox_enviar_mensagem
+            // 
+            this.comboBox_enviar_mensagem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_enviar_mensagem.FormattingEnabled = true;
+            this.comboBox_enviar_mensagem.Items.AddRange(new object[] {
+            "Player 1",
+            "Player 2",
+            "Player 3",
+            "Player 4"});
+            this.comboBox_enviar_mensagem.Location = new System.Drawing.Point(340, 61);
+            this.comboBox_enviar_mensagem.Name = "comboBox_enviar_mensagem";
+            this.comboBox_enviar_mensagem.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_enviar_mensagem.TabIndex = 21;
+            this.comboBox_enviar_mensagem.Visible = false;
+            // 
+            // textBox_eviar_mensagem
+            // 
+            this.textBox_eviar_mensagem.Location = new System.Drawing.Point(304, 163);
+            this.textBox_eviar_mensagem.Multiline = true;
+            this.textBox_eviar_mensagem.Name = "textBox_eviar_mensagem";
+            this.textBox_eviar_mensagem.Size = new System.Drawing.Size(197, 20);
+            this.textBox_eviar_mensagem.TabIndex = 22;
+            this.textBox_eviar_mensagem.Visible = false;
+            // 
+            // enviar_mensagem
+            // 
+            this.enviar_mensagem.Location = new System.Drawing.Point(350, 235);
+            this.enviar_mensagem.Name = "enviar_mensagem";
+            this.enviar_mensagem.Size = new System.Drawing.Size(102, 23);
+            this.enviar_mensagem.TabIndex = 23;
+            this.enviar_mensagem.Text = "Enviar Mensagem";
+            this.enviar_mensagem.UseVisualStyleBackColor = true;
+            this.enviar_mensagem.Visible = false;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,6 +443,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(785, 501);
             this.ControlBox = false;
+            this.Controls.Add(this.enviar_mensagem);
+            this.Controls.Add(this.textBox_eviar_mensagem);
+            this.Controls.Add(this.comboBox_enviar_mensagem);
+            this.Controls.Add(this.player_ronda);
+            this.Controls.Add(this.num_rondas);
+            this.Controls.Add(this.ronda);
             this.Controls.Add(this.progressBar_Comida);
             this.Controls.Add(this.progressBar_Descanso);
             this.Controls.Add(this.groupBox1);
@@ -421,5 +500,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar progressBar_Descanso;
         private System.Windows.Forms.ProgressBar progressBar_Comida;
+        private System.Windows.Forms.Label ronda;
+        private System.Windows.Forms.Label num_rondas;
+        private System.Windows.Forms.Label player_ronda;
+        private System.Windows.Forms.ComboBox comboBox_enviar_mensagem;
+        private System.Windows.Forms.TextBox textBox_eviar_mensagem;
+        private System.Windows.Forms.Button enviar_mensagem;
     }
 }

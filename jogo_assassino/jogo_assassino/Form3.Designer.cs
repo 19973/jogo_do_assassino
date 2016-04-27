@@ -220,6 +220,7 @@
             this.comboBox_Player.Name = "comboBox_Player";
             this.comboBox_Player.Size = new System.Drawing.Size(121, 21);
             this.comboBox_Player.TabIndex = 24;
+            this.comboBox_Player.SelectedIndexChanged += new System.EventHandler(this.comboBox_Player_SelectedIndexChanged);
             // 
             // Lab_Players
             // 

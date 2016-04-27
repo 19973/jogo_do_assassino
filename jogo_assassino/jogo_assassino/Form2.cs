@@ -178,6 +178,7 @@ namespace jogo_assassino
                                 t.Text = textBox5.Text;
                                 t = form3.Controls.Find("comboBox_Player", true)[0];
                                 t.Text = comboBox1.Text;
+                                
 
                                 form3.ShowDialog();
                                 form3 = null;
